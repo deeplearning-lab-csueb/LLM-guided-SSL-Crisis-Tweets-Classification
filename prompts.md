@@ -43,6 +43,8 @@ These results indicate that GPT-4o is reasonably robust to prompt phrasing for t
 
 ### RULES_1
 
+Compact, single-line class definitions. Shortest variant (≈11 lines including tie-break hint).
+
 * caution_and_advice: warnings/instructions/tips
 * displaced_people_and_evacuations: evacuations, relocation, shelters
 * infrastructure_and_utility_damage: damage/outages to roads/bridges/power/water/buildings
@@ -59,6 +61,8 @@ These results indicate that GPT-4o is reasonably robust to prompt phrasing for t
 ---
 
 ### RULES_2
+
+Medium-detail variant with a "PRIMARY INTENT" framing instruction and slightly expanded one-line class definitions.
 
 **Instruction:** Pick ONE label for the tweet's PRIMARY INTENT.
 
@@ -77,15 +81,64 @@ These results indicate that GPT-4o is reasonably robust to prompt phrasing for t
 
 ### RULES_3
 
-(Condensed for readability; full version in source file)
+Detailed variant with explicit Definition, Include, and Exclude criteria for each class (≈3–4× longer than RULES_1).
 
-* **caution_and_advice:** warnings with actionable instructions
-* **displaced_people_and_evacuations:** evacuation/shelter-related content
-* **infrastructure_and_utility_damage:** physical damage/outages
-* **injured_or_dead_people:** casualties/fatalities
-* **missing_or_found_people:** missing/found individuals
-* **requests_or_urgent_needs:** urgent help/supplies requests
-* **rescue_volunteering_or_donation_effort:** organizing/offering help
-* **sympathy_and_support:** prayers/condolences
-* **other_relevant_information:** general disaster-related info
-* **not_humanitarian:** unrelated content
+#### caution_and_advice
+
+* **Definition:** Action-oriented warnings, instructions, or tips telling people what to do/not do during the disaster.
+* **Include:** Imperatives (“evacuate”, “avoid…”, “do not…”, “boil water”, “seek shelter”); agency alerts with directives.
+* **Exclude:** Pure situation updates → `other_relevant_information`.
+
+#### displaced_people_and_evacuations
+
+* **Definition:** People being evacuated/relocated, shelters open, or explicit evacuation orders.
+* **Include:** “Evacuation order issued…”, “Shelter at…”, “Families relocated to…”.
+* **Exclude:** Roadblocks without people movement → `infrastructure_and_utility_damage`.
+
+#### infrastructure_and_utility_damage
+
+* **Definition:** Physical damage or outages to infrastructure.
+* **Include:** “Bridge collapsed…”, “Power is out…”, “Water main burst…”.
+* **Exclude:** Human impact → `injured_or_dead_people`.
+
+#### injured_or_dead_people
+
+* **Definition:** Mentions of injuries, casualties, fatalities.
+* **Include:** “3 injured…”, “2 fatalities reported…”.
+* **Exclude:** Sympathy only → `sympathy_and_support`.
+
+#### missing_or_found_people
+
+* **Definition:** Missing or found persons.
+* **Include:** “Missing person…”, “Found safe”.
+* **Exclude:** Volunteer coordination → `rescue_volunteering_or_donation_effort`.
+
+#### requests_or_urgent_needs
+
+* **Definition:** Requests for urgent help/supplies.
+* **Include:** “We need water/food”, “Please send help”.
+* **Exclude:** Donation drives → `rescue_volunteering_or_donation_effort`.
+
+#### rescue_volunteering_or_donation_effort
+
+* **Definition:** Offering help or organizing aid.
+* **Include:** “Volunteers needed”, “Accepting donations…”.
+* **Exclude:** Personal survival needs → `requests_or_urgent_needs`.
+
+#### sympathy_and_support
+
+* **Definition:** Condolences/prayers without actionable info.
+* **Include:** “Praying for…”, “Stay strong…”.
+* **Exclude:** Any concrete info → `other_relevant_information`.
+
+#### other_relevant_information
+
+* **Definition:** Informative disaster-related content not covered above.
+* **Include:** Updates, stats, hazard observations.
+* **Exclude:** Prefer more specific labels if applicable.
+
+#### not_humanitarian
+
+* **Definition:** Unrelated or metaphorical use of disaster terms.
+* **Include:** Jokes, metaphors, entertainment.
+* **Exclude:** Real disaster references → `other_relevant_information`.
