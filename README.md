@@ -84,9 +84,10 @@ Every result file referenced below is committed to this repo. All numbers in the
 |---|---|---|---|
 | **LG-CoTrain Macro-F1 / ECE on HumAID** (10 events × 4 budgets, 3 seeds, BERTweet + GPT-4o) | F1 0.608 / 0.619 / 0.631 / 0.645 at 5 / 10 / 25 / 50 labels per class;  ECE 0.174 / 0.160 / 0.122 / 0.108 | `results/bertweet/optuna/wge7/**/trials_10/best_params.json` (Optuna study artifacts) and the equivalent materialized re-runs in `results/bertweet/gpt-4o/optuna-tuned/wge7/` | NB15 |
 | **Per-event LG-CoTrain Macro-F1** | full 10 events × 4 budgets matrix | same as above (per-event aggregation) | NB15 |
-| **SG-CoTrain ablation** (LG-CoTrain pipeline + BERTweet self-trained pseudo-labels instead of GPT-4o), b=5, per event | average Macro-F1 0.396; per-event values in JSON | `results/bertweet/ablation/self-trained/optuna/{event}/5_set*/trials_10/best_params.json` | NB27 |
-| **SG-CoTrain-Top variant** (top-50-per-class confidence-filtered self-trained pseudo-labels) | Macro-F1 ≈ 0.607 at b=50 | `results/bertweet/ablation/self-trained-top-p/baseline/` | NB19 |
-| **Vanilla Blum & Mitchell co-training ablation** | full grid in JSON | `results/bertweet/ablation/vanilla-cotrain/baseline/` | NB29 |
+| **SG-CoTrain ablation, Optuna-tuned (b=5 only)** — head-to-head fair comparison against LG-CoTrain at b=5 (both sides Optuna-tuned with the same 6-parameter search space and 10 trials per cell) | average Macro-F1 **0.396** at b=5; per-event values in JSON | `results/bertweet/ablation/self-trained/optuna/{event}/5_set*/trials_10/best_params.json` | NB27 |
+| **SG-CoTrain ablation, default HP (all 4 budgets)** — fixed-HP runs across the full grid for completeness; per-budget numbers are weak at low budgets because the BERTweet teacher under-fits with default HP | F1 ≈ 0.108 / 0.293 / 0.459 / 0.587 at 5 / 10 / 25 / 50 lb/cl | `results/bertweet/ablation/self-trained/baseline/` | NB19 |
+| **SG-CoTrain-Top variant, default HP (all 4 budgets)** — same as SG-CoTrain but the BERTweet teacher's pseudo-labels are filtered to the top-50 most confident predictions per class before co-training | F1 ≈ 0.205 / 0.392 / 0.536 / **0.607** at 5 / 10 / 25 / 50 lb/cl | `results/bertweet/ablation/self-trained-top-p/baseline/` | NB19 |
+| **Vanilla Blum & Mitchell co-training, default HP (all 4 budgets)** — no LLM teacher; two BERTweet models bootstrap from the labeled set and exchange high-confidence pseudo-labels each iteration | F1 ≈ 0.092 / 0.125 / 0.419 / 0.542 at 5 / 10 / 25 / 50 lb/cl | `results/bertweet/ablation/vanilla-cotrain/baseline/` | NB19 |
 | **GPT-4o zero-shot baseline** on HumAID (RULES1 prompt) | test Macro-F1 ≈ 0.641; train Macro-F1 ≈ 0.628 | `zeroshot/results/{event}/{train,test,dev}/gpt-4o/.../predictions.csv` | `zeroshot/12_…test_rules_1…ipynb`, `zeroshot/13_…train_rules_1…ipynb` |
 | **Prompt-selection comparison** (3 candidate prompts on dev split) | RULES1/2/3 all in 0.601–0.613 Macro-F1 range; RULES1 chosen (simplest + highest) | `zeroshot/results/{event}/dev/gpt-4o/.../predictions.csv` for each prompt | `zeroshot/11_…dev_RULES1_2_3.ipynb` |
 | **Per-class GPT-4o pseudo-label quality** | e.g. *Injured or dead people* 0.885, *Other relevant* 0.276 | computed in NB26 from the train-split predictions above | NB26 |
@@ -316,8 +317,8 @@ Six LG-CoTrain notebooks under `Notebooks/` plus three GPT-4o zero-shot notebook
 | `15_bertweet_optuna_retune.ipynb` | Per-cell Optuna re-tuning of LG-CoTrain on BERTweet (6-parameter search × 10 trials per cell × 120 cells), then materialized re-runs | `results/bertweet/optuna/wge7/` (study artifacts) + `results/bertweet/gpt-4o/optuna-tuned/wge7/` (re-runs) — **canonical LG-CoTrain result tree** |
 | `19_ablation_studies.ipynb` | 3-way ablation with default hyperparameters (SG-CoTrain, SG-CoTrain-Top, vanilla cotrain) | `results/bertweet/ablation/{self-trained,self-trained-top-p,vanilla-cotrain}/baseline/` |
 | `26_pseudolabel_quality_analysis.ipynb` | Per-class GPT-4o pseudo-label quality | analysis only — reads `data/pseudo-labelled/gpt-4o/` and computes per-class F1 against `data/original/{event}/{event}_train.tsv` |
-| `27_selftrained_optuna_ablation.ipynb` | SG-CoTrain Optuna ablation — generates self-trained pseudo-labels (Step 1) and Optuna-tunes the LG-CoTrain pipeline on them (Step 2), end-to-end across all 4 budgets x 10 events x 3 seeds | `results/bertweet/ablation/self-trained/optuna/` |
-| `29_vanilla_cotrain_optuna_ablation.ipynb` | Vanilla Blum & Mitchell co-training Optuna ablation | `results/bertweet/ablation/vanilla-cotrain/optuna/` |
+| `27_selftrained_optuna_ablation.ipynb` | SG-CoTrain Optuna ablation — generates self-trained pseudo-labels (Step 1) and Optuna-tunes the LG-CoTrain pipeline on them (Step 2). The notebook is structured for all 4 budgets, **but only the b=5 cells are committed** (`5_set{1,2,3}` per event = 30 studies); other budgets were not run due to compute time. To reproduce them, run the b=10/25/50 cells. | `results/bertweet/ablation/self-trained/optuna/` |
+| `29_vanilla_cotrain_optuna_ablation.ipynb` | Optuna search definition for vanilla Blum & Mitchell co-training (7 hyperparameters). **No Optuna result tree is committed** — the vanilla-cotrain numbers in this repo come from the default-HP runs in NB19 instead. Run this notebook if you want a tuned vanilla baseline. | (would write to `results/bertweet/ablation/vanilla-cotrain/optuna/` if executed) |
 
 ### GPT-4o zero-shot baseline (`zeroshot/`)
 
@@ -352,17 +353,34 @@ All studies use 10 trials per (event, budget, seed) combination with `dev_macro_
 | `max_seq_length` | fixed | 128 |
 | `stopping_strategy` | fixed | `baseline` (ensemble macro-F1 patience) |
 
-### Self-trained ablation (NB27)
+### Self-trained ablation — Optuna-tuned, b=5 only (NB27)
 
-Same 6-parameter LG-CoTrain search space, but with `pseudo_label_source = self-trained-optuna`. The teacher BERTweet model is first fine-tuned on the labeled set using the per-cell supervised Optuna-tuned hyperparameters from `results/bertweet/supervised/optuna-tuned/` (committed in this repo); the teacher then generates pseudo-labels which feed Step 2.
+Same 6-parameter LG-CoTrain search space as above, but with `pseudo_label_source = self-trained-optuna`. The teacher BERTweet model is first fine-tuned on the labeled set using the per-cell supervised Optuna-tuned hyperparameters from `results/bertweet/supervised/optuna-tuned/` (committed in this repo); the teacher then generates pseudo-labels which feed Step 2.
 
-### Self-trained-top-p ablation (NB19, defaults only)
+**Scope of the committed result tree:** only the **b=5** cells (10 events × 3 seeds = 30 studies) are committed under `results/bertweet/ablation/self-trained/optuna/`. This is the fair head-to-head comparison against LG-CoTrain at b=5 reported in Table 5 of the paper. Other budgets (10/25/50) were not run with this tuned variant due to compute time — for those, see the default-HP runs in `ablation/self-trained/baseline/` (NB19) instead.
 
-Same as self-trained but the teacher's pseudo-labels are filtered to the top 50 most confident predictions per class via `lg_cotrain.filter_pseudo_labels`.
+### Self-trained, self-trained-top-p, and vanilla cotrain — default HP (NB19)
 
-### Vanilla co-training (NB29, `vanilla_cotrain.optuna_tuner`)
+These three default-HP ablation grids (each 10 events × 4 budgets × 3 seeds = 120 cells) are all produced by NB19 with the same fixed hyperparameter set. They use the same defaults that the LG-CoTrain reference paper specifies for the main pipeline:
 
-Classic Blum & Mitchell (1998) co-training with no external pseudo-labels.
+| Parameter | Value |
+|---|---|
+| `lr` | 2e-5 |
+| `batch_size` | 32 |
+| `cotrain_epochs` | 10 |
+| `finetune_patience` | 5 |
+| `weight_decay` | 0.01 |
+| `warmup_ratio` | 0.1 |
+| `weight_gen_epochs` | 7 |
+
+Variant-specific differences:
+- **self-trained**: BERTweet teacher uses paper-default HP (no per-cell Optuna teacher tuning)
+- **self-trained-top-p**: same as self-trained, plus pseudo-labels filtered to the top 50 most confident predictions per class via `lg_cotrain.filter_pseudo_labels`
+- **vanilla-cotrain**: classic Blum & Mitchell co-training; no external teacher; runs through `vanilla_cotrain.run_experiment` instead of `lg_cotrain.run_experiment`
+
+### Vanilla co-training Optuna search (NB29, `vanilla_cotrain.optuna_tuner`) — defined but not committed
+
+A 7-parameter Optuna search for vanilla co-training is defined in NB29 and `vanilla_cotrain.optuna_tuner`. **No result tree from this search is committed** — only the default-HP runs from NB19 are in the repo. Run NB29 yourself if you want a tuned vanilla baseline; output would land at `results/bertweet/ablation/vanilla-cotrain/optuna/`.
 
 | Parameter | Tuned? | Range / Value |
 |---|---|---|
