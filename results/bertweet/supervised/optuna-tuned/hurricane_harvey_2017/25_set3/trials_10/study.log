@@ -1,0 +1,284 @@
+2026-04-15 23:51:13,876 - supervised_baseline - INFO - === Optuna study: hurricane_harvey_2017 budget=25 seed=3 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 23:51:13,876 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 23:51:14,597 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:51:14,597 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:51:14,641 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:51:14,641 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:51:18,382 - supervised_baseline - INFO - Epoch 1/83: loss=2.2069, dev_macro_f1=0.0541, dev_err=83.10%, es_counter=0
+2026-04-15 23:51:21,464 - supervised_baseline - INFO - Epoch 2/83: loss=2.1889, dev_macro_f1=0.0899, dev_err=84.93%, es_counter=0
+2026-04-15 23:51:24,531 - supervised_baseline - INFO - Epoch 3/83: loss=2.1852, dev_macro_f1=0.0408, dev_err=92.14%, es_counter=1
+2026-04-15 23:51:27,614 - supervised_baseline - INFO - Epoch 4/83: loss=2.1712, dev_macro_f1=0.1247, dev_err=79.33%, es_counter=0
+2026-04-15 23:51:30,692 - supervised_baseline - INFO - Epoch 5/83: loss=2.1240, dev_macro_f1=0.2212, dev_err=58.88%, es_counter=0
+2026-04-15 23:51:33,815 - supervised_baseline - INFO - Epoch 6/83: loss=2.0132, dev_macro_f1=0.3621, dev_err=54.25%, es_counter=0
+2026-04-15 23:51:36,919 - supervised_baseline - INFO - Epoch 7/83: loss=1.8639, dev_macro_f1=0.4963, dev_err=44.13%, es_counter=0
+2026-04-15 23:51:40,024 - supervised_baseline - INFO - Epoch 8/83: loss=1.5498, dev_macro_f1=0.5142, dev_err=42.63%, es_counter=0
+2026-04-15 23:51:43,120 - supervised_baseline - INFO - Epoch 9/83: loss=1.3198, dev_macro_f1=0.5642, dev_err=41.23%, es_counter=0
+2026-04-15 23:51:46,211 - supervised_baseline - INFO - Epoch 10/83: loss=0.9640, dev_macro_f1=0.6141, dev_err=36.06%, es_counter=0
+2026-04-15 23:51:49,301 - supervised_baseline - INFO - Epoch 11/83: loss=0.7195, dev_macro_f1=0.5999, dev_err=39.18%, es_counter=1
+2026-04-15 23:51:52,392 - supervised_baseline - INFO - Epoch 12/83: loss=0.5275, dev_macro_f1=0.6213, dev_err=35.63%, es_counter=0
+2026-04-15 23:51:55,488 - supervised_baseline - INFO - Epoch 13/83: loss=0.3998, dev_macro_f1=0.6007, dev_err=40.15%, es_counter=1
+2026-04-15 23:51:58,579 - supervised_baseline - INFO - Epoch 14/83: loss=0.3102, dev_macro_f1=0.6232, dev_err=38.97%, es_counter=0
+2026-04-15 23:52:01,696 - supervised_baseline - INFO - Epoch 15/83: loss=0.2395, dev_macro_f1=0.6273, dev_err=37.46%, es_counter=0
+2026-04-15 23:52:04,794 - supervised_baseline - INFO - Epoch 16/83: loss=0.2034, dev_macro_f1=0.6207, dev_err=38.43%, es_counter=1
+2026-04-15 23:52:07,879 - supervised_baseline - INFO - Epoch 17/83: loss=0.1726, dev_macro_f1=0.6255, dev_err=38.75%, es_counter=2
+2026-04-15 23:52:10,957 - supervised_baseline - INFO - Epoch 18/83: loss=0.1502, dev_macro_f1=0.6213, dev_err=38.86%, es_counter=3
+2026-04-15 23:52:14,053 - supervised_baseline - INFO - Epoch 19/83: loss=0.1351, dev_macro_f1=0.6208, dev_err=39.07%, es_counter=4
+2026-04-15 23:52:17,140 - supervised_baseline - INFO - Early stopping at epoch 20
+2026-04-15 23:52:17,145 - supervised_baseline - INFO - Training done in 62s. Epochs: 20, Best epoch: 15
+2026-04-15 23:52:17,145 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:52:22,294 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp4aq11dr1\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:52:22,294 - supervised_baseline - INFO - Test error rate: 37.45%, Test macro-F1: 0.6103, Test ECE: 0.1090
+2026-04-15 23:52:22,308 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp4aq11dr1\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:52:22,319 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp4aq11dr1\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:52:22,331 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.6273 ---
+2026-04-15 23:52:22,331 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 23:52:22,991 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:52:22,991 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:52:23,011 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:52:23,011 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:52:27,326 - supervised_baseline - INFO - Epoch 1/100: loss=2.2016, dev_macro_f1=0.0946, dev_err=81.49%, es_counter=0
+2026-04-15 23:52:30,912 - supervised_baseline - INFO - Epoch 2/100: loss=2.1753, dev_macro_f1=0.1707, dev_err=82.24%, es_counter=0
+2026-04-15 23:52:34,528 - supervised_baseline - INFO - Epoch 3/100: loss=2.0355, dev_macro_f1=0.4105, dev_err=50.59%, es_counter=0
+2026-04-15 23:52:38,129 - supervised_baseline - INFO - Epoch 4/100: loss=1.6123, dev_macro_f1=0.6185, dev_err=35.84%, es_counter=0
+2026-04-15 23:52:41,741 - supervised_baseline - INFO - Epoch 5/100: loss=1.0663, dev_macro_f1=0.5859, dev_err=41.12%, es_counter=1
+2026-04-15 23:52:45,341 - supervised_baseline - INFO - Epoch 6/100: loss=0.7358, dev_macro_f1=0.5260, dev_err=37.89%, es_counter=2
+2026-04-15 23:52:48,945 - supervised_baseline - INFO - Epoch 7/100: loss=0.8367, dev_macro_f1=0.6039, dev_err=36.92%, es_counter=3
+2026-04-15 23:52:52,548 - supervised_baseline - INFO - Epoch 8/100: loss=0.5048, dev_macro_f1=0.5610, dev_err=38.43%, es_counter=4
+2026-04-15 23:52:56,147 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 23:52:56,152 - supervised_baseline - INFO - Training done in 33s. Epochs: 9, Best epoch: 4
+2026-04-15 23:52:56,152 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:53:01,772 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpsl18gd7u\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:53:01,772 - supervised_baseline - INFO - Test error rate: 37.34%, Test macro-F1: 0.5848, Test ECE: 0.3079
+2026-04-15 23:53:01,785 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpsl18gd7u\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:53:01,795 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpsl18gd7u\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:53:01,803 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.6185 ---
+2026-04-15 23:53:01,803 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 23:53:02,491 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:53:02,491 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:53:02,513 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:53:02,513 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:53:06,153 - supervised_baseline - INFO - Epoch 1/79: loss=2.2100, dev_macro_f1=0.0509, dev_err=82.67%, es_counter=0
+2026-04-15 23:53:09,002 - supervised_baseline - INFO - Epoch 2/79: loss=2.1838, dev_macro_f1=0.0656, dev_err=84.39%, es_counter=0
+2026-04-15 23:53:11,863 - supervised_baseline - INFO - Epoch 3/79: loss=2.1838, dev_macro_f1=0.0397, dev_err=91.39%, es_counter=1
+2026-04-15 23:53:14,690 - supervised_baseline - INFO - Epoch 4/79: loss=2.1984, dev_macro_f1=0.0412, dev_err=91.07%, es_counter=2
+2026-04-15 23:53:17,547 - supervised_baseline - INFO - Epoch 5/79: loss=2.1679, dev_macro_f1=0.1056, dev_err=77.07%, es_counter=0
+2026-04-15 23:53:20,403 - supervised_baseline - INFO - Epoch 6/79: loss=2.1493, dev_macro_f1=0.1513, dev_err=68.14%, es_counter=0
+2026-04-15 23:53:23,247 - supervised_baseline - INFO - Epoch 7/79: loss=2.1423, dev_macro_f1=0.1284, dev_err=79.55%, es_counter=1
+2026-04-15 23:53:26,129 - supervised_baseline - INFO - Epoch 8/79: loss=2.0699, dev_macro_f1=0.2491, dev_err=63.72%, es_counter=0
+2026-04-15 23:53:29,005 - supervised_baseline - INFO - Epoch 9/79: loss=1.9972, dev_macro_f1=0.3944, dev_err=50.81%, es_counter=0
+2026-04-15 23:53:31,884 - supervised_baseline - INFO - Epoch 10/79: loss=1.7806, dev_macro_f1=0.4138, dev_err=52.74%, es_counter=0
+2026-04-15 23:53:34,764 - supervised_baseline - INFO - Epoch 11/79: loss=1.6950, dev_macro_f1=0.5089, dev_err=45.10%, es_counter=0
+2026-04-15 23:53:37,654 - supervised_baseline - INFO - Epoch 12/79: loss=1.5757, dev_macro_f1=0.5557, dev_err=40.69%, es_counter=0
+2026-04-15 23:53:40,504 - supervised_baseline - INFO - Epoch 13/79: loss=1.4128, dev_macro_f1=0.5279, dev_err=43.16%, es_counter=1
+2026-04-15 23:53:43,400 - supervised_baseline - INFO - Epoch 14/79: loss=1.2792, dev_macro_f1=0.5761, dev_err=39.18%, es_counter=0
+2026-04-15 23:53:46,281 - supervised_baseline - INFO - Epoch 15/79: loss=1.0412, dev_macro_f1=0.5582, dev_err=41.33%, es_counter=1
+2026-04-15 23:53:49,203 - supervised_baseline - INFO - Epoch 16/79: loss=0.9774, dev_macro_f1=0.5774, dev_err=40.47%, es_counter=0
+2026-04-15 23:53:52,105 - supervised_baseline - INFO - Epoch 17/79: loss=0.8248, dev_macro_f1=0.5797, dev_err=40.15%, es_counter=0
+2026-04-15 23:53:54,978 - supervised_baseline - INFO - Epoch 18/79: loss=0.6884, dev_macro_f1=0.5900, dev_err=38.64%, es_counter=0
+2026-04-15 23:53:57,839 - supervised_baseline - INFO - Epoch 19/79: loss=0.6528, dev_macro_f1=0.6003, dev_err=37.46%, es_counter=0
+2026-04-15 23:54:00,729 - supervised_baseline - INFO - Epoch 20/79: loss=0.5456, dev_macro_f1=0.5707, dev_err=43.49%, es_counter=1
+2026-04-15 23:54:03,597 - supervised_baseline - INFO - Epoch 21/79: loss=0.4913, dev_macro_f1=0.6201, dev_err=36.17%, es_counter=0
+2026-04-15 23:54:06,464 - supervised_baseline - INFO - Epoch 22/79: loss=0.4274, dev_macro_f1=0.5958, dev_err=38.32%, es_counter=1
+2026-04-15 23:54:09,366 - supervised_baseline - INFO - Epoch 23/79: loss=0.4175, dev_macro_f1=0.5898, dev_err=39.83%, es_counter=2
+2026-04-15 23:54:12,258 - supervised_baseline - INFO - Epoch 24/79: loss=0.3642, dev_macro_f1=0.6121, dev_err=38.32%, es_counter=3
+2026-04-15 23:54:15,161 - supervised_baseline - INFO - Epoch 25/79: loss=0.3192, dev_macro_f1=0.5849, dev_err=40.58%, es_counter=4
+2026-04-15 23:54:18,033 - supervised_baseline - INFO - Early stopping at epoch 26
+2026-04-15 23:54:18,041 - supervised_baseline - INFO - Training done in 75s. Epochs: 26, Best epoch: 21
+2026-04-15 23:54:18,041 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:54:22,977 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpbl45wbsf\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:54:22,977 - supervised_baseline - INFO - Test error rate: 36.68%, Test macro-F1: 0.6077, Test ECE: 0.0747
+2026-04-15 23:54:23,003 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpbl45wbsf\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:54:23,014 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpbl45wbsf\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:54:23,024 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.6201 ---
+2026-04-15 23:54:23,024 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 23:54:23,687 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:54:23,687 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:54:23,706 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:54:23,706 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:54:27,991 - supervised_baseline - INFO - Epoch 1/69: loss=2.2024, dev_macro_f1=0.0553, dev_err=91.17%, es_counter=0
+2026-04-15 23:54:31,626 - supervised_baseline - INFO - Epoch 2/69: loss=2.1086, dev_macro_f1=0.3860, dev_err=53.07%, es_counter=0
+2026-04-15 23:54:35,286 - supervised_baseline - INFO - Epoch 3/69: loss=1.6294, dev_macro_f1=0.4955, dev_err=44.67%, es_counter=0
+2026-04-15 23:54:38,909 - supervised_baseline - INFO - Epoch 4/69: loss=0.8987, dev_macro_f1=0.5941, dev_err=32.19%, es_counter=0
+2026-04-15 23:54:42,547 - supervised_baseline - INFO - Epoch 5/69: loss=0.8039, dev_macro_f1=0.5951, dev_err=40.26%, es_counter=0
+2026-04-15 23:54:46,156 - supervised_baseline - INFO - Epoch 6/69: loss=0.8897, dev_macro_f1=0.5134, dev_err=49.09%, es_counter=1
+2026-04-15 23:54:49,763 - supervised_baseline - INFO - Epoch 7/69: loss=1.5369, dev_macro_f1=0.4290, dev_err=59.96%, es_counter=2
+2026-04-15 23:54:53,382 - supervised_baseline - INFO - Epoch 8/69: loss=2.3173, dev_macro_f1=0.1310, dev_err=82.56%, es_counter=3
+2026-04-15 23:54:56,994 - supervised_baseline - INFO - Epoch 9/69: loss=1.7343, dev_macro_f1=0.2239, dev_err=60.60%, es_counter=4
+2026-04-15 23:55:00,598 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 23:55:00,602 - supervised_baseline - INFO - Training done in 36s. Epochs: 10, Best epoch: 5
+2026-04-15 23:55:00,602 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:55:06,199 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp_s53j4o9\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:55:06,199 - supervised_baseline - INFO - Test error rate: 40.44%, Test macro-F1: 0.5715, Test ECE: 0.1383
+2026-04-15 23:55:06,217 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_s53j4o9\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:55:06,227 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_s53j4o9\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:55:06,237 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.5951 ---
+2026-04-15 23:55:06,237 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 23:55:06,885 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:55:06,885 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:55:06,904 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:55:06,904 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:55:10,142 - supervised_baseline - INFO - Epoch 1/49: loss=2.2000, dev_macro_f1=0.0504, dev_err=82.45%, es_counter=0
+2026-04-15 23:55:12,737 - supervised_baseline - INFO - Epoch 2/49: loss=2.2003, dev_macro_f1=0.0664, dev_err=82.02%, es_counter=0
+2026-04-15 23:55:15,332 - supervised_baseline - INFO - Epoch 3/49: loss=2.1858, dev_macro_f1=0.1066, dev_err=82.78%, es_counter=0
+2026-04-15 23:55:17,945 - supervised_baseline - INFO - Epoch 4/49: loss=2.1811, dev_macro_f1=0.1905, dev_err=71.47%, es_counter=0
+2026-04-15 23:55:20,527 - supervised_baseline - INFO - Epoch 5/49: loss=2.1498, dev_macro_f1=0.2377, dev_err=62.54%, es_counter=0
+2026-04-15 23:55:23,132 - supervised_baseline - INFO - Epoch 6/49: loss=2.1138, dev_macro_f1=0.3293, dev_err=55.76%, es_counter=0
+2026-04-15 23:55:25,757 - supervised_baseline - INFO - Epoch 7/49: loss=2.0489, dev_macro_f1=0.4100, dev_err=49.41%, es_counter=0
+2026-04-15 23:55:28,373 - supervised_baseline - INFO - Epoch 8/49: loss=1.9479, dev_macro_f1=0.4551, dev_err=49.19%, es_counter=0
+2026-04-15 23:55:31,003 - supervised_baseline - INFO - Epoch 9/49: loss=1.8610, dev_macro_f1=0.4670, dev_err=45.32%, es_counter=0
+2026-04-15 23:55:33,628 - supervised_baseline - INFO - Epoch 10/49: loss=1.7324, dev_macro_f1=0.5080, dev_err=44.78%, es_counter=0
+2026-04-15 23:55:36,219 - supervised_baseline - INFO - Epoch 11/49: loss=1.5880, dev_macro_f1=0.5172, dev_err=43.81%, es_counter=0
+2026-04-15 23:55:38,835 - supervised_baseline - INFO - Epoch 12/49: loss=1.4843, dev_macro_f1=0.5360, dev_err=42.30%, es_counter=0
+2026-04-15 23:55:41,424 - supervised_baseline - INFO - Epoch 13/49: loss=1.3352, dev_macro_f1=0.5308, dev_err=42.52%, es_counter=1
+2026-04-15 23:55:44,043 - supervised_baseline - INFO - Epoch 14/49: loss=1.2139, dev_macro_f1=0.5391, dev_err=42.73%, es_counter=0
+2026-04-15 23:55:46,678 - supervised_baseline - INFO - Epoch 15/49: loss=1.0962, dev_macro_f1=0.5526, dev_err=41.33%, es_counter=0
+2026-04-15 23:55:49,306 - supervised_baseline - INFO - Epoch 16/49: loss=0.9655, dev_macro_f1=0.5718, dev_err=39.83%, es_counter=0
+2026-04-15 23:55:51,932 - supervised_baseline - INFO - Epoch 17/49: loss=0.8644, dev_macro_f1=0.5730, dev_err=40.69%, es_counter=0
+2026-04-15 23:55:54,554 - supervised_baseline - INFO - Epoch 18/49: loss=0.7711, dev_macro_f1=0.5722, dev_err=39.94%, es_counter=1
+2026-04-15 23:55:57,203 - supervised_baseline - INFO - Epoch 19/49: loss=0.6878, dev_macro_f1=0.5940, dev_err=40.04%, es_counter=0
+2026-04-15 23:55:59,829 - supervised_baseline - INFO - Epoch 20/49: loss=0.6223, dev_macro_f1=0.5794, dev_err=41.23%, es_counter=1
+2026-04-15 23:56:02,460 - supervised_baseline - INFO - Epoch 21/49: loss=0.5538, dev_macro_f1=0.5886, dev_err=39.18%, es_counter=2
+2026-04-15 23:56:05,086 - supervised_baseline - INFO - Epoch 22/49: loss=0.5024, dev_macro_f1=0.5814, dev_err=41.12%, es_counter=3
+2026-04-15 23:56:07,734 - supervised_baseline - INFO - Epoch 23/49: loss=0.4561, dev_macro_f1=0.6022, dev_err=39.40%, es_counter=0
+2026-04-15 23:56:10,357 - supervised_baseline - INFO - Epoch 24/49: loss=0.4214, dev_macro_f1=0.6052, dev_err=39.40%, es_counter=0
+2026-04-15 23:56:12,929 - supervised_baseline - INFO - Epoch 25/49: loss=0.3878, dev_macro_f1=0.5967, dev_err=40.26%, es_counter=1
+2026-04-15 23:56:15,545 - supervised_baseline - INFO - Epoch 26/49: loss=0.3576, dev_macro_f1=0.6047, dev_err=38.75%, es_counter=2
+2026-04-15 23:56:18,178 - supervised_baseline - INFO - Epoch 27/49: loss=0.3370, dev_macro_f1=0.5962, dev_err=39.83%, es_counter=3
+2026-04-15 23:56:20,800 - supervised_baseline - INFO - Epoch 28/49: loss=0.3174, dev_macro_f1=0.5986, dev_err=40.80%, es_counter=4
+2026-04-15 23:56:23,428 - supervised_baseline - INFO - Early stopping at epoch 29
+2026-04-15 23:56:23,435 - supervised_baseline - INFO - Training done in 76s. Epochs: 29, Best epoch: 24
+2026-04-15 23:56:23,435 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:56:28,134 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp16jw5w5d\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:56:28,134 - supervised_baseline - INFO - Test error rate: 40.39%, Test macro-F1: 0.5853, Test ECE: 0.0682
+2026-04-15 23:56:28,154 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp16jw5w5d\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:56:28,166 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp16jw5w5d\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:56:28,175 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.6052 ---
+2026-04-15 23:56:28,175 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 23:56:28,889 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:56:28,889 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:56:28,915 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:56:28,915 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:56:32,166 - supervised_baseline - INFO - Epoch 1/53: loss=2.1997, dev_macro_f1=0.0570, dev_err=82.99%, es_counter=0
+2026-04-15 23:56:34,771 - supervised_baseline - INFO - Epoch 2/53: loss=2.1916, dev_macro_f1=0.1175, dev_err=81.81%, es_counter=0
+2026-04-15 23:56:37,411 - supervised_baseline - INFO - Epoch 3/53: loss=2.1544, dev_macro_f1=0.2917, dev_err=61.89%, es_counter=0
+2026-04-15 23:56:40,042 - supervised_baseline - INFO - Epoch 4/53: loss=2.0679, dev_macro_f1=0.4457, dev_err=47.04%, es_counter=0
+2026-04-15 23:56:42,664 - supervised_baseline - INFO - Epoch 5/53: loss=1.8495, dev_macro_f1=0.4669, dev_err=47.15%, es_counter=0
+2026-04-15 23:56:45,294 - supervised_baseline - INFO - Epoch 6/53: loss=1.5360, dev_macro_f1=0.5381, dev_err=39.72%, es_counter=0
+2026-04-15 23:56:47,911 - supervised_baseline - INFO - Epoch 7/53: loss=1.1881, dev_macro_f1=0.5627, dev_err=40.26%, es_counter=0
+2026-04-15 23:56:50,533 - supervised_baseline - INFO - Epoch 8/53: loss=0.8273, dev_macro_f1=0.5579, dev_err=43.38%, es_counter=1
+2026-04-15 23:56:53,152 - supervised_baseline - INFO - Epoch 9/53: loss=0.5788, dev_macro_f1=0.6052, dev_err=37.78%, es_counter=0
+2026-04-15 23:56:55,785 - supervised_baseline - INFO - Epoch 10/53: loss=0.3635, dev_macro_f1=0.5905, dev_err=42.95%, es_counter=1
+2026-04-15 23:56:58,387 - supervised_baseline - INFO - Epoch 11/53: loss=0.2433, dev_macro_f1=0.6095, dev_err=38.54%, es_counter=0
+2026-04-15 23:57:01,021 - supervised_baseline - INFO - Epoch 12/53: loss=0.1700, dev_macro_f1=0.6194, dev_err=36.92%, es_counter=0
+2026-04-15 23:57:03,629 - supervised_baseline - INFO - Epoch 13/53: loss=0.1210, dev_macro_f1=0.6099, dev_err=39.18%, es_counter=1
+2026-04-15 23:57:06,238 - supervised_baseline - INFO - Epoch 14/53: loss=0.0915, dev_macro_f1=0.6132, dev_err=39.61%, es_counter=2
+2026-04-15 23:57:08,881 - supervised_baseline - INFO - Epoch 15/53: loss=0.0745, dev_macro_f1=0.6156, dev_err=39.18%, es_counter=3
+2026-04-15 23:57:11,506 - supervised_baseline - INFO - Epoch 16/53: loss=0.0599, dev_macro_f1=0.6106, dev_err=38.97%, es_counter=4
+2026-04-15 23:57:14,123 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 23:57:14,129 - supervised_baseline - INFO - Training done in 45s. Epochs: 17, Best epoch: 12
+2026-04-15 23:57:14,129 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:57:18,805 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp4jod6e8d\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:57:18,805 - supervised_baseline - INFO - Test error rate: 35.29%, Test macro-F1: 0.6223, Test ECE: 0.1411
+2026-04-15 23:57:18,826 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp4jod6e8d\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:57:18,838 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp4jod6e8d\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:57:18,847 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.6194 ---
+2026-04-15 23:57:18,847 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 23:57:19,492 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:57:19,492 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:57:19,518 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:57:19,518 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:57:22,828 - supervised_baseline - INFO - Epoch 1/67: loss=2.1999, dev_macro_f1=0.0526, dev_err=82.67%, es_counter=0
+2026-04-15 23:57:25,458 - supervised_baseline - INFO - Epoch 2/67: loss=2.1988, dev_macro_f1=0.0843, dev_err=82.35%, es_counter=0
+2026-04-15 23:57:28,072 - supervised_baseline - INFO - Epoch 3/67: loss=2.1814, dev_macro_f1=0.1299, dev_err=80.95%, es_counter=0
+2026-04-15 23:57:30,683 - supervised_baseline - INFO - Epoch 4/67: loss=2.1689, dev_macro_f1=0.2565, dev_err=59.53%, es_counter=0
+2026-04-15 23:57:33,334 - supervised_baseline - INFO - Epoch 5/67: loss=2.1182, dev_macro_f1=0.3455, dev_err=54.47%, es_counter=0
+2026-04-15 23:57:35,949 - supervised_baseline - INFO - Epoch 6/67: loss=2.0298, dev_macro_f1=0.4566, dev_err=48.01%, es_counter=0
+2026-04-15 23:57:38,560 - supervised_baseline - INFO - Epoch 7/67: loss=1.8589, dev_macro_f1=0.4549, dev_err=47.79%, es_counter=1
+2026-04-15 23:57:41,205 - supervised_baseline - INFO - Epoch 8/67: loss=1.6359, dev_macro_f1=0.5299, dev_err=44.13%, es_counter=0
+2026-04-15 23:57:43,820 - supervised_baseline - INFO - Epoch 9/67: loss=1.4182, dev_macro_f1=0.5328, dev_err=43.16%, es_counter=0
+2026-04-15 23:57:46,463 - supervised_baseline - INFO - Epoch 10/67: loss=1.1659, dev_macro_f1=0.5333, dev_err=42.95%, es_counter=0
+2026-04-15 23:57:49,138 - supervised_baseline - INFO - Epoch 11/67: loss=0.9163, dev_macro_f1=0.5723, dev_err=40.58%, es_counter=0
+2026-04-15 23:57:51,746 - supervised_baseline - INFO - Epoch 12/67: loss=0.7370, dev_macro_f1=0.5760, dev_err=39.18%, es_counter=0
+2026-04-15 23:57:54,371 - supervised_baseline - INFO - Epoch 13/67: loss=0.5664, dev_macro_f1=0.5841, dev_err=40.69%, es_counter=0
+2026-04-15 23:57:56,989 - supervised_baseline - INFO - Epoch 14/67: loss=0.4465, dev_macro_f1=0.6145, dev_err=38.64%, es_counter=0
+2026-04-15 23:57:59,621 - supervised_baseline - INFO - Epoch 15/67: loss=0.3600, dev_macro_f1=0.6109, dev_err=38.11%, es_counter=1
+2026-04-15 23:58:02,247 - supervised_baseline - INFO - Epoch 16/67: loss=0.2802, dev_macro_f1=0.6076, dev_err=39.18%, es_counter=2
+2026-04-15 23:58:04,885 - supervised_baseline - INFO - Epoch 17/67: loss=0.2289, dev_macro_f1=0.6069, dev_err=40.90%, es_counter=3
+2026-04-15 23:58:07,529 - supervised_baseline - INFO - Epoch 18/67: loss=0.1850, dev_macro_f1=0.6125, dev_err=38.32%, es_counter=4
+2026-04-15 23:58:10,135 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 23:58:10,139 - supervised_baseline - INFO - Training done in 50s. Epochs: 19, Best epoch: 14
+2026-04-15 23:58:10,139 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:58:14,805 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpyy_3d06n\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:58:14,805 - supervised_baseline - INFO - Test error rate: 38.39%, Test macro-F1: 0.6078, Test ECE: 0.0549
+2026-04-15 23:58:14,832 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpyy_3d06n\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:58:14,844 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpyy_3d06n\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:58:14,852 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.6145 ---
+2026-04-15 23:58:14,852 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 23:58:15,521 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:58:15,521 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:58:15,541 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:58:15,541 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:58:19,822 - supervised_baseline - INFO - Epoch 1/88: loss=2.2021, dev_macro_f1=0.1000, dev_err=86.22%, es_counter=0
+2026-04-15 23:58:23,459 - supervised_baseline - INFO - Epoch 2/88: loss=2.1460, dev_macro_f1=0.3839, dev_err=56.08%, es_counter=0
+2026-04-15 23:58:27,070 - supervised_baseline - INFO - Epoch 3/88: loss=1.7659, dev_macro_f1=0.5378, dev_err=42.84%, es_counter=0
+2026-04-15 23:58:30,668 - supervised_baseline - INFO - Epoch 4/88: loss=1.0216, dev_macro_f1=0.6103, dev_err=39.40%, es_counter=0
+2026-04-15 23:58:34,265 - supervised_baseline - INFO - Epoch 5/88: loss=0.6144, dev_macro_f1=0.6076, dev_err=40.26%, es_counter=1
+2026-04-15 23:58:37,870 - supervised_baseline - INFO - Epoch 6/88: loss=0.4808, dev_macro_f1=0.5528, dev_err=42.73%, es_counter=2
+2026-04-15 23:58:41,458 - supervised_baseline - INFO - Epoch 7/88: loss=0.3628, dev_macro_f1=0.5287, dev_err=46.39%, es_counter=3
+2026-04-15 23:58:45,005 - supervised_baseline - INFO - Epoch 8/88: loss=0.7116, dev_macro_f1=0.3998, dev_err=56.94%, es_counter=4
+2026-04-15 23:58:48,640 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 23:58:48,644 - supervised_baseline - INFO - Training done in 33s. Epochs: 9, Best epoch: 4
+2026-04-15 23:58:48,644 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:58:54,346 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp03rxx2ul\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:58:54,346 - supervised_baseline - INFO - Test error rate: 35.68%, Test macro-F1: 0.6313, Test ECE: 0.0829
+2026-04-15 23:58:54,363 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp03rxx2ul\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:58:54,368 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp03rxx2ul\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:58:54,381 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.6103 ---
+2026-04-15 23:58:54,381 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 23:58:55,033 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:58:55,033 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:58:55,054 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:58:55,054 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:58:59,243 - supervised_baseline - INFO - Epoch 1/80: loss=2.2024, dev_macro_f1=0.0376, dev_err=92.14%, es_counter=0
+2026-04-15 23:59:02,794 - supervised_baseline - INFO - Epoch 2/80: loss=2.0606, dev_macro_f1=0.4879, dev_err=52.21%, es_counter=0
+2026-04-15 23:59:06,361 - supervised_baseline - INFO - Epoch 3/80: loss=1.7529, dev_macro_f1=0.1172, dev_err=71.80%, es_counter=1
+2026-04-15 23:59:09,950 - supervised_baseline - INFO - Epoch 4/80: loss=2.2667, dev_macro_f1=0.0145, dev_err=93.00%, es_counter=2
+2026-04-15 23:59:13,542 - supervised_baseline - INFO - Epoch 5/80: loss=2.2961, dev_macro_f1=0.0262, dev_err=86.65%, es_counter=3
+2026-04-15 23:59:17,111 - supervised_baseline - INFO - Epoch 6/80: loss=2.2542, dev_macro_f1=0.0158, dev_err=92.36%, es_counter=4
+2026-04-15 23:59:20,705 - supervised_baseline - INFO - Early stopping at epoch 7
+2026-04-15 23:59:20,710 - supervised_baseline - INFO - Training done in 25s. Epochs: 7, Best epoch: 2
+2026-04-15 23:59:20,710 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:59:26,297 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpxd_44s0f\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-15 23:59:26,297 - supervised_baseline - INFO - Test error rate: 51.75%, Test macro-F1: 0.4594, Test ECE: 0.2678
+2026-04-15 23:59:26,311 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxd_44s0f\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-15 23:59:26,322 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxd_44s0f\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-15 23:59:26,332 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.4879 ---
+2026-04-15 23:59:26,332 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 23:59:26,998 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_harvey_2017, budget=25, seed_set=3
+2026-04-15 23:59:26,998 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:59:27,019 - supervised_baseline - INFO - Detected 9 classes for event hurricane_harvey_2017: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:59:27,019 - supervised_baseline - INFO - Labeled: 225, Dev: 929, Test: 1805
+2026-04-15 23:59:31,179 - supervised_baseline - INFO - Epoch 1/26: loss=2.2015, dev_macro_f1=0.0838, dev_err=81.49%, es_counter=0
+2026-04-15 23:59:34,722 - supervised_baseline - INFO - Epoch 2/26: loss=2.1802, dev_macro_f1=0.1368, dev_err=86.44%, es_counter=0
+2026-04-15 23:59:38,285 - supervised_baseline - INFO - Epoch 3/26: loss=2.0906, dev_macro_f1=0.4093, dev_err=47.90%, es_counter=0
+2026-04-15 23:59:41,846 - supervised_baseline - INFO - Epoch 4/26: loss=1.7750, dev_macro_f1=0.5377, dev_err=41.23%, es_counter=0
+2026-04-15 23:59:45,394 - supervised_baseline - INFO - Epoch 5/26: loss=1.3784, dev_macro_f1=0.5726, dev_err=39.07%, es_counter=0
+2026-04-15 23:59:48,956 - supervised_baseline - INFO - Epoch 6/26: loss=0.9500, dev_macro_f1=0.5757, dev_err=43.27%, es_counter=0
+2026-04-15 23:59:52,561 - supervised_baseline - INFO - Epoch 7/26: loss=0.6750, dev_macro_f1=0.5808, dev_err=40.15%, es_counter=0
+2026-04-15 23:59:56,119 - supervised_baseline - INFO - Epoch 8/26: loss=0.4633, dev_macro_f1=0.6297, dev_err=34.66%, es_counter=0
+2026-04-15 23:59:59,702 - supervised_baseline - INFO - Epoch 9/26: loss=0.3527, dev_macro_f1=0.6116, dev_err=39.61%, es_counter=1
+2026-04-16 00:00:03,295 - supervised_baseline - INFO - Epoch 10/26: loss=0.2563, dev_macro_f1=0.5955, dev_err=41.87%, es_counter=2
+2026-04-16 00:00:06,877 - supervised_baseline - INFO - Epoch 11/26: loss=0.2066, dev_macro_f1=0.6055, dev_err=37.89%, es_counter=3
+2026-04-16 00:00:10,462 - supervised_baseline - INFO - Epoch 12/26: loss=0.1742, dev_macro_f1=0.6427, dev_err=32.83%, es_counter=0
+2026-04-16 00:00:14,036 - supervised_baseline - INFO - Epoch 13/26: loss=0.1497, dev_macro_f1=0.6075, dev_err=39.72%, es_counter=1
+2026-04-16 00:00:17,592 - supervised_baseline - INFO - Epoch 14/26: loss=0.1284, dev_macro_f1=0.6216, dev_err=37.67%, es_counter=2
+2026-04-16 00:00:21,202 - supervised_baseline - INFO - Epoch 15/26: loss=0.1132, dev_macro_f1=0.6073, dev_err=38.21%, es_counter=3
+2026-04-16 00:00:24,792 - supervised_baseline - INFO - Epoch 16/26: loss=0.1048, dev_macro_f1=0.6197, dev_err=37.67%, es_counter=4
+2026-04-16 00:00:28,391 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-16 00:00:28,396 - supervised_baseline - INFO - Training done in 61s. Epochs: 17, Best epoch: 12
+2026-04-16 00:00:28,396 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-16 00:00:33,957 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp85gxzxii\hurricane_harvey_2017\25_set3\metrics.json
+2026-04-16 00:00:33,957 - supervised_baseline - INFO - Test error rate: 30.97%, Test macro-F1: 0.6427, Test ECE: 0.0963
+2026-04-16 00:00:33,976 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp85gxzxii\hurricane_harvey_2017\25_set3\test_predictions.tsv (1805 samples)
+2026-04-16 00:00:33,986 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp85gxzxii\hurricane_harvey_2017\25_set3\dev_predictions.tsv (929 samples)
+2026-04-16 00:00:33,995 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.6427 ---

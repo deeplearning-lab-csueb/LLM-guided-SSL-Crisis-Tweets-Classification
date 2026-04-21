@@ -1,0 +1,52 @@
+# Environment and secrets
+.env
+.env.*
+*.pem
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+*-env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Type checking / linters
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.pytype/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Transient runtime logs (Optuna study.log files under results/ are data, not logs — keep them)
+*.log
+!results/**/study.log
+!results/**/experiment.log
+
+# Node.js (not needed at runtime)
+node_modules/
+package.json
+package-lock.json

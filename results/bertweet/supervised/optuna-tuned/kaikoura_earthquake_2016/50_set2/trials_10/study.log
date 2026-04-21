@@ -1,0 +1,217 @@
+2026-04-15 19:53:24,945 - supervised_baseline - INFO - === Optuna study: kaikoura_earthquake_2016 budget=50 seed=2 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 19:53:24,945 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 19:53:25,555 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:53:25,555 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:53:25,575 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:53:25,576 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:53:28,897 - supervised_baseline - INFO - Epoch 1/66: loss=2.1409, dev_macro_f1=0.2550, dev_err=65.62%, es_counter=0
+2026-04-15 19:53:31,520 - supervised_baseline - INFO - Epoch 2/66: loss=1.6633, dev_macro_f1=0.5196, dev_err=43.30%, es_counter=0
+2026-04-15 19:53:34,132 - supervised_baseline - INFO - Epoch 3/66: loss=1.2213, dev_macro_f1=0.1766, dev_err=83.48%, es_counter=1
+2026-04-15 19:53:36,767 - supervised_baseline - INFO - Epoch 4/66: loss=2.4127, dev_macro_f1=0.0086, dev_err=95.98%, es_counter=2
+2026-04-15 19:53:39,395 - supervised_baseline - INFO - Epoch 5/66: loss=2.3331, dev_macro_f1=0.0207, dev_err=89.73%, es_counter=3
+2026-04-15 19:53:42,025 - supervised_baseline - INFO - Epoch 6/66: loss=2.3012, dev_macro_f1=0.0365, dev_err=80.36%, es_counter=4
+2026-04-15 19:53:44,653 - supervised_baseline - INFO - Early stopping at epoch 7
+2026-04-15 19:53:44,662 - supervised_baseline - INFO - Training done in 18s. Epochs: 7, Best epoch: 2
+2026-04-15 19:53:44,662 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:53:45,844 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpf_gk6e9x\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:53:45,845 - supervised_baseline - INFO - Test error rate: 43.45%, Test macro-F1: 0.5185, Test ECE: 0.2197
+2026-04-15 19:53:45,851 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpf_gk6e9x\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:53:45,856 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpf_gk6e9x\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:53:45,864 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.5196 ---
+2026-04-15 19:53:45,864 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 19:53:46,499 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:53:46,499 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:53:46,505 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:53:46,505 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:53:49,411 - supervised_baseline - INFO - Epoch 1/54: loss=2.1823, dev_macro_f1=0.0810, dev_err=84.38%, es_counter=0
+2026-04-15 19:53:51,779 - supervised_baseline - INFO - Epoch 2/54: loss=2.1198, dev_macro_f1=0.3241, dev_err=55.36%, es_counter=0
+2026-04-15 19:53:54,173 - supervised_baseline - INFO - Epoch 3/54: loss=1.8820, dev_macro_f1=0.5151, dev_err=38.39%, es_counter=0
+2026-04-15 19:53:56,619 - supervised_baseline - INFO - Epoch 4/54: loss=1.3733, dev_macro_f1=0.6126, dev_err=29.46%, es_counter=0
+2026-04-15 19:53:58,993 - supervised_baseline - INFO - Epoch 5/54: loss=0.8751, dev_macro_f1=0.5885, dev_err=30.80%, es_counter=1
+2026-04-15 19:54:01,355 - supervised_baseline - INFO - Epoch 6/54: loss=0.5925, dev_macro_f1=0.6328, dev_err=31.25%, es_counter=0
+2026-04-15 19:54:03,710 - supervised_baseline - INFO - Epoch 7/54: loss=0.3983, dev_macro_f1=0.6170, dev_err=34.38%, es_counter=1
+2026-04-15 19:54:06,085 - supervised_baseline - INFO - Epoch 8/54: loss=0.2531, dev_macro_f1=0.5989, dev_err=33.48%, es_counter=2
+2026-04-15 19:54:08,567 - supervised_baseline - INFO - Epoch 9/54: loss=0.1720, dev_macro_f1=0.6208, dev_err=30.80%, es_counter=3
+2026-04-15 19:54:10,923 - supervised_baseline - INFO - Epoch 10/54: loss=0.1721, dev_macro_f1=0.5529, dev_err=35.71%, es_counter=4
+2026-04-15 19:54:13,278 - supervised_baseline - INFO - Early stopping at epoch 11
+2026-04-15 19:54:13,282 - supervised_baseline - INFO - Training done in 26s. Epochs: 11, Best epoch: 6
+2026-04-15 19:54:13,282 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:54:14,439 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpmqrn9lf6\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:54:14,439 - supervised_baseline - INFO - Test error rate: 33.56%, Test macro-F1: 0.6869, Test ECE: 0.0565
+2026-04-15 19:54:14,446 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpmqrn9lf6\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:54:14,450 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpmqrn9lf6\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:54:14,457 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.6328 ---
+2026-04-15 19:54:14,457 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 19:54:15,110 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:54:15,110 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:54:15,119 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:54:15,119 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:54:18,405 - supervised_baseline - INFO - Epoch 1/95: loss=2.1707, dev_macro_f1=0.2285, dev_err=70.54%, es_counter=0
+2026-04-15 19:54:21,086 - supervised_baseline - INFO - Epoch 2/95: loss=2.0454, dev_macro_f1=0.4061, dev_err=49.11%, es_counter=0
+2026-04-15 19:54:23,821 - supervised_baseline - INFO - Epoch 3/95: loss=1.5882, dev_macro_f1=0.6127, dev_err=31.25%, es_counter=0
+2026-04-15 19:54:26,501 - supervised_baseline - INFO - Epoch 4/95: loss=0.9284, dev_macro_f1=0.5358, dev_err=34.82%, es_counter=1
+2026-04-15 19:54:29,166 - supervised_baseline - INFO - Epoch 5/95: loss=0.6800, dev_macro_f1=0.6181, dev_err=31.25%, es_counter=0
+2026-04-15 19:54:31,805 - supervised_baseline - INFO - Epoch 6/95: loss=0.4922, dev_macro_f1=0.5227, dev_err=38.84%, es_counter=1
+2026-04-15 19:54:34,454 - supervised_baseline - INFO - Epoch 7/95: loss=0.4571, dev_macro_f1=0.5238, dev_err=40.18%, es_counter=2
+2026-04-15 19:54:37,076 - supervised_baseline - INFO - Epoch 8/95: loss=0.6268, dev_macro_f1=0.5775, dev_err=36.16%, es_counter=3
+2026-04-15 19:54:39,728 - supervised_baseline - INFO - Epoch 9/95: loss=0.6126, dev_macro_f1=0.5548, dev_err=37.05%, es_counter=4
+2026-04-15 19:54:42,366 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 19:54:42,370 - supervised_baseline - INFO - Training done in 27s. Epochs: 10, Best epoch: 5
+2026-04-15 19:54:42,370 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:54:43,563 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpx2ftssjg\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:54:43,563 - supervised_baseline - INFO - Test error rate: 29.89%, Test macro-F1: 0.6205, Test ECE: 0.0765
+2026-04-15 19:54:43,571 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpx2ftssjg\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:54:43,575 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpx2ftssjg\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:54:43,583 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.6181 ---
+2026-04-15 19:54:43,584 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 19:54:44,215 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:54:44,215 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:54:44,221 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:54:44,221 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:54:47,187 - supervised_baseline - INFO - Epoch 1/54: loss=2.1840, dev_macro_f1=0.0471, dev_err=86.16%, es_counter=0
+2026-04-15 19:54:49,570 - supervised_baseline - INFO - Epoch 2/54: loss=2.1378, dev_macro_f1=0.2602, dev_err=64.73%, es_counter=0
+2026-04-15 19:54:51,920 - supervised_baseline - INFO - Epoch 3/54: loss=1.9859, dev_macro_f1=0.4413, dev_err=45.98%, es_counter=0
+2026-04-15 19:54:54,386 - supervised_baseline - INFO - Epoch 4/54: loss=1.6054, dev_macro_f1=0.5617, dev_err=34.38%, es_counter=0
+2026-04-15 19:54:56,833 - supervised_baseline - INFO - Epoch 5/54: loss=1.0878, dev_macro_f1=0.6351, dev_err=28.12%, es_counter=0
+2026-04-15 19:54:59,362 - supervised_baseline - INFO - Epoch 6/54: loss=0.7241, dev_macro_f1=0.6343, dev_err=30.36%, es_counter=1
+2026-04-15 19:55:01,861 - supervised_baseline - INFO - Epoch 7/54: loss=0.4828, dev_macro_f1=0.6231, dev_err=30.80%, es_counter=2
+2026-04-15 19:55:04,251 - supervised_baseline - INFO - Epoch 8/54: loss=0.3178, dev_macro_f1=0.6188, dev_err=31.25%, es_counter=3
+2026-04-15 19:55:06,610 - supervised_baseline - INFO - Epoch 9/54: loss=0.2351, dev_macro_f1=0.6269, dev_err=30.80%, es_counter=4
+2026-04-15 19:55:09,051 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 19:55:09,057 - supervised_baseline - INFO - Training done in 24s. Epochs: 10, Best epoch: 5
+2026-04-15 19:55:09,057 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:55:10,254 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpr_g5_g1r\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:55:10,255 - supervised_baseline - INFO - Test error rate: 29.20%, Test macro-F1: 0.6167, Test ECE: 0.1954
+2026-04-15 19:55:10,261 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpr_g5_g1r\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:55:10,267 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpr_g5_g1r\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:55:10,276 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.6351 ---
+2026-04-15 19:55:10,277 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 19:55:10,899 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:55:10,899 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:55:10,904 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:55:10,904 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:55:14,648 - supervised_baseline - INFO - Epoch 1/42: loss=2.1237, dev_macro_f1=0.2457, dev_err=68.30%, es_counter=0
+2026-04-15 19:55:17,640 - supervised_baseline - INFO - Epoch 2/42: loss=1.3650, dev_macro_f1=0.4925, dev_err=41.52%, es_counter=0
+2026-04-15 19:55:20,606 - supervised_baseline - INFO - Epoch 3/42: loss=1.0201, dev_macro_f1=0.5188, dev_err=38.39%, es_counter=0
+2026-04-15 19:55:23,588 - supervised_baseline - INFO - Epoch 4/42: loss=0.9196, dev_macro_f1=0.5359, dev_err=38.39%, es_counter=0
+2026-04-15 19:55:26,599 - supervised_baseline - INFO - Epoch 5/42: loss=1.9867, dev_macro_f1=0.0086, dev_err=95.98%, es_counter=1
+2026-04-15 19:55:29,609 - supervised_baseline - INFO - Epoch 6/42: loss=2.2808, dev_macro_f1=0.0207, dev_err=89.73%, es_counter=2
+2026-04-15 19:55:32,645 - supervised_baseline - INFO - Epoch 7/42: loss=2.2393, dev_macro_f1=0.0086, dev_err=95.98%, es_counter=3
+2026-04-15 19:55:35,686 - supervised_baseline - INFO - Epoch 8/42: loss=2.2457, dev_macro_f1=0.0104, dev_err=95.09%, es_counter=4
+2026-04-15 19:55:38,673 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 19:55:38,679 - supervised_baseline - INFO - Training done in 27s. Epochs: 9, Best epoch: 4
+2026-04-15 19:55:38,679 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:55:39,909 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpgo7gei8p\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:55:39,910 - supervised_baseline - INFO - Test error rate: 38.62%, Test macro-F1: 0.5471, Test ECE: 0.0999
+2026-04-15 19:55:39,915 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpgo7gei8p\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:55:39,920 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpgo7gei8p\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:55:39,926 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.5359 ---
+2026-04-15 19:55:39,926 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 19:55:40,551 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:55:40,551 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:55:40,559 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:55:40,559 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:55:44,837 - supervised_baseline - INFO - Epoch 1/96: loss=2.1862, dev_macro_f1=0.0633, dev_err=86.16%, es_counter=0
+2026-04-15 19:55:48,540 - supervised_baseline - INFO - Epoch 2/96: loss=2.1735, dev_macro_f1=0.1175, dev_err=83.48%, es_counter=0
+2026-04-15 19:55:52,212 - supervised_baseline - INFO - Epoch 3/96: loss=2.1199, dev_macro_f1=0.3279, dev_err=59.82%, es_counter=0
+2026-04-15 19:55:55,881 - supervised_baseline - INFO - Epoch 4/96: loss=1.9000, dev_macro_f1=0.4305, dev_err=46.43%, es_counter=0
+2026-04-15 19:55:59,561 - supervised_baseline - INFO - Epoch 5/96: loss=1.4858, dev_macro_f1=0.5764, dev_err=31.70%, es_counter=0
+2026-04-15 19:56:03,218 - supervised_baseline - INFO - Epoch 6/96: loss=1.0574, dev_macro_f1=0.5774, dev_err=33.04%, es_counter=0
+2026-04-15 19:56:06,877 - supervised_baseline - INFO - Epoch 7/96: loss=0.7489, dev_macro_f1=0.6304, dev_err=29.02%, es_counter=0
+2026-04-15 19:56:10,550 - supervised_baseline - INFO - Epoch 8/96: loss=0.5040, dev_macro_f1=0.6493, dev_err=30.36%, es_counter=0
+2026-04-15 19:56:14,204 - supervised_baseline - INFO - Epoch 9/96: loss=0.4262, dev_macro_f1=0.6486, dev_err=27.68%, es_counter=1
+2026-04-15 19:56:17,871 - supervised_baseline - INFO - Epoch 10/96: loss=0.2671, dev_macro_f1=0.6139, dev_err=31.70%, es_counter=2
+2026-04-15 19:56:21,508 - supervised_baseline - INFO - Epoch 11/96: loss=0.1858, dev_macro_f1=0.6300, dev_err=29.91%, es_counter=3
+2026-04-15 19:56:25,170 - supervised_baseline - INFO - Epoch 12/96: loss=0.1602, dev_macro_f1=0.6027, dev_err=33.93%, es_counter=4
+2026-04-15 19:56:28,820 - supervised_baseline - INFO - Early stopping at epoch 13
+2026-04-15 19:56:28,823 - supervised_baseline - INFO - Training done in 48s. Epochs: 13, Best epoch: 8
+2026-04-15 19:56:28,823 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:56:30,188 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpp8q0myit\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:56:30,189 - supervised_baseline - INFO - Test error rate: 29.89%, Test macro-F1: 0.7133, Test ECE: 0.0781
+2026-04-15 19:56:30,197 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpp8q0myit\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:56:30,201 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpp8q0myit\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:56:30,210 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.6493 ---
+2026-04-15 19:56:30,210 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 19:56:30,873 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:56:30,873 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:56:30,881 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:56:30,881 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:56:33,827 - supervised_baseline - INFO - Epoch 1/60: loss=2.1709, dev_macro_f1=0.2500, dev_err=64.73%, es_counter=0
+2026-04-15 19:56:36,158 - supervised_baseline - INFO - Epoch 2/60: loss=1.9373, dev_macro_f1=0.4864, dev_err=43.75%, es_counter=0
+2026-04-15 19:56:38,478 - supervised_baseline - INFO - Epoch 3/60: loss=1.2091, dev_macro_f1=0.6432, dev_err=27.68%, es_counter=0
+2026-04-15 19:56:40,808 - supervised_baseline - INFO - Epoch 4/60: loss=0.6872, dev_macro_f1=0.5295, dev_err=44.20%, es_counter=1
+2026-04-15 19:56:43,134 - supervised_baseline - INFO - Epoch 5/60: loss=0.6121, dev_macro_f1=0.6321, dev_err=31.25%, es_counter=2
+2026-04-15 19:56:45,461 - supervised_baseline - INFO - Epoch 6/60: loss=0.5777, dev_macro_f1=0.4960, dev_err=41.07%, es_counter=3
+2026-04-15 19:56:47,797 - supervised_baseline - INFO - Epoch 7/60: loss=0.6856, dev_macro_f1=0.5554, dev_err=38.39%, es_counter=4
+2026-04-15 19:56:50,133 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 19:56:50,144 - supervised_baseline - INFO - Training done in 19s. Epochs: 8, Best epoch: 3
+2026-04-15 19:56:50,144 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:56:51,262 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpb8g64qa1\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:56:51,263 - supervised_baseline - INFO - Test error rate: 28.51%, Test macro-F1: 0.6356, Test ECE: 0.1507
+2026-04-15 19:56:51,269 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpb8g64qa1\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:56:51,273 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpb8g64qa1\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:56:51,281 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.6432 ---
+2026-04-15 19:56:51,281 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 19:56:51,935 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:56:51,935 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:56:51,941 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:56:51,941 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:56:55,327 - supervised_baseline - INFO - Epoch 1/71: loss=2.1784, dev_macro_f1=0.1108, dev_err=81.25%, es_counter=0
+2026-04-15 19:56:57,960 - supervised_baseline - INFO - Epoch 2/71: loss=2.1414, dev_macro_f1=0.1183, dev_err=87.05%, es_counter=0
+2026-04-15 19:57:00,590 - supervised_baseline - INFO - Epoch 3/71: loss=2.0039, dev_macro_f1=0.4166, dev_err=48.21%, es_counter=0
+2026-04-15 19:57:03,205 - supervised_baseline - INFO - Epoch 4/71: loss=1.6242, dev_macro_f1=0.5555, dev_err=35.27%, es_counter=0
+2026-04-15 19:57:05,832 - supervised_baseline - INFO - Epoch 5/71: loss=1.1599, dev_macro_f1=0.6119, dev_err=27.68%, es_counter=0
+2026-04-15 19:57:08,465 - supervised_baseline - INFO - Epoch 6/71: loss=0.7665, dev_macro_f1=0.6229, dev_err=29.46%, es_counter=0
+2026-04-15 19:57:11,098 - supervised_baseline - INFO - Epoch 7/71: loss=0.5091, dev_macro_f1=0.6332, dev_err=29.02%, es_counter=0
+2026-04-15 19:57:13,722 - supervised_baseline - INFO - Epoch 8/71: loss=0.3326, dev_macro_f1=0.6251, dev_err=30.80%, es_counter=1
+2026-04-15 19:57:16,338 - supervised_baseline - INFO - Epoch 9/71: loss=0.2269, dev_macro_f1=0.5790, dev_err=34.38%, es_counter=2
+2026-04-15 19:57:18,952 - supervised_baseline - INFO - Epoch 10/71: loss=0.2243, dev_macro_f1=0.6090, dev_err=32.59%, es_counter=3
+2026-04-15 19:57:21,565 - supervised_baseline - INFO - Epoch 11/71: loss=0.1521, dev_macro_f1=0.6314, dev_err=31.70%, es_counter=4
+2026-04-15 19:57:24,193 - supervised_baseline - INFO - Early stopping at epoch 12
+2026-04-15 19:57:24,198 - supervised_baseline - INFO - Training done in 32s. Epochs: 12, Best epoch: 7
+2026-04-15 19:57:24,198 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:57:25,367 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpdm55q8nc\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:57:25,367 - supervised_baseline - INFO - Test error rate: 26.67%, Test macro-F1: 0.7128, Test ECE: 0.0272
+2026-04-15 19:57:25,375 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpdm55q8nc\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:57:25,381 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpdm55q8nc\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:57:25,388 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.6332 ---
+2026-04-15 19:57:25,388 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 19:57:26,168 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:57:26,168 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:57:26,175 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:57:26,175 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:57:29,731 - supervised_baseline - INFO - Epoch 1/77: loss=2.1789, dev_macro_f1=0.2993, dev_err=60.71%, es_counter=0
+2026-04-15 19:57:32,694 - supervised_baseline - INFO - Epoch 2/77: loss=1.9194, dev_macro_f1=0.5296, dev_err=40.18%, es_counter=0
+2026-04-15 19:57:35,673 - supervised_baseline - INFO - Epoch 3/77: loss=1.1733, dev_macro_f1=0.6161, dev_err=30.36%, es_counter=0
+2026-04-15 19:57:38,663 - supervised_baseline - INFO - Epoch 4/77: loss=0.7524, dev_macro_f1=0.5781, dev_err=37.95%, es_counter=1
+2026-04-15 19:57:41,653 - supervised_baseline - INFO - Epoch 5/77: loss=0.6283, dev_macro_f1=0.5541, dev_err=35.71%, es_counter=2
+2026-04-15 19:57:44,619 - supervised_baseline - INFO - Epoch 6/77: loss=0.8966, dev_macro_f1=0.4277, dev_err=47.32%, es_counter=3
+2026-04-15 19:57:47,588 - supervised_baseline - INFO - Epoch 7/77: loss=0.9852, dev_macro_f1=0.5771, dev_err=38.39%, es_counter=4
+2026-04-15 19:57:50,528 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 19:57:50,531 - supervised_baseline - INFO - Training done in 24s. Epochs: 8, Best epoch: 3
+2026-04-15 19:57:50,532 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:57:51,798 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpeeh83lp9\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:57:51,798 - supervised_baseline - INFO - Test error rate: 31.49%, Test macro-F1: 0.6081, Test ECE: 0.1495
+2026-04-15 19:57:51,804 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpeeh83lp9\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:57:51,809 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpeeh83lp9\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:57:51,817 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.6161 ---
+2026-04-15 19:57:51,817 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 19:57:52,504 - supervised_baseline - INFO - Starting Supervised Baseline: event=kaikoura_earthquake_2016, budget=50, seed_set=2
+2026-04-15 19:57:52,504 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 19:57:52,510 - supervised_baseline - INFO - Detected 9 classes for event kaikoura_earthquake_2016: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:57:52,510 - supervised_baseline - INFO - Labeled: 417, Dev: 224, Test: 435
+2026-04-15 19:57:56,743 - supervised_baseline - INFO - Epoch 1/96: loss=2.1305, dev_macro_f1=0.3741, dev_err=55.36%, es_counter=0
+2026-04-15 19:58:00,401 - supervised_baseline - INFO - Epoch 2/96: loss=1.3565, dev_macro_f1=0.5590, dev_err=35.27%, es_counter=0
+2026-04-15 19:58:04,039 - supervised_baseline - INFO - Epoch 3/96: loss=1.0254, dev_macro_f1=0.6084, dev_err=33.04%, es_counter=0
+2026-04-15 19:58:07,645 - supervised_baseline - INFO - Epoch 4/96: loss=0.9100, dev_macro_f1=0.0365, dev_err=80.36%, es_counter=1
+2026-04-15 19:58:11,285 - supervised_baseline - INFO - Epoch 5/96: loss=2.3209, dev_macro_f1=0.0086, dev_err=95.98%, es_counter=2
+2026-04-15 19:58:14,881 - supervised_baseline - INFO - Epoch 6/96: loss=2.2524, dev_macro_f1=0.0207, dev_err=89.73%, es_counter=3
+2026-04-15 19:58:18,510 - supervised_baseline - INFO - Epoch 7/96: loss=2.2603, dev_macro_f1=0.0104, dev_err=95.09%, es_counter=4
+2026-04-15 19:58:22,144 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 19:58:22,151 - supervised_baseline - INFO - Training done in 29s. Epochs: 8, Best epoch: 3
+2026-04-15 19:58:22,151 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:58:23,493 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp82smqw3l\kaikoura_earthquake_2016\50_set2\metrics.json
+2026-04-15 19:58:23,493 - supervised_baseline - INFO - Test error rate: 32.18%, Test macro-F1: 0.6268, Test ECE: 0.0682
+2026-04-15 19:58:23,499 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp82smqw3l\kaikoura_earthquake_2016\50_set2\test_predictions.tsv (435 samples)
+2026-04-15 19:58:23,504 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp82smqw3l\kaikoura_earthquake_2016\50_set2\dev_predictions.tsv (224 samples)
+2026-04-15 19:58:23,511 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.6084 ---

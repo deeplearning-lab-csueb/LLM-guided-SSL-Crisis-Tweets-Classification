@@ -1,0 +1,241 @@
+2026-04-15 20:49:33,744 - supervised_baseline - INFO - === Optuna study: cyclone_idai_2019 budget=50 seed=2 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 20:49:33,744 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 20:49:34,357 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:49:34,357 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:49:34,386 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:49:34,386 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:49:38,050 - supervised_baseline - INFO - Epoch 1/76: loss=2.3110, dev_macro_f1=0.0260, dev_err=94.26%, es_counter=0
+2026-04-15 20:49:40,955 - supervised_baseline - INFO - Epoch 2/76: loss=2.2565, dev_macro_f1=0.0334, dev_err=90.02%, es_counter=0
+2026-04-15 20:49:43,863 - supervised_baseline - INFO - Epoch 3/76: loss=2.1770, dev_macro_f1=0.3686, dev_err=37.91%, es_counter=0
+2026-04-15 20:49:46,716 - supervised_baseline - INFO - Epoch 4/76: loss=2.0115, dev_macro_f1=0.3367, dev_err=47.88%, es_counter=1
+2026-04-15 20:49:49,606 - supervised_baseline - INFO - Epoch 5/76: loss=1.6965, dev_macro_f1=0.3630, dev_err=48.88%, es_counter=2
+2026-04-15 20:49:52,527 - supervised_baseline - INFO - Epoch 6/76: loss=1.3718, dev_macro_f1=0.4357, dev_err=37.41%, es_counter=0
+2026-04-15 20:49:55,427 - supervised_baseline - INFO - Epoch 7/76: loss=0.9773, dev_macro_f1=0.4130, dev_err=36.16%, es_counter=1
+2026-04-15 20:49:58,315 - supervised_baseline - INFO - Epoch 8/76: loss=0.6737, dev_macro_f1=0.4197, dev_err=47.38%, es_counter=2
+2026-04-15 20:50:01,215 - supervised_baseline - INFO - Epoch 9/76: loss=0.6113, dev_macro_f1=0.4045, dev_err=51.12%, es_counter=3
+2026-04-15 20:50:04,097 - supervised_baseline - INFO - Epoch 10/76: loss=0.4189, dev_macro_f1=0.3426, dev_err=67.08%, es_counter=4
+2026-04-15 20:50:06,997 - supervised_baseline - INFO - Early stopping at epoch 11
+2026-04-15 20:50:07,006 - supervised_baseline - INFO - Training done in 32s. Epochs: 11, Best epoch: 6
+2026-04-15 20:50:07,006 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:50:09,127 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpk99ab5wc\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:50:09,127 - supervised_baseline - INFO - Test error rate: 35.69%, Test macro-F1: 0.4394, Test ECE: 0.1881
+2026-04-15 20:50:09,140 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpk99ab5wc\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:50:09,148 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpk99ab5wc\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:50:09,155 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.4357 ---
+2026-04-15 20:50:09,155 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 20:50:09,803 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:50:09,803 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:50:09,821 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:50:09,821 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:50:14,930 - supervised_baseline - INFO - Epoch 1/21: loss=2.3110, dev_macro_f1=0.0266, dev_err=92.77%, es_counter=0
+2026-04-15 20:50:19,247 - supervised_baseline - INFO - Epoch 2/21: loss=2.2691, dev_macro_f1=0.1595, dev_err=57.61%, es_counter=0
+2026-04-15 20:50:23,565 - supervised_baseline - INFO - Epoch 3/21: loss=2.1422, dev_macro_f1=0.3383, dev_err=38.65%, es_counter=0
+2026-04-15 20:50:27,866 - supervised_baseline - INFO - Epoch 4/21: loss=1.9022, dev_macro_f1=0.3796, dev_err=30.67%, es_counter=0
+2026-04-15 20:50:32,208 - supervised_baseline - INFO - Epoch 5/21: loss=1.6115, dev_macro_f1=0.4345, dev_err=35.91%, es_counter=0
+2026-04-15 20:50:36,543 - supervised_baseline - INFO - Epoch 6/21: loss=1.3656, dev_macro_f1=0.4480, dev_err=34.66%, es_counter=0
+2026-04-15 20:50:40,866 - supervised_baseline - INFO - Epoch 7/21: loss=1.1323, dev_macro_f1=0.4640, dev_err=32.42%, es_counter=0
+2026-04-15 20:50:45,177 - supervised_baseline - INFO - Epoch 8/21: loss=0.9414, dev_macro_f1=0.4535, dev_err=35.91%, es_counter=1
+2026-04-15 20:50:49,494 - supervised_baseline - INFO - Epoch 9/21: loss=0.7872, dev_macro_f1=0.4430, dev_err=36.66%, es_counter=2
+2026-04-15 20:50:53,806 - supervised_baseline - INFO - Epoch 10/21: loss=0.6650, dev_macro_f1=0.4516, dev_err=35.66%, es_counter=3
+2026-04-15 20:50:58,105 - supervised_baseline - INFO - Epoch 11/21: loss=0.5596, dev_macro_f1=0.4525, dev_err=38.65%, es_counter=4
+2026-04-15 20:51:02,412 - supervised_baseline - INFO - Early stopping at epoch 12
+2026-04-15 20:51:02,416 - supervised_baseline - INFO - Training done in 52s. Epochs: 12, Best epoch: 7
+2026-04-15 20:51:02,416 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:51:05,013 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmphg5lgu2j\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:51:05,013 - supervised_baseline - INFO - Test error rate: 28.63%, Test macro-F1: 0.5657, Test ECE: 0.2679
+2026-04-15 20:51:05,026 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmphg5lgu2j\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:51:05,032 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmphg5lgu2j\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:51:05,041 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.4640 ---
+2026-04-15 20:51:05,041 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 20:51:05,789 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:51:05,789 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:51:05,805 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:51:05,805 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:51:09,802 - supervised_baseline - INFO - Epoch 1/27: loss=2.3117, dev_macro_f1=0.0315, dev_err=94.01%, es_counter=0
+2026-04-15 20:51:13,015 - supervised_baseline - INFO - Epoch 2/27: loss=2.2483, dev_macro_f1=0.1555, dev_err=63.59%, es_counter=0
+2026-04-15 20:51:16,224 - supervised_baseline - INFO - Epoch 3/27: loss=2.0749, dev_macro_f1=0.3743, dev_err=37.66%, es_counter=0
+2026-04-15 20:51:19,436 - supervised_baseline - INFO - Epoch 4/27: loss=1.7129, dev_macro_f1=0.3788, dev_err=40.65%, es_counter=0
+2026-04-15 20:51:22,653 - supervised_baseline - INFO - Epoch 5/27: loss=1.3093, dev_macro_f1=0.4429, dev_err=33.42%, es_counter=0
+2026-04-15 20:51:25,853 - supervised_baseline - INFO - Epoch 6/27: loss=0.9335, dev_macro_f1=0.4400, dev_err=38.15%, es_counter=1
+2026-04-15 20:51:29,063 - supervised_baseline - INFO - Epoch 7/27: loss=0.6801, dev_macro_f1=0.4073, dev_err=38.90%, es_counter=2
+2026-04-15 20:51:32,270 - supervised_baseline - INFO - Epoch 8/27: loss=0.4864, dev_macro_f1=0.4370, dev_err=42.14%, es_counter=3
+2026-04-15 20:51:35,472 - supervised_baseline - INFO - Epoch 9/27: loss=0.3502, dev_macro_f1=0.4353, dev_err=40.15%, es_counter=4
+2026-04-15 20:51:38,677 - supervised_baseline - INFO - Epoch 10/27: loss=0.2885, dev_macro_f1=0.4455, dev_err=38.90%, es_counter=0
+2026-04-15 20:51:41,883 - supervised_baseline - INFO - Epoch 11/27: loss=0.2101, dev_macro_f1=0.4892, dev_err=36.16%, es_counter=0
+2026-04-15 20:51:45,083 - supervised_baseline - INFO - Epoch 12/27: loss=0.1445, dev_macro_f1=0.4357, dev_err=41.90%, es_counter=1
+2026-04-15 20:51:48,295 - supervised_baseline - INFO - Epoch 13/27: loss=0.1137, dev_macro_f1=0.4920, dev_err=36.16%, es_counter=0
+2026-04-15 20:51:51,515 - supervised_baseline - INFO - Epoch 14/27: loss=0.0997, dev_macro_f1=0.4693, dev_err=35.16%, es_counter=1
+2026-04-15 20:51:54,692 - supervised_baseline - INFO - Epoch 15/27: loss=0.0840, dev_macro_f1=0.4413, dev_err=39.15%, es_counter=2
+2026-04-15 20:51:57,929 - supervised_baseline - INFO - Epoch 16/27: loss=0.0744, dev_macro_f1=0.4539, dev_err=38.15%, es_counter=3
+2026-04-15 20:52:01,186 - supervised_baseline - INFO - Epoch 17/27: loss=0.0669, dev_macro_f1=0.4522, dev_err=38.65%, es_counter=4
+2026-04-15 20:52:04,413 - supervised_baseline - INFO - Early stopping at epoch 18
+2026-04-15 20:52:04,419 - supervised_baseline - INFO - Training done in 58s. Epochs: 18, Best epoch: 13
+2026-04-15 20:52:04,419 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:52:06,668 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpsqxz7c63\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:52:06,668 - supervised_baseline - INFO - Test error rate: 34.66%, Test macro-F1: 0.5858, Test ECE: 0.1993
+2026-04-15 20:52:06,680 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpsqxz7c63\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:52:06,686 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpsqxz7c63\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:52:06,695 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.4920 ---
+2026-04-15 20:52:06,695 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 20:52:07,545 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:52:07,545 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:52:07,559 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:52:07,559 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:52:11,839 - supervised_baseline - INFO - Epoch 1/55: loss=2.2831, dev_macro_f1=0.2005, dev_err=40.65%, es_counter=0
+2026-04-15 20:52:15,417 - supervised_baseline - INFO - Epoch 2/55: loss=1.9770, dev_macro_f1=0.3752, dev_err=41.90%, es_counter=0
+2026-04-15 20:52:18,993 - supervised_baseline - INFO - Epoch 3/55: loss=1.4168, dev_macro_f1=0.4686, dev_err=44.89%, es_counter=0
+2026-04-15 20:52:22,530 - supervised_baseline - INFO - Epoch 4/55: loss=0.9847, dev_macro_f1=0.3954, dev_err=62.09%, es_counter=1
+2026-04-15 20:52:26,077 - supervised_baseline - INFO - Epoch 5/55: loss=1.2005, dev_macro_f1=0.3832, dev_err=43.64%, es_counter=2
+2026-04-15 20:52:29,639 - supervised_baseline - INFO - Epoch 6/55: loss=1.3806, dev_macro_f1=0.3111, dev_err=67.83%, es_counter=3
+2026-04-15 20:52:33,196 - supervised_baseline - INFO - Epoch 7/55: loss=1.7688, dev_macro_f1=0.0072, dev_err=96.26%, es_counter=4
+2026-04-15 20:52:36,734 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 20:52:36,740 - supervised_baseline - INFO - Training done in 29s. Epochs: 8, Best epoch: 3
+2026-04-15 20:52:36,740 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:52:39,068 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpzi9718ik\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:52:39,068 - supervised_baseline - INFO - Test error rate: 44.80%, Test macro-F1: 0.4621, Test ECE: 0.1024
+2026-04-15 20:52:39,076 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzi9718ik\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:52:39,082 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzi9718ik\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:52:39,091 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.4686 ---
+2026-04-15 20:52:39,091 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 20:52:39,762 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:52:39,762 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:52:39,777 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:52:39,777 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:52:44,140 - supervised_baseline - INFO - Epoch 1/79: loss=2.3032, dev_macro_f1=0.1162, dev_err=68.08%, es_counter=0
+2026-04-15 20:52:47,731 - supervised_baseline - INFO - Epoch 2/79: loss=2.1917, dev_macro_f1=0.2973, dev_err=47.38%, es_counter=0
+2026-04-15 20:52:51,344 - supervised_baseline - INFO - Epoch 3/79: loss=1.7928, dev_macro_f1=0.4235, dev_err=32.42%, es_counter=0
+2026-04-15 20:52:54,933 - supervised_baseline - INFO - Epoch 4/79: loss=1.2331, dev_macro_f1=0.4911, dev_err=33.92%, es_counter=0
+2026-04-15 20:52:58,496 - supervised_baseline - INFO - Epoch 5/79: loss=0.8768, dev_macro_f1=0.4471, dev_err=39.90%, es_counter=1
+2026-04-15 20:53:02,035 - supervised_baseline - INFO - Epoch 6/79: loss=0.5614, dev_macro_f1=0.4205, dev_err=49.63%, es_counter=2
+2026-04-15 20:53:05,600 - supervised_baseline - INFO - Epoch 7/79: loss=0.3943, dev_macro_f1=0.4156, dev_err=40.40%, es_counter=3
+2026-04-15 20:53:09,150 - supervised_baseline - INFO - Epoch 8/79: loss=0.7190, dev_macro_f1=0.4057, dev_err=46.13%, es_counter=4
+2026-04-15 20:53:12,716 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 20:53:12,722 - supervised_baseline - INFO - Training done in 32s. Epochs: 9, Best epoch: 4
+2026-04-15 20:53:12,722 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:53:15,061 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp65om_m0r\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:53:15,061 - supervised_baseline - INFO - Test error rate: 30.68%, Test macro-F1: 0.5565, Test ECE: 0.2122
+2026-04-15 20:53:15,072 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp65om_m0r\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:53:15,079 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp65om_m0r\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:53:15,087 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.4911 ---
+2026-04-15 20:53:15,088 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 20:53:15,796 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:53:15,796 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:53:15,815 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:53:15,815 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:53:19,789 - supervised_baseline - INFO - Epoch 1/94: loss=2.3221, dev_macro_f1=0.0186, dev_err=96.26%, es_counter=0
+2026-04-15 20:53:23,010 - supervised_baseline - INFO - Epoch 2/94: loss=2.3152, dev_macro_f1=0.0265, dev_err=93.27%, es_counter=0
+2026-04-15 20:53:26,221 - supervised_baseline - INFO - Epoch 3/94: loss=2.2867, dev_macro_f1=0.0255, dev_err=91.77%, es_counter=1
+2026-04-15 20:53:29,438 - supervised_baseline - INFO - Epoch 4/94: loss=2.2693, dev_macro_f1=0.0817, dev_err=79.30%, es_counter=0
+2026-04-15 20:53:32,672 - supervised_baseline - INFO - Epoch 5/94: loss=2.2408, dev_macro_f1=0.1823, dev_err=73.32%, es_counter=0
+2026-04-15 20:53:35,910 - supervised_baseline - INFO - Epoch 6/94: loss=2.2105, dev_macro_f1=0.2056, dev_err=68.08%, es_counter=0
+2026-04-15 20:53:39,168 - supervised_baseline - INFO - Epoch 7/94: loss=2.1475, dev_macro_f1=0.3321, dev_err=38.90%, es_counter=0
+2026-04-15 20:53:42,411 - supervised_baseline - INFO - Epoch 8/94: loss=2.0267, dev_macro_f1=0.3396, dev_err=39.90%, es_counter=0
+2026-04-15 20:53:45,640 - supervised_baseline - INFO - Epoch 9/94: loss=1.8687, dev_macro_f1=0.3807, dev_err=33.17%, es_counter=0
+2026-04-15 20:53:48,864 - supervised_baseline - INFO - Epoch 10/94: loss=1.6749, dev_macro_f1=0.3900, dev_err=34.66%, es_counter=0
+2026-04-15 20:53:52,083 - supervised_baseline - INFO - Epoch 11/94: loss=1.4485, dev_macro_f1=0.3685, dev_err=45.14%, es_counter=1
+2026-04-15 20:53:55,292 - supervised_baseline - INFO - Epoch 12/94: loss=1.2343, dev_macro_f1=0.3977, dev_err=38.65%, es_counter=0
+2026-04-15 20:53:58,494 - supervised_baseline - INFO - Epoch 13/94: loss=1.0722, dev_macro_f1=0.4340, dev_err=37.66%, es_counter=0
+2026-04-15 20:54:01,699 - supervised_baseline - INFO - Epoch 14/94: loss=0.8994, dev_macro_f1=0.4796, dev_err=31.42%, es_counter=0
+2026-04-15 20:54:04,888 - supervised_baseline - INFO - Epoch 15/94: loss=0.7892, dev_macro_f1=0.4358, dev_err=39.90%, es_counter=1
+2026-04-15 20:54:08,091 - supervised_baseline - INFO - Epoch 16/94: loss=0.6563, dev_macro_f1=0.4102, dev_err=46.88%, es_counter=2
+2026-04-15 20:54:11,286 - supervised_baseline - INFO - Epoch 17/94: loss=0.5449, dev_macro_f1=0.4744, dev_err=36.66%, es_counter=3
+2026-04-15 20:54:14,473 - supervised_baseline - INFO - Epoch 18/94: loss=0.4525, dev_macro_f1=0.4616, dev_err=36.16%, es_counter=4
+2026-04-15 20:54:17,668 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 20:54:17,673 - supervised_baseline - INFO - Training done in 61s. Epochs: 19, Best epoch: 14
+2026-04-15 20:54:17,673 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:54:19,924 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpttes1qju\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:54:19,924 - supervised_baseline - INFO - Test error rate: 30.30%, Test macro-F1: 0.6056, Test ECE: 0.2010
+2026-04-15 20:54:19,938 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpttes1qju\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:54:19,945 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpttes1qju\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:54:19,954 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.4796 ---
+2026-04-15 20:54:19,955 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 20:54:20,611 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:54:20,611 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:54:20,625 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:54:20,625 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:54:24,833 - supervised_baseline - INFO - Epoch 1/66: loss=2.3164, dev_macro_f1=0.0212, dev_err=95.51%, es_counter=0
+2026-04-15 20:54:28,498 - supervised_baseline - INFO - Epoch 2/66: loss=2.3031, dev_macro_f1=0.0263, dev_err=92.27%, es_counter=0
+2026-04-15 20:54:32,129 - supervised_baseline - INFO - Epoch 3/66: loss=2.2737, dev_macro_f1=0.0466, dev_err=89.03%, es_counter=0
+2026-04-15 20:54:35,720 - supervised_baseline - INFO - Epoch 4/66: loss=2.2524, dev_macro_f1=0.1994, dev_err=48.13%, es_counter=0
+2026-04-15 20:54:39,330 - supervised_baseline - INFO - Epoch 5/66: loss=2.1993, dev_macro_f1=0.3066, dev_err=50.62%, es_counter=0
+2026-04-15 20:54:42,903 - supervised_baseline - INFO - Epoch 6/66: loss=2.0750, dev_macro_f1=0.3120, dev_err=42.14%, es_counter=0
+2026-04-15 20:54:46,460 - supervised_baseline - INFO - Epoch 7/66: loss=1.8848, dev_macro_f1=0.3730, dev_err=33.42%, es_counter=0
+2026-04-15 20:54:50,038 - supervised_baseline - INFO - Epoch 8/66: loss=1.6399, dev_macro_f1=0.3899, dev_err=34.41%, es_counter=0
+2026-04-15 20:54:53,597 - supervised_baseline - INFO - Epoch 9/66: loss=1.4349, dev_macro_f1=0.3971, dev_err=40.90%, es_counter=0
+2026-04-15 20:54:57,190 - supervised_baseline - INFO - Epoch 10/66: loss=1.2240, dev_macro_f1=0.3925, dev_err=41.65%, es_counter=1
+2026-04-15 20:55:00,802 - supervised_baseline - INFO - Epoch 11/66: loss=1.0396, dev_macro_f1=0.4862, dev_err=31.92%, es_counter=0
+2026-04-15 20:55:04,389 - supervised_baseline - INFO - Epoch 12/66: loss=0.8831, dev_macro_f1=0.4737, dev_err=35.66%, es_counter=1
+2026-04-15 20:55:07,959 - supervised_baseline - INFO - Epoch 13/66: loss=0.7322, dev_macro_f1=0.4772, dev_err=34.16%, es_counter=2
+2026-04-15 20:55:11,591 - supervised_baseline - INFO - Epoch 14/66: loss=0.6114, dev_macro_f1=0.4938, dev_err=34.91%, es_counter=0
+2026-04-15 20:55:15,178 - supervised_baseline - INFO - Epoch 15/66: loss=0.5072, dev_macro_f1=0.4588, dev_err=37.91%, es_counter=1
+2026-04-15 20:55:18,776 - supervised_baseline - INFO - Epoch 16/66: loss=0.4249, dev_macro_f1=0.4748, dev_err=36.16%, es_counter=2
+2026-04-15 20:55:22,371 - supervised_baseline - INFO - Epoch 17/66: loss=0.3763, dev_macro_f1=0.4520, dev_err=39.15%, es_counter=3
+2026-04-15 20:55:25,955 - supervised_baseline - INFO - Epoch 18/66: loss=0.3354, dev_macro_f1=0.4634, dev_err=37.91%, es_counter=4
+2026-04-15 20:55:29,567 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 20:55:29,576 - supervised_baseline - INFO - Training done in 68s. Epochs: 19, Best epoch: 14
+2026-04-15 20:55:29,576 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:55:31,923 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp2od3jego\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:55:31,923 - supervised_baseline - INFO - Test error rate: 31.71%, Test macro-F1: 0.5916, Test ECE: 0.1082
+2026-04-15 20:55:31,937 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2od3jego\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:55:31,945 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2od3jego\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:55:31,955 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.4938 ---
+2026-04-15 20:55:31,956 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 20:55:32,632 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:55:32,632 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:55:32,646 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:55:32,646 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:55:36,232 - supervised_baseline - INFO - Epoch 1/94: loss=2.3060, dev_macro_f1=0.0720, dev_err=82.04%, es_counter=0
+2026-04-15 20:55:39,135 - supervised_baseline - INFO - Epoch 2/94: loss=2.1661, dev_macro_f1=0.2535, dev_err=66.33%, es_counter=0
+2026-04-15 20:55:42,052 - supervised_baseline - INFO - Epoch 3/94: loss=1.8356, dev_macro_f1=0.2829, dev_err=37.16%, es_counter=0
+2026-04-15 20:55:44,955 - supervised_baseline - INFO - Epoch 4/94: loss=1.5952, dev_macro_f1=0.4161, dev_err=48.13%, es_counter=0
+2026-04-15 20:55:47,853 - supervised_baseline - INFO - Epoch 5/94: loss=1.1522, dev_macro_f1=0.0994, dev_err=85.79%, es_counter=1
+2026-04-15 20:55:50,743 - supervised_baseline - INFO - Epoch 6/94: loss=2.2492, dev_macro_f1=0.1256, dev_err=79.80%, es_counter=2
+2026-04-15 20:55:53,635 - supervised_baseline - INFO - Epoch 7/94: loss=2.0853, dev_macro_f1=0.1552, dev_err=86.53%, es_counter=3
+2026-04-15 20:55:56,542 - supervised_baseline - INFO - Epoch 8/94: loss=2.6238, dev_macro_f1=0.0072, dev_err=96.26%, es_counter=4
+2026-04-15 20:55:59,463 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 20:55:59,467 - supervised_baseline - INFO - Training done in 26s. Epochs: 9, Best epoch: 4
+2026-04-15 20:55:59,468 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:56:01,720 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpxkgj15dc\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:56:01,720 - supervised_baseline - INFO - Test error rate: 47.75%, Test macro-F1: 0.4658, Test ECE: 0.0926
+2026-04-15 20:56:01,732 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxkgj15dc\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:56:01,739 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxkgj15dc\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:56:01,747 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.4161 ---
+2026-04-15 20:56:01,747 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 20:56:02,431 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:56:02,431 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:56:02,449 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:56:02,449 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:56:07,527 - supervised_baseline - INFO - Epoch 1/22: loss=2.2825, dev_macro_f1=0.0165, dev_err=91.02%, es_counter=0
+2026-04-15 20:56:11,863 - supervised_baseline - INFO - Epoch 2/22: loss=2.3345, dev_macro_f1=0.0218, dev_err=87.78%, es_counter=0
+2026-04-15 20:56:16,208 - supervised_baseline - INFO - Epoch 3/22: loss=2.3201, dev_macro_f1=0.0186, dev_err=89.78%, es_counter=1
+2026-04-15 20:56:20,558 - supervised_baseline - INFO - Epoch 4/22: loss=2.3051, dev_macro_f1=0.0186, dev_err=89.78%, es_counter=2
+2026-04-15 20:56:24,826 - supervised_baseline - INFO - Epoch 5/22: loss=2.3122, dev_macro_f1=0.0039, dev_err=98.00%, es_counter=3
+2026-04-15 20:56:29,107 - supervised_baseline - INFO - Epoch 6/22: loss=2.3017, dev_macro_f1=0.0039, dev_err=98.00%, es_counter=4
+2026-04-15 20:56:33,376 - supervised_baseline - INFO - Early stopping at epoch 7
+2026-04-15 20:56:33,380 - supervised_baseline - INFO - Training done in 30s. Epochs: 7, Best epoch: 2
+2026-04-15 20:56:33,380 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:56:35,926 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmph69x_z0j\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:56:35,926 - supervised_baseline - INFO - Test error rate: 87.80%, Test macro-F1: 0.0217, Test ECE: 0.1107
+2026-04-15 20:56:35,939 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmph69x_z0j\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:56:35,945 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmph69x_z0j\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:56:35,949 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.0218 ---
+2026-04-15 20:56:35,949 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 20:56:36,601 - supervised_baseline - INFO - Starting Supervised Baseline: event=cyclone_idai_2019, budget=50, seed_set=2
+2026-04-15 20:56:36,601 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 20:56:36,614 - supervised_baseline - INFO - Detected 10 classes for event cyclone_idai_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 20:56:36,614 - supervised_baseline - INFO - Labeled: 453, Dev: 401, Test: 779
+2026-04-15 20:56:41,547 - supervised_baseline - INFO - Epoch 1/70: loss=2.2875, dev_macro_f1=0.1152, dev_err=49.13%, es_counter=0
+2026-04-15 20:56:45,931 - supervised_baseline - INFO - Epoch 2/70: loss=2.0172, dev_macro_f1=0.2596, dev_err=63.84%, es_counter=0
+2026-04-15 20:56:50,215 - supervised_baseline - INFO - Epoch 3/70: loss=1.4191, dev_macro_f1=0.4323, dev_err=46.63%, es_counter=0
+2026-04-15 20:56:54,481 - supervised_baseline - INFO - Epoch 4/70: loss=1.0569, dev_macro_f1=0.2821, dev_err=71.57%, es_counter=1
+2026-04-15 20:56:58,720 - supervised_baseline - INFO - Epoch 5/70: loss=0.9430, dev_macro_f1=0.4133, dev_err=43.14%, es_counter=2
+2026-04-15 20:57:03,007 - supervised_baseline - INFO - Epoch 6/70: loss=1.0162, dev_macro_f1=0.3670, dev_err=53.87%, es_counter=3
+2026-04-15 20:57:07,302 - supervised_baseline - INFO - Epoch 7/70: loss=1.1225, dev_macro_f1=0.4131, dev_err=47.13%, es_counter=4
+2026-04-15 20:57:11,596 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 20:57:11,600 - supervised_baseline - INFO - Training done in 34s. Epochs: 8, Best epoch: 3
+2026-04-15 20:57:11,600 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 20:57:14,127 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp11xwzgxd\cyclone_idai_2019\50_set2\metrics.json
+2026-04-15 20:57:14,127 - supervised_baseline - INFO - Test error rate: 41.59%, Test macro-F1: 0.5065, Test ECE: 0.1236
+2026-04-15 20:57:14,133 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp11xwzgxd\cyclone_idai_2019\50_set2\test_predictions.tsv (779 samples)
+2026-04-15 20:57:14,148 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp11xwzgxd\cyclone_idai_2019\50_set2\dev_predictions.tsv (401 samples)
+2026-04-15 20:57:14,158 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.4323 ---

@@ -1,0 +1,261 @@
+2026-04-15 21:22:17,457 - supervised_baseline - INFO - === Optuna study: hurricane_florence_2018 budget=50 seed=1 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 21:22:17,457 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 21:22:18,147 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:22:18,148 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:22:18,182 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:22:18,182 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:22:22,448 - supervised_baseline - INFO - Epoch 1/77: loss=2.1904, dev_macro_f1=0.2122, dev_err=66.82%, es_counter=0
+2026-04-15 21:22:26,018 - supervised_baseline - INFO - Epoch 2/77: loss=2.0471, dev_macro_f1=0.5248, dev_err=32.71%, es_counter=0
+2026-04-15 21:22:29,670 - supervised_baseline - INFO - Epoch 3/77: loss=1.5399, dev_macro_f1=0.6213, dev_err=24.88%, es_counter=0
+2026-04-15 21:22:33,213 - supervised_baseline - INFO - Epoch 4/77: loss=0.9161, dev_macro_f1=0.6669, dev_err=25.82%, es_counter=0
+2026-04-15 21:22:36,798 - supervised_baseline - INFO - Epoch 5/77: loss=0.5900, dev_macro_f1=0.6770, dev_err=25.20%, es_counter=0
+2026-04-15 21:22:40,326 - supervised_baseline - INFO - Epoch 6/77: loss=0.5540, dev_macro_f1=0.5669, dev_err=32.71%, es_counter=1
+2026-04-15 21:22:43,818 - supervised_baseline - INFO - Epoch 7/77: loss=0.5060, dev_macro_f1=0.5798, dev_err=40.38%, es_counter=2
+2026-04-15 21:22:47,410 - supervised_baseline - INFO - Epoch 8/77: loss=0.4515, dev_macro_f1=0.5672, dev_err=34.74%, es_counter=3
+2026-04-15 21:22:50,986 - supervised_baseline - INFO - Epoch 9/77: loss=0.5317, dev_macro_f1=0.5652, dev_err=40.38%, es_counter=4
+2026-04-15 21:22:54,564 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 21:22:54,567 - supervised_baseline - INFO - Training done in 36s. Epochs: 10, Best epoch: 5
+2026-04-15 21:22:54,567 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:22:58,129 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpjw6i3vs_\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:22:58,129 - supervised_baseline - INFO - Test error rate: 26.99%, Test macro-F1: 0.6882, Test ECE: 0.0757
+2026-04-15 21:22:58,147 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpjw6i3vs_\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:22:58,159 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpjw6i3vs_\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:22:58,168 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.6770 ---
+2026-04-15 21:22:58,169 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 21:22:58,857 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:22:58,858 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:22:58,878 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:22:58,878 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:23:03,304 - supervised_baseline - INFO - Epoch 1/79: loss=2.1947, dev_macro_f1=0.0341, dev_err=91.39%, es_counter=0
+2026-04-15 21:23:06,830 - supervised_baseline - INFO - Epoch 2/79: loss=2.1887, dev_macro_f1=0.0602, dev_err=89.36%, es_counter=0
+2026-04-15 21:23:10,405 - supervised_baseline - INFO - Epoch 3/79: loss=2.1744, dev_macro_f1=0.2423, dev_err=64.01%, es_counter=0
+2026-04-15 21:23:14,023 - supervised_baseline - INFO - Epoch 4/79: loss=2.1274, dev_macro_f1=0.3664, dev_err=49.45%, es_counter=0
+2026-04-15 21:23:17,584 - supervised_baseline - INFO - Epoch 5/79: loss=2.0216, dev_macro_f1=0.5000, dev_err=37.09%, es_counter=0
+2026-04-15 21:23:21,136 - supervised_baseline - INFO - Epoch 6/79: loss=1.8105, dev_macro_f1=0.5482, dev_err=31.46%, es_counter=0
+2026-04-15 21:23:24,736 - supervised_baseline - INFO - Epoch 7/79: loss=1.5472, dev_macro_f1=0.5981, dev_err=26.60%, es_counter=0
+2026-04-15 21:23:28,310 - supervised_baseline - INFO - Epoch 8/79: loss=1.2331, dev_macro_f1=0.6238, dev_err=23.79%, es_counter=0
+2026-04-15 21:23:31,866 - supervised_baseline - INFO - Epoch 9/79: loss=0.9736, dev_macro_f1=0.6289, dev_err=25.98%, es_counter=0
+2026-04-15 21:23:35,422 - supervised_baseline - INFO - Epoch 10/79: loss=0.7491, dev_macro_f1=0.6453, dev_err=23.47%, es_counter=0
+2026-04-15 21:23:39,014 - supervised_baseline - INFO - Epoch 11/79: loss=0.6120, dev_macro_f1=0.6176, dev_err=28.17%, es_counter=1
+2026-04-15 21:23:42,576 - supervised_baseline - INFO - Epoch 12/79: loss=0.4777, dev_macro_f1=0.6557, dev_err=25.67%, es_counter=0
+2026-04-15 21:23:46,151 - supervised_baseline - INFO - Epoch 13/79: loss=0.3609, dev_macro_f1=0.6288, dev_err=30.52%, es_counter=1
+2026-04-15 21:23:49,744 - supervised_baseline - INFO - Epoch 14/79: loss=0.2855, dev_macro_f1=0.6617, dev_err=25.67%, es_counter=0
+2026-04-15 21:23:53,321 - supervised_baseline - INFO - Epoch 15/79: loss=0.2376, dev_macro_f1=0.6359, dev_err=29.42%, es_counter=1
+2026-04-15 21:23:56,835 - supervised_baseline - INFO - Epoch 16/79: loss=0.2013, dev_macro_f1=0.6519, dev_err=26.13%, es_counter=2
+2026-04-15 21:24:00,371 - supervised_baseline - INFO - Epoch 17/79: loss=0.1648, dev_macro_f1=0.6542, dev_err=27.70%, es_counter=3
+2026-04-15 21:24:03,905 - supervised_baseline - INFO - Epoch 18/79: loss=0.1456, dev_macro_f1=0.6344, dev_err=30.05%, es_counter=4
+2026-04-15 21:24:07,514 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 21:24:07,518 - supervised_baseline - INFO - Training done in 68s. Epochs: 19, Best epoch: 14
+2026-04-15 21:24:07,518 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:24:11,110 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpn2560h19\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:24:11,110 - supervised_baseline - INFO - Test error rate: 28.12%, Test macro-F1: 0.6825, Test ECE: 0.0666
+2026-04-15 21:24:11,125 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpn2560h19\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:24:11,133 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpn2560h19\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:24:11,139 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.6617 ---
+2026-04-15 21:24:11,139 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 21:24:11,912 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:24:11,912 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:24:11,936 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:24:11,936 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:24:15,877 - supervised_baseline - INFO - Epoch 1/68: loss=2.1933, dev_macro_f1=0.0639, dev_err=88.26%, es_counter=0
+2026-04-15 21:24:19,066 - supervised_baseline - INFO - Epoch 2/68: loss=2.1571, dev_macro_f1=0.3461, dev_err=52.43%, es_counter=0
+2026-04-15 21:24:22,249 - supervised_baseline - INFO - Epoch 3/68: loss=2.0077, dev_macro_f1=0.4976, dev_err=35.84%, es_counter=0
+2026-04-15 21:24:25,439 - supervised_baseline - INFO - Epoch 4/68: loss=1.6588, dev_macro_f1=0.5714, dev_err=30.05%, es_counter=0
+2026-04-15 21:24:28,640 - supervised_baseline - INFO - Epoch 5/68: loss=1.2328, dev_macro_f1=0.6058, dev_err=26.13%, es_counter=0
+2026-04-15 21:24:31,853 - supervised_baseline - INFO - Epoch 6/68: loss=0.8223, dev_macro_f1=0.6109, dev_err=29.73%, es_counter=0
+2026-04-15 21:24:35,056 - supervised_baseline - INFO - Epoch 7/68: loss=0.5555, dev_macro_f1=0.6427, dev_err=29.89%, es_counter=0
+2026-04-15 21:24:38,260 - supervised_baseline - INFO - Epoch 8/68: loss=0.3781, dev_macro_f1=0.6813, dev_err=23.16%, es_counter=0
+2026-04-15 21:24:41,426 - supervised_baseline - INFO - Epoch 9/68: loss=0.2443, dev_macro_f1=0.6170, dev_err=38.03%, es_counter=1
+2026-04-15 21:24:44,624 - supervised_baseline - INFO - Epoch 10/68: loss=0.1801, dev_macro_f1=0.6155, dev_err=29.58%, es_counter=2
+2026-04-15 21:24:47,818 - supervised_baseline - INFO - Epoch 11/68: loss=0.1113, dev_macro_f1=0.6569, dev_err=29.42%, es_counter=3
+2026-04-15 21:24:51,066 - supervised_baseline - INFO - Epoch 12/68: loss=0.1093, dev_macro_f1=0.5947, dev_err=36.31%, es_counter=4
+2026-04-15 21:24:54,261 - supervised_baseline - INFO - Early stopping at epoch 13
+2026-04-15 21:24:54,265 - supervised_baseline - INFO - Training done in 42s. Epochs: 13, Best epoch: 8
+2026-04-15 21:24:54,265 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:24:57,609 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmprxr5pt0n\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:24:57,609 - supervised_baseline - INFO - Test error rate: 27.32%, Test macro-F1: 0.6491, Test ECE: 0.0665
+2026-04-15 21:24:57,620 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmprxr5pt0n\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:24:57,628 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmprxr5pt0n\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:24:57,629 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.6813 ---
+2026-04-15 21:24:57,629 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 21:24:58,311 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:24:58,311 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:24:58,329 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:24:58,329 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:25:02,225 - supervised_baseline - INFO - Epoch 1/22: loss=2.1888, dev_macro_f1=0.2585, dev_err=59.00%, es_counter=0
+2026-04-15 21:25:05,389 - supervised_baseline - INFO - Epoch 2/22: loss=1.9642, dev_macro_f1=0.4933, dev_err=41.00%, es_counter=0
+2026-04-15 21:25:08,583 - supervised_baseline - INFO - Epoch 3/22: loss=1.3604, dev_macro_f1=0.5298, dev_err=35.52%, es_counter=0
+2026-04-15 21:25:11,767 - supervised_baseline - INFO - Epoch 4/22: loss=0.8561, dev_macro_f1=0.6763, dev_err=25.98%, es_counter=0
+2026-04-15 21:25:15,023 - supervised_baseline - INFO - Epoch 5/22: loss=0.5165, dev_macro_f1=0.6738, dev_err=27.54%, es_counter=1
+2026-04-15 21:25:18,291 - supervised_baseline - INFO - Epoch 6/22: loss=0.3852, dev_macro_f1=0.6737, dev_err=25.67%, es_counter=2
+2026-04-15 21:25:21,506 - supervised_baseline - INFO - Epoch 7/22: loss=0.2177, dev_macro_f1=0.6739, dev_err=28.64%, es_counter=3
+2026-04-15 21:25:24,692 - supervised_baseline - INFO - Epoch 8/22: loss=0.1479, dev_macro_f1=0.6721, dev_err=27.70%, es_counter=4
+2026-04-15 21:25:27,882 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 21:25:27,887 - supervised_baseline - INFO - Training done in 29s. Epochs: 9, Best epoch: 4
+2026-04-15 21:25:27,887 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:25:31,323 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpy3jktudw\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:25:31,324 - supervised_baseline - INFO - Test error rate: 26.27%, Test macro-F1: 0.6979, Test ECE: 0.1474
+2026-04-15 21:25:31,339 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpy3jktudw\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:25:31,348 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpy3jktudw\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:25:31,357 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.6763 ---
+2026-04-15 21:25:31,357 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 21:25:31,973 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:25:31,973 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:25:31,993 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:25:31,993 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:25:36,783 - supervised_baseline - INFO - Epoch 1/99: loss=2.1615, dev_macro_f1=0.4452, dev_err=39.44%, es_counter=0
+2026-04-15 21:25:40,756 - supervised_baseline - INFO - Epoch 2/99: loss=1.5087, dev_macro_f1=0.5901, dev_err=27.86%, es_counter=0
+2026-04-15 21:25:44,762 - supervised_baseline - INFO - Epoch 3/99: loss=1.0795, dev_macro_f1=0.4552, dev_err=45.54%, es_counter=1
+2026-04-15 21:25:48,660 - supervised_baseline - INFO - Epoch 4/99: loss=1.1494, dev_macro_f1=0.3593, dev_err=59.15%, es_counter=2
+2026-04-15 21:25:52,567 - supervised_baseline - INFO - Epoch 5/99: loss=1.9715, dev_macro_f1=0.0321, dev_err=83.10%, es_counter=3
+2026-04-15 21:25:56,442 - supervised_baseline - INFO - Epoch 6/99: loss=2.3014, dev_macro_f1=0.0425, dev_err=76.37%, es_counter=4
+2026-04-15 21:26:00,433 - supervised_baseline - INFO - Early stopping at epoch 7
+2026-04-15 21:26:00,437 - supervised_baseline - INFO - Training done in 28s. Epochs: 7, Best epoch: 2
+2026-04-15 21:26:00,437 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:26:04,249 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpjkfll84b\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:26:04,249 - supervised_baseline - INFO - Test error rate: 32.31%, Test macro-F1: 0.5548, Test ECE: 0.1145
+2026-04-15 21:26:04,264 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpjkfll84b\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:26:04,272 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpjkfll84b\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:26:04,281 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.5901 ---
+2026-04-15 21:26:04,281 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 21:26:04,895 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:26:04,895 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:26:04,913 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:26:04,913 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:26:08,946 - supervised_baseline - INFO - Epoch 1/41: loss=2.1943, dev_macro_f1=0.0285, dev_err=91.71%, es_counter=0
+2026-04-15 21:26:12,174 - supervised_baseline - INFO - Epoch 2/41: loss=2.1891, dev_macro_f1=0.0564, dev_err=89.67%, es_counter=0
+2026-04-15 21:26:15,387 - supervised_baseline - INFO - Epoch 3/41: loss=2.1778, dev_macro_f1=0.2185, dev_err=67.29%, es_counter=0
+2026-04-15 21:26:18,668 - supervised_baseline - INFO - Epoch 4/41: loss=2.1382, dev_macro_f1=0.3839, dev_err=47.42%, es_counter=0
+2026-04-15 21:26:21,875 - supervised_baseline - INFO - Epoch 5/41: loss=2.0694, dev_macro_f1=0.4568, dev_err=41.47%, es_counter=0
+2026-04-15 21:26:25,043 - supervised_baseline - INFO - Epoch 6/41: loss=1.9616, dev_macro_f1=0.5031, dev_err=35.84%, es_counter=0
+2026-04-15 21:26:28,253 - supervised_baseline - INFO - Epoch 7/41: loss=1.8275, dev_macro_f1=0.5412, dev_err=31.77%, es_counter=0
+2026-04-15 21:26:31,462 - supervised_baseline - INFO - Epoch 8/41: loss=1.6766, dev_macro_f1=0.5615, dev_err=30.20%, es_counter=0
+2026-04-15 21:26:34,666 - supervised_baseline - INFO - Epoch 9/41: loss=1.5271, dev_macro_f1=0.5721, dev_err=29.11%, es_counter=0
+2026-04-15 21:26:37,851 - supervised_baseline - INFO - Epoch 10/41: loss=1.3824, dev_macro_f1=0.6017, dev_err=26.60%, es_counter=0
+2026-04-15 21:26:41,069 - supervised_baseline - INFO - Epoch 11/41: loss=1.2432, dev_macro_f1=0.6204, dev_err=24.57%, es_counter=0
+2026-04-15 21:26:44,259 - supervised_baseline - INFO - Epoch 12/41: loss=1.1193, dev_macro_f1=0.6108, dev_err=25.98%, es_counter=1
+2026-04-15 21:26:47,473 - supervised_baseline - INFO - Epoch 13/41: loss=1.0137, dev_macro_f1=0.6276, dev_err=24.88%, es_counter=0
+2026-04-15 21:26:50,662 - supervised_baseline - INFO - Epoch 14/41: loss=0.9156, dev_macro_f1=0.6452, dev_err=23.63%, es_counter=0
+2026-04-15 21:26:53,856 - supervised_baseline - INFO - Epoch 15/41: loss=0.8375, dev_macro_f1=0.6458, dev_err=24.57%, es_counter=0
+2026-04-15 21:26:57,050 - supervised_baseline - INFO - Epoch 16/41: loss=0.7646, dev_macro_f1=0.6476, dev_err=25.04%, es_counter=0
+2026-04-15 21:27:00,248 - supervised_baseline - INFO - Epoch 17/41: loss=0.7018, dev_macro_f1=0.6560, dev_err=24.88%, es_counter=0
+2026-04-15 21:27:03,456 - supervised_baseline - INFO - Epoch 18/41: loss=0.6415, dev_macro_f1=0.6586, dev_err=24.88%, es_counter=0
+2026-04-15 21:27:06,665 - supervised_baseline - INFO - Epoch 19/41: loss=0.5845, dev_macro_f1=0.6601, dev_err=24.57%, es_counter=0
+2026-04-15 21:27:09,867 - supervised_baseline - INFO - Epoch 20/41: loss=0.5380, dev_macro_f1=0.6514, dev_err=25.67%, es_counter=1
+2026-04-15 21:27:13,051 - supervised_baseline - INFO - Epoch 21/41: loss=0.4972, dev_macro_f1=0.6526, dev_err=25.35%, es_counter=2
+2026-04-15 21:27:16,223 - supervised_baseline - INFO - Epoch 22/41: loss=0.4639, dev_macro_f1=0.6464, dev_err=26.60%, es_counter=3
+2026-04-15 21:27:19,420 - supervised_baseline - INFO - Epoch 23/41: loss=0.4264, dev_macro_f1=0.6642, dev_err=24.88%, es_counter=0
+2026-04-15 21:27:22,606 - supervised_baseline - INFO - Epoch 24/41: loss=0.3936, dev_macro_f1=0.6435, dev_err=27.54%, es_counter=1
+2026-04-15 21:27:25,804 - supervised_baseline - INFO - Epoch 25/41: loss=0.3722, dev_macro_f1=0.6514, dev_err=26.13%, es_counter=2
+2026-04-15 21:27:28,992 - supervised_baseline - INFO - Epoch 26/41: loss=0.3545, dev_macro_f1=0.6447, dev_err=27.54%, es_counter=3
+2026-04-15 21:27:32,190 - supervised_baseline - INFO - Epoch 27/41: loss=0.3356, dev_macro_f1=0.6548, dev_err=25.67%, es_counter=4
+2026-04-15 21:27:35,406 - supervised_baseline - INFO - Early stopping at epoch 28
+2026-04-15 21:27:35,409 - supervised_baseline - INFO - Training done in 90s. Epochs: 28, Best epoch: 23
+2026-04-15 21:27:35,409 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:27:38,857 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmplucg2n9g\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:27:38,858 - supervised_baseline - INFO - Test error rate: 28.77%, Test macro-F1: 0.6704, Test ECE: 0.0882
+2026-04-15 21:27:38,873 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmplucg2n9g\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:27:38,878 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmplucg2n9g\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:27:38,887 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.6642 ---
+2026-04-15 21:27:38,887 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 21:27:39,520 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:27:39,520 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:27:39,541 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:27:39,541 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:27:43,499 - supervised_baseline - INFO - Epoch 1/46: loss=2.1943, dev_macro_f1=0.0284, dev_err=91.71%, es_counter=0
+2026-04-15 21:27:46,708 - supervised_baseline - INFO - Epoch 2/46: loss=2.1875, dev_macro_f1=0.0664, dev_err=88.58%, es_counter=0
+2026-04-15 21:27:49,856 - supervised_baseline - INFO - Epoch 3/46: loss=2.1722, dev_macro_f1=0.2732, dev_err=60.25%, es_counter=0
+2026-04-15 21:27:53,022 - supervised_baseline - INFO - Epoch 4/46: loss=2.1203, dev_macro_f1=0.4210, dev_err=42.88%, es_counter=0
+2026-04-15 21:27:56,207 - supervised_baseline - INFO - Epoch 5/46: loss=2.0183, dev_macro_f1=0.4767, dev_err=38.65%, es_counter=0
+2026-04-15 21:27:59,363 - supervised_baseline - INFO - Epoch 6/46: loss=1.8553, dev_macro_f1=0.5376, dev_err=32.71%, es_counter=0
+2026-04-15 21:28:02,547 - supervised_baseline - INFO - Epoch 7/46: loss=1.6606, dev_macro_f1=0.5667, dev_err=29.73%, es_counter=0
+2026-04-15 21:28:05,769 - supervised_baseline - INFO - Epoch 8/46: loss=1.4489, dev_macro_f1=0.5848, dev_err=28.48%, es_counter=0
+2026-04-15 21:28:08,990 - supervised_baseline - INFO - Epoch 9/46: loss=1.2662, dev_macro_f1=0.5813, dev_err=29.26%, es_counter=1
+2026-04-15 21:28:12,147 - supervised_baseline - INFO - Epoch 10/46: loss=1.0964, dev_macro_f1=0.6112, dev_err=26.13%, es_counter=0
+2026-04-15 21:28:15,319 - supervised_baseline - INFO - Epoch 11/46: loss=0.9450, dev_macro_f1=0.6325, dev_err=24.26%, es_counter=0
+2026-04-15 21:28:18,501 - supervised_baseline - INFO - Epoch 12/46: loss=0.8260, dev_macro_f1=0.6450, dev_err=24.57%, es_counter=0
+2026-04-15 21:28:21,745 - supervised_baseline - INFO - Epoch 13/46: loss=0.7194, dev_macro_f1=0.6405, dev_err=27.39%, es_counter=1
+2026-04-15 21:28:24,967 - supervised_baseline - INFO - Epoch 14/46: loss=0.6253, dev_macro_f1=0.6723, dev_err=24.73%, es_counter=0
+2026-04-15 21:28:28,234 - supervised_baseline - INFO - Epoch 15/46: loss=0.5459, dev_macro_f1=0.6549, dev_err=24.88%, es_counter=1
+2026-04-15 21:28:31,485 - supervised_baseline - INFO - Epoch 16/46: loss=0.4759, dev_macro_f1=0.6535, dev_err=26.29%, es_counter=2
+2026-04-15 21:28:34,658 - supervised_baseline - INFO - Epoch 17/46: loss=0.4183, dev_macro_f1=0.6276, dev_err=29.73%, es_counter=3
+2026-04-15 21:28:37,861 - supervised_baseline - INFO - Epoch 18/46: loss=0.3590, dev_macro_f1=0.6716, dev_err=24.26%, es_counter=4
+2026-04-15 21:28:41,040 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 21:28:41,046 - supervised_baseline - INFO - Training done in 61s. Epochs: 19, Best epoch: 14
+2026-04-15 21:28:41,046 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:28:44,445 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpz88iuvm4\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:28:44,445 - supervised_baseline - INFO - Test error rate: 28.53%, Test macro-F1: 0.6666, Test ECE: 0.1505
+2026-04-15 21:28:44,460 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz88iuvm4\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:28:44,469 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz88iuvm4\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:28:44,478 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.6723 ---
+2026-04-15 21:28:44,478 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 21:28:45,209 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:28:45,209 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:28:45,233 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:28:45,233 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:28:50,686 - supervised_baseline - INFO - Epoch 1/92: loss=2.1957, dev_macro_f1=0.0247, dev_err=92.02%, es_counter=0
+2026-04-15 21:28:55,445 - supervised_baseline - INFO - Epoch 2/92: loss=2.1929, dev_macro_f1=0.0528, dev_err=90.14%, es_counter=0
+2026-04-15 21:29:00,135 - supervised_baseline - INFO - Epoch 3/92: loss=2.1726, dev_macro_f1=0.2085, dev_err=69.17%, es_counter=0
+2026-04-15 21:29:04,805 - supervised_baseline - INFO - Epoch 4/92: loss=2.1242, dev_macro_f1=0.3958, dev_err=51.80%, es_counter=0
+2026-04-15 21:29:09,447 - supervised_baseline - INFO - Epoch 5/92: loss=1.9780, dev_macro_f1=0.5207, dev_err=35.84%, es_counter=0
+2026-04-15 21:29:14,141 - supervised_baseline - INFO - Epoch 6/92: loss=1.7003, dev_macro_f1=0.5493, dev_err=32.39%, es_counter=0
+2026-04-15 21:29:18,804 - supervised_baseline - INFO - Epoch 7/92: loss=1.3806, dev_macro_f1=0.6203, dev_err=24.41%, es_counter=0
+2026-04-15 21:29:23,466 - supervised_baseline - INFO - Epoch 8/92: loss=1.0757, dev_macro_f1=0.6330, dev_err=24.41%, es_counter=0
+2026-04-15 21:29:28,123 - supervised_baseline - INFO - Epoch 9/92: loss=0.8409, dev_macro_f1=0.6597, dev_err=25.82%, es_counter=0
+2026-04-15 21:29:32,787 - supervised_baseline - INFO - Epoch 10/92: loss=0.6464, dev_macro_f1=0.6621, dev_err=23.47%, es_counter=0
+2026-04-15 21:29:37,437 - supervised_baseline - INFO - Epoch 11/92: loss=0.4970, dev_macro_f1=0.6568, dev_err=28.33%, es_counter=1
+2026-04-15 21:29:42,089 - supervised_baseline - INFO - Epoch 12/92: loss=0.3807, dev_macro_f1=0.6611, dev_err=25.04%, es_counter=2
+2026-04-15 21:29:46,756 - supervised_baseline - INFO - Epoch 13/92: loss=0.2864, dev_macro_f1=0.6396, dev_err=29.11%, es_counter=3
+2026-04-15 21:29:51,415 - supervised_baseline - INFO - Epoch 14/92: loss=0.2196, dev_macro_f1=0.6531, dev_err=26.92%, es_counter=4
+2026-04-15 21:29:56,082 - supervised_baseline - INFO - Early stopping at epoch 15
+2026-04-15 21:29:56,092 - supervised_baseline - INFO - Training done in 70s. Epochs: 15, Best epoch: 10
+2026-04-15 21:29:56,092 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:30:00,131 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpnznkfwg3\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:30:00,131 - supervised_baseline - INFO - Test error rate: 26.99%, Test macro-F1: 0.6892, Test ECE: 0.1311
+2026-04-15 21:30:00,146 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpnznkfwg3\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:30:00,156 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpnznkfwg3\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:30:00,164 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.6621 ---
+2026-04-15 21:30:00,165 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 21:30:00,804 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:30:00,804 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:30:00,825 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:30:00,825 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:30:05,446 - supervised_baseline - INFO - Epoch 1/55: loss=2.1928, dev_macro_f1=0.2417, dev_err=74.02%, es_counter=0
+2026-04-15 21:30:09,343 - supervised_baseline - INFO - Epoch 2/55: loss=1.9482, dev_macro_f1=0.5171, dev_err=34.43%, es_counter=0
+2026-04-15 21:30:13,244 - supervised_baseline - INFO - Epoch 3/55: loss=1.3191, dev_macro_f1=0.5907, dev_err=30.83%, es_counter=0
+2026-04-15 21:30:17,143 - supervised_baseline - INFO - Epoch 4/55: loss=0.8242, dev_macro_f1=0.6192, dev_err=30.05%, es_counter=0
+2026-04-15 21:30:21,015 - supervised_baseline - INFO - Epoch 5/55: loss=0.5145, dev_macro_f1=0.6538, dev_err=28.48%, es_counter=0
+2026-04-15 21:30:24,886 - supervised_baseline - INFO - Epoch 6/55: loss=0.5082, dev_macro_f1=0.4847, dev_err=44.13%, es_counter=1
+2026-04-15 21:30:28,797 - supervised_baseline - INFO - Epoch 7/55: loss=0.4591, dev_macro_f1=0.6356, dev_err=33.18%, es_counter=2
+2026-04-15 21:30:32,787 - supervised_baseline - INFO - Epoch 8/55: loss=0.2527, dev_macro_f1=0.6352, dev_err=31.46%, es_counter=3
+2026-04-15 21:30:36,687 - supervised_baseline - INFO - Epoch 9/55: loss=0.5268, dev_macro_f1=0.6082, dev_err=34.74%, es_counter=4
+2026-04-15 21:30:40,707 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 21:30:40,715 - supervised_baseline - INFO - Training done in 39s. Epochs: 10, Best epoch: 5
+2026-04-15 21:30:40,715 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:30:44,371 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpimilwkpv\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:30:44,371 - supervised_baseline - INFO - Test error rate: 30.86%, Test macro-F1: 0.6571, Test ECE: 0.0772
+2026-04-15 21:30:44,384 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpimilwkpv\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:30:44,394 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpimilwkpv\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:30:44,404 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.6538 ---
+2026-04-15 21:30:44,404 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 21:30:45,038 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_florence_2018, budget=50, seed_set=1
+2026-04-15 21:30:45,038 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:30:45,056 - supervised_baseline - INFO - Detected 9 classes for event hurricane_florence_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:30:45,056 - supervised_baseline - INFO - Labeled: 438, Dev: 639, Test: 1241
+2026-04-15 21:30:49,271 - supervised_baseline - INFO - Epoch 1/81: loss=2.1930, dev_macro_f1=0.0913, dev_err=85.76%, es_counter=0
+2026-04-15 21:30:52,777 - supervised_baseline - INFO - Epoch 2/81: loss=2.1478, dev_macro_f1=0.4129, dev_err=45.07%, es_counter=0
+2026-04-15 21:30:56,270 - supervised_baseline - INFO - Epoch 3/81: loss=1.9370, dev_macro_f1=0.5142, dev_err=35.84%, es_counter=0
+2026-04-15 21:30:59,780 - supervised_baseline - INFO - Epoch 4/81: loss=1.4776, dev_macro_f1=0.5678, dev_err=31.61%, es_counter=0
+2026-04-15 21:31:03,283 - supervised_baseline - INFO - Epoch 5/81: loss=0.9322, dev_macro_f1=0.6689, dev_err=22.69%, es_counter=0
+2026-04-15 21:31:06,788 - supervised_baseline - INFO - Epoch 6/81: loss=0.5854, dev_macro_f1=0.5946, dev_err=37.56%, es_counter=1
+2026-04-15 21:31:10,297 - supervised_baseline - INFO - Epoch 7/81: loss=0.4125, dev_macro_f1=0.6675, dev_err=30.99%, es_counter=2
+2026-04-15 21:31:13,829 - supervised_baseline - INFO - Epoch 8/81: loss=0.2555, dev_macro_f1=0.6370, dev_err=32.71%, es_counter=3
+2026-04-15 21:31:17,334 - supervised_baseline - INFO - Epoch 9/81: loss=0.4980, dev_macro_f1=0.6426, dev_err=27.23%, es_counter=4
+2026-04-15 21:31:20,831 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 21:31:20,837 - supervised_baseline - INFO - Training done in 35s. Epochs: 10, Best epoch: 5
+2026-04-15 21:31:20,838 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:31:24,351 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpelbxygwi\hurricane_florence_2018\50_set1\metrics.json
+2026-04-15 21:31:24,351 - supervised_baseline - INFO - Test error rate: 24.90%, Test macro-F1: 0.6913, Test ECE: 0.2147
+2026-04-15 21:31:24,365 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpelbxygwi\hurricane_florence_2018\50_set1\test_predictions.tsv (1241 samples)
+2026-04-15 21:31:24,376 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpelbxygwi\hurricane_florence_2018\50_set1\dev_predictions.tsv (639 samples)
+2026-04-15 21:31:24,384 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.6689 ---

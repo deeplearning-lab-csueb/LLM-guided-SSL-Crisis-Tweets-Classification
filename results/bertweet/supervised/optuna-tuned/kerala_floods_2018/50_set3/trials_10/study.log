@@ -1,0 +1,291 @@
+2026-04-15 23:10:30,810 - supervised_baseline - INFO - === Optuna study: kerala_floods_2018 budget=50 seed=3 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 23:10:30,811 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 23:10:31,543 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:10:31,543 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:10:31,582 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:10:31,582 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:10:36,405 - supervised_baseline - INFO - Epoch 1/54: loss=2.1970, dev_macro_f1=0.1188, dev_err=86.00%, es_counter=0
+2026-04-15 23:10:40,383 - supervised_baseline - INFO - Epoch 2/54: loss=2.0236, dev_macro_f1=0.2043, dev_err=72.73%, es_counter=0
+2026-04-15 23:10:44,363 - supervised_baseline - INFO - Epoch 3/54: loss=1.5842, dev_macro_f1=0.3556, dev_err=62.04%, es_counter=0
+2026-04-15 23:10:48,378 - supervised_baseline - INFO - Epoch 4/54: loss=1.0288, dev_macro_f1=0.3921, dev_err=63.27%, es_counter=0
+2026-04-15 23:10:52,430 - supervised_baseline - INFO - Epoch 5/54: loss=0.9201, dev_macro_f1=0.5011, dev_err=46.81%, es_counter=0
+2026-04-15 23:10:56,407 - supervised_baseline - INFO - Epoch 6/54: loss=0.9237, dev_macro_f1=0.4312, dev_err=53.81%, es_counter=1
+2026-04-15 23:11:00,400 - supervised_baseline - INFO - Epoch 7/54: loss=0.9416, dev_macro_f1=0.2830, dev_err=75.92%, es_counter=2
+2026-04-15 23:11:04,378 - supervised_baseline - INFO - Epoch 8/54: loss=1.7642, dev_macro_f1=0.1322, dev_err=86.00%, es_counter=3
+2026-04-15 23:11:08,378 - supervised_baseline - INFO - Epoch 9/54: loss=1.6912, dev_macro_f1=0.3183, dev_err=59.09%, es_counter=4
+2026-04-15 23:11:12,378 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 23:11:12,383 - supervised_baseline - INFO - Training done in 40s. Epochs: 10, Best epoch: 5
+2026-04-15 23:11:12,383 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:11:17,065 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpxfeu8_n2\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:11:17,065 - supervised_baseline - INFO - Test error rate: 48.10%, Test macro-F1: 0.4564, Test ECE: 0.1478
+2026-04-15 23:11:17,085 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxfeu8_n2\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:11:17,098 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxfeu8_n2\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:11:17,107 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.5011 ---
+2026-04-15 23:11:17,107 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 23:11:17,787 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:11:17,787 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:11:17,816 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:11:17,816 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:11:22,237 - supervised_baseline - INFO - Epoch 1/73: loss=2.2029, dev_macro_f1=0.0880, dev_err=83.17%, es_counter=0
+2026-04-15 23:11:25,871 - supervised_baseline - INFO - Epoch 2/73: loss=2.1782, dev_macro_f1=0.2108, dev_err=61.18%, es_counter=0
+2026-04-15 23:11:29,515 - supervised_baseline - INFO - Epoch 3/73: loss=2.0604, dev_macro_f1=0.3508, dev_err=53.69%, es_counter=0
+2026-04-15 23:11:33,131 - supervised_baseline - INFO - Epoch 4/73: loss=1.7504, dev_macro_f1=0.3767, dev_err=60.07%, es_counter=0
+2026-04-15 23:11:36,756 - supervised_baseline - INFO - Epoch 5/73: loss=1.3231, dev_macro_f1=0.4039, dev_err=57.62%, es_counter=0
+2026-04-15 23:11:40,386 - supervised_baseline - INFO - Epoch 6/73: loss=0.9010, dev_macro_f1=0.5043, dev_err=38.82%, es_counter=0
+2026-04-15 23:11:43,986 - supervised_baseline - INFO - Epoch 7/73: loss=0.6931, dev_macro_f1=0.4643, dev_err=43.37%, es_counter=1
+2026-04-15 23:11:47,649 - supervised_baseline - INFO - Epoch 8/73: loss=0.4371, dev_macro_f1=0.4512, dev_err=49.63%, es_counter=2
+2026-04-15 23:11:51,270 - supervised_baseline - INFO - Epoch 9/73: loss=0.3422, dev_macro_f1=0.4356, dev_err=55.16%, es_counter=3
+2026-04-15 23:11:54,903 - supervised_baseline - INFO - Epoch 10/73: loss=0.2666, dev_macro_f1=0.5425, dev_err=35.75%, es_counter=0
+2026-04-15 23:11:58,564 - supervised_baseline - INFO - Epoch 11/73: loss=0.1588, dev_macro_f1=0.4867, dev_err=44.35%, es_counter=1
+2026-04-15 23:12:02,211 - supervised_baseline - INFO - Epoch 12/73: loss=0.1135, dev_macro_f1=0.5224, dev_err=36.98%, es_counter=2
+2026-04-15 23:12:05,808 - supervised_baseline - INFO - Epoch 13/73: loss=0.0762, dev_macro_f1=0.5020, dev_err=41.28%, es_counter=3
+2026-04-15 23:12:09,497 - supervised_baseline - INFO - Epoch 14/73: loss=0.2434, dev_macro_f1=0.4404, dev_err=51.23%, es_counter=4
+2026-04-15 23:12:13,218 - supervised_baseline - INFO - Epoch 15/73: loss=0.2680, dev_macro_f1=0.5457, dev_err=40.91%, es_counter=0
+2026-04-15 23:12:16,998 - supervised_baseline - INFO - Epoch 16/73: loss=0.2098, dev_macro_f1=0.5061, dev_err=37.96%, es_counter=1
+2026-04-15 23:12:20,776 - supervised_baseline - INFO - Epoch 17/73: loss=0.1479, dev_macro_f1=0.4991, dev_err=49.02%, es_counter=2
+2026-04-15 23:12:24,486 - supervised_baseline - INFO - Epoch 18/73: loss=0.0833, dev_macro_f1=0.4672, dev_err=44.96%, es_counter=3
+2026-04-15 23:12:28,146 - supervised_baseline - INFO - Epoch 19/73: loss=0.0698, dev_macro_f1=0.5750, dev_err=36.73%, es_counter=0
+2026-04-15 23:12:31,746 - supervised_baseline - INFO - Epoch 20/73: loss=0.0526, dev_macro_f1=0.5016, dev_err=37.96%, es_counter=1
+2026-04-15 23:12:35,394 - supervised_baseline - INFO - Epoch 21/73: loss=0.0582, dev_macro_f1=0.5294, dev_err=40.79%, es_counter=2
+2026-04-15 23:12:39,004 - supervised_baseline - INFO - Epoch 22/73: loss=0.0309, dev_macro_f1=0.5384, dev_err=37.96%, es_counter=3
+2026-04-15 23:12:42,633 - supervised_baseline - INFO - Epoch 23/73: loss=0.0424, dev_macro_f1=0.5275, dev_err=37.84%, es_counter=4
+2026-04-15 23:12:46,440 - supervised_baseline - INFO - Early stopping at epoch 24
+2026-04-15 23:12:46,445 - supervised_baseline - INFO - Training done in 88s. Epochs: 24, Best epoch: 19
+2026-04-15 23:12:46,445 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:12:51,084 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp6_t8yg4h\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:12:51,084 - supervised_baseline - INFO - Test error rate: 36.85%, Test macro-F1: 0.5198, Test ECE: 0.2921
+2026-04-15 23:12:51,101 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp6_t8yg4h\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:12:51,112 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp6_t8yg4h\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:12:51,122 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.5750 ---
+2026-04-15 23:12:51,122 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 23:12:51,868 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:12:51,868 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:12:51,900 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:12:51,900 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:12:56,710 - supervised_baseline - INFO - Epoch 1/70: loss=2.2012, dev_macro_f1=0.0294, dev_err=91.28%, es_counter=0
+2026-04-15 23:13:00,710 - supervised_baseline - INFO - Epoch 2/70: loss=2.1940, dev_macro_f1=0.0341, dev_err=90.91%, es_counter=0
+2026-04-15 23:13:04,676 - supervised_baseline - INFO - Epoch 3/70: loss=2.1920, dev_macro_f1=0.0660, dev_err=89.80%, es_counter=0
+2026-04-15 23:13:08,655 - supervised_baseline - INFO - Epoch 4/70: loss=2.1844, dev_macro_f1=0.1773, dev_err=70.27%, es_counter=0
+2026-04-15 23:13:12,707 - supervised_baseline - INFO - Epoch 5/70: loss=2.1666, dev_macro_f1=0.2045, dev_err=77.64%, es_counter=0
+2026-04-15 23:13:16,725 - supervised_baseline - INFO - Epoch 6/70: loss=2.1204, dev_macro_f1=0.2742, dev_err=62.65%, es_counter=0
+2026-04-15 23:13:20,772 - supervised_baseline - INFO - Epoch 7/70: loss=2.0245, dev_macro_f1=0.3296, dev_err=61.18%, es_counter=0
+2026-04-15 23:13:24,831 - supervised_baseline - INFO - Epoch 8/70: loss=1.8603, dev_macro_f1=0.3755, dev_err=58.48%, es_counter=0
+2026-04-15 23:13:28,867 - supervised_baseline - INFO - Epoch 9/70: loss=1.6614, dev_macro_f1=0.3909, dev_err=54.05%, es_counter=0
+2026-04-15 23:13:32,890 - supervised_baseline - INFO - Epoch 10/70: loss=1.4358, dev_macro_f1=0.4557, dev_err=44.35%, es_counter=0
+2026-04-15 23:13:36,929 - supervised_baseline - INFO - Epoch 11/70: loss=1.2476, dev_macro_f1=0.4840, dev_err=44.59%, es_counter=0
+2026-04-15 23:13:40,954 - supervised_baseline - INFO - Epoch 12/70: loss=1.0300, dev_macro_f1=0.5138, dev_err=35.50%, es_counter=0
+2026-04-15 23:13:44,961 - supervised_baseline - INFO - Epoch 13/70: loss=0.8692, dev_macro_f1=0.5103, dev_err=39.68%, es_counter=1
+2026-04-15 23:13:48,991 - supervised_baseline - INFO - Epoch 14/70: loss=0.7395, dev_macro_f1=0.5191, dev_err=39.19%, es_counter=0
+2026-04-15 23:13:53,000 - supervised_baseline - INFO - Epoch 15/70: loss=0.6011, dev_macro_f1=0.5160, dev_err=38.82%, es_counter=1
+2026-04-15 23:13:57,037 - supervised_baseline - INFO - Epoch 16/70: loss=0.4754, dev_macro_f1=0.5254, dev_err=36.00%, es_counter=0
+2026-04-15 23:14:01,058 - supervised_baseline - INFO - Epoch 17/70: loss=0.4096, dev_macro_f1=0.5111, dev_err=41.03%, es_counter=1
+2026-04-15 23:14:05,076 - supervised_baseline - INFO - Epoch 18/70: loss=0.3339, dev_macro_f1=0.5305, dev_err=37.35%, es_counter=0
+2026-04-15 23:14:09,088 - supervised_baseline - INFO - Epoch 19/70: loss=0.2844, dev_macro_f1=0.5246, dev_err=39.56%, es_counter=1
+2026-04-15 23:14:13,070 - supervised_baseline - INFO - Epoch 20/70: loss=0.2482, dev_macro_f1=0.5231, dev_err=39.43%, es_counter=2
+2026-04-15 23:14:17,069 - supervised_baseline - INFO - Epoch 21/70: loss=0.2286, dev_macro_f1=0.4979, dev_err=41.89%, es_counter=3
+2026-04-15 23:14:21,082 - supervised_baseline - INFO - Epoch 22/70: loss=0.2068, dev_macro_f1=0.5220, dev_err=40.54%, es_counter=4
+2026-04-15 23:14:25,111 - supervised_baseline - INFO - Early stopping at epoch 23
+2026-04-15 23:14:25,116 - supervised_baseline - INFO - Training done in 93s. Epochs: 23, Best epoch: 18
+2026-04-15 23:14:25,116 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:14:29,852 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpatyfrjys\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:14:29,852 - supervised_baseline - INFO - Test error rate: 37.23%, Test macro-F1: 0.5091, Test ECE: 0.0766
+2026-04-15 23:14:29,865 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpatyfrjys\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:14:29,876 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpatyfrjys\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:14:29,883 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.5305 ---
+2026-04-15 23:14:29,883 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 23:14:30,541 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:14:30,541 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:14:30,566 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:14:30,566 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:14:35,946 - supervised_baseline - INFO - Epoch 1/29: loss=2.2023, dev_macro_f1=0.0608, dev_err=88.82%, es_counter=0
+2026-04-15 23:14:40,418 - supervised_baseline - INFO - Epoch 2/29: loss=2.1791, dev_macro_f1=0.2292, dev_err=60.07%, es_counter=0
+2026-04-15 23:14:44,876 - supervised_baseline - INFO - Epoch 3/29: loss=2.0251, dev_macro_f1=0.3118, dev_err=70.76%, es_counter=0
+2026-04-15 23:14:49,309 - supervised_baseline - INFO - Epoch 4/29: loss=1.6197, dev_macro_f1=0.4260, dev_err=56.14%, es_counter=0
+2026-04-15 23:14:53,765 - supervised_baseline - INFO - Epoch 5/29: loss=1.1602, dev_macro_f1=0.4385, dev_err=52.95%, es_counter=0
+2026-04-15 23:14:58,213 - supervised_baseline - INFO - Epoch 6/29: loss=0.7743, dev_macro_f1=0.5378, dev_err=34.89%, es_counter=0
+2026-04-15 23:15:02,678 - supervised_baseline - INFO - Epoch 7/29: loss=0.4795, dev_macro_f1=0.5321, dev_err=37.84%, es_counter=1
+2026-04-15 23:15:07,124 - supervised_baseline - INFO - Epoch 8/29: loss=0.2926, dev_macro_f1=0.5388, dev_err=36.86%, es_counter=0
+2026-04-15 23:15:11,601 - supervised_baseline - INFO - Epoch 9/29: loss=0.1969, dev_macro_f1=0.5282, dev_err=35.01%, es_counter=1
+2026-04-15 23:15:16,063 - supervised_baseline - INFO - Epoch 10/29: loss=0.1362, dev_macro_f1=0.5268, dev_err=39.68%, es_counter=2
+2026-04-15 23:15:20,561 - supervised_baseline - INFO - Epoch 11/29: loss=0.0995, dev_macro_f1=0.5464, dev_err=34.40%, es_counter=0
+2026-04-15 23:15:25,036 - supervised_baseline - INFO - Epoch 12/29: loss=0.0783, dev_macro_f1=0.5477, dev_err=36.36%, es_counter=0
+2026-04-15 23:15:29,542 - supervised_baseline - INFO - Epoch 13/29: loss=0.0668, dev_macro_f1=0.5367, dev_err=36.98%, es_counter=1
+2026-04-15 23:15:34,017 - supervised_baseline - INFO - Epoch 14/29: loss=0.0581, dev_macro_f1=0.5371, dev_err=37.47%, es_counter=2
+2026-04-15 23:15:38,456 - supervised_baseline - INFO - Epoch 15/29: loss=0.0517, dev_macro_f1=0.5373, dev_err=37.47%, es_counter=3
+2026-04-15 23:15:42,945 - supervised_baseline - INFO - Epoch 16/29: loss=0.0481, dev_macro_f1=0.5368, dev_err=37.47%, es_counter=4
+2026-04-15 23:15:47,406 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 23:15:47,410 - supervised_baseline - INFO - Training done in 76s. Epochs: 17, Best epoch: 12
+2026-04-15 23:15:47,410 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:15:52,380 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp8ux1gnek\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:15:52,380 - supervised_baseline - INFO - Test error rate: 36.16%, Test macro-F1: 0.5333, Test ECE: 0.2297
+2026-04-15 23:15:52,399 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp8ux1gnek\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:15:52,411 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp8ux1gnek\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:15:52,420 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.5477 ---
+2026-04-15 23:15:52,420 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 23:15:53,067 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:15:53,068 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:15:53,096 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:15:53,096 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:15:57,959 - supervised_baseline - INFO - Epoch 1/60: loss=2.2009, dev_macro_f1=0.0288, dev_err=91.77%, es_counter=0
+2026-04-15 23:16:01,995 - supervised_baseline - INFO - Epoch 2/60: loss=2.1890, dev_macro_f1=0.0961, dev_err=86.12%, es_counter=0
+2026-04-15 23:16:06,052 - supervised_baseline - INFO - Epoch 3/60: loss=2.1776, dev_macro_f1=0.1999, dev_err=65.11%, es_counter=0
+2026-04-15 23:16:10,101 - supervised_baseline - INFO - Epoch 4/60: loss=2.1489, dev_macro_f1=0.3131, dev_err=60.44%, es_counter=0
+2026-04-15 23:16:14,154 - supervised_baseline - INFO - Epoch 5/60: loss=2.0466, dev_macro_f1=0.3786, dev_err=51.60%, es_counter=0
+2026-04-15 23:16:18,178 - supervised_baseline - INFO - Epoch 6/60: loss=1.8220, dev_macro_f1=0.4013, dev_err=52.70%, es_counter=0
+2026-04-15 23:16:22,225 - supervised_baseline - INFO - Epoch 7/60: loss=1.5368, dev_macro_f1=0.4934, dev_err=38.21%, es_counter=0
+2026-04-15 23:16:26,317 - supervised_baseline - INFO - Epoch 8/60: loss=1.2043, dev_macro_f1=0.4955, dev_err=42.63%, es_counter=0
+2026-04-15 23:16:30,390 - supervised_baseline - INFO - Epoch 9/60: loss=0.8839, dev_macro_f1=0.4917, dev_err=44.10%, es_counter=1
+2026-04-15 23:16:34,450 - supervised_baseline - INFO - Epoch 10/60: loss=0.6092, dev_macro_f1=0.4887, dev_err=42.38%, es_counter=2
+2026-04-15 23:16:38,496 - supervised_baseline - INFO - Epoch 11/60: loss=0.4338, dev_macro_f1=0.5554, dev_err=38.08%, es_counter=0
+2026-04-15 23:16:42,528 - supervised_baseline - INFO - Epoch 12/60: loss=0.3189, dev_macro_f1=0.5615, dev_err=33.05%, es_counter=0
+2026-04-15 23:16:46,559 - supervised_baseline - INFO - Epoch 13/60: loss=0.2318, dev_macro_f1=0.5358, dev_err=38.82%, es_counter=1
+2026-04-15 23:16:50,599 - supervised_baseline - INFO - Epoch 14/60: loss=0.1754, dev_macro_f1=0.5578, dev_err=35.14%, es_counter=2
+2026-04-15 23:16:54,644 - supervised_baseline - INFO - Epoch 15/60: loss=0.1423, dev_macro_f1=0.5378, dev_err=39.19%, es_counter=3
+2026-04-15 23:16:58,700 - supervised_baseline - INFO - Epoch 16/60: loss=0.1210, dev_macro_f1=0.5436, dev_err=37.84%, es_counter=4
+2026-04-15 23:17:02,727 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 23:17:02,731 - supervised_baseline - INFO - Training done in 69s. Epochs: 17, Best epoch: 12
+2026-04-15 23:17:02,731 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:17:07,519 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpd4o88_lw\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:17:07,519 - supervised_baseline - INFO - Test error rate: 35.40%, Test macro-F1: 0.5060, Test ECE: 0.0834
+2026-04-15 23:17:07,539 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpd4o88_lw\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:17:07,550 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpd4o88_lw\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:17:07,558 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.5615 ---
+2026-04-15 23:17:07,559 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 23:17:08,217 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:17:08,217 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:17:08,239 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:17:08,239 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:17:13,001 - supervised_baseline - INFO - Epoch 1/94: loss=2.1973, dev_macro_f1=0.1297, dev_err=85.01%, es_counter=0
+2026-04-15 23:17:17,049 - supervised_baseline - INFO - Epoch 2/94: loss=2.0947, dev_macro_f1=0.2230, dev_err=64.50%, es_counter=0
+2026-04-15 23:17:21,109 - supervised_baseline - INFO - Epoch 3/94: loss=1.6991, dev_macro_f1=0.4014, dev_err=61.79%, es_counter=0
+2026-04-15 23:17:25,150 - supervised_baseline - INFO - Epoch 4/94: loss=1.0192, dev_macro_f1=0.4850, dev_err=49.51%, es_counter=0
+2026-04-15 23:17:29,184 - supervised_baseline - INFO - Epoch 5/94: loss=0.6382, dev_macro_f1=0.3921, dev_err=65.60%, es_counter=1
+2026-04-15 23:17:33,214 - supervised_baseline - INFO - Epoch 6/94: loss=1.0401, dev_macro_f1=0.4367, dev_err=44.47%, es_counter=2
+2026-04-15 23:17:37,280 - supervised_baseline - INFO - Epoch 7/94: loss=1.0233, dev_macro_f1=0.4064, dev_err=50.37%, es_counter=3
+2026-04-15 23:17:41,355 - supervised_baseline - INFO - Epoch 8/94: loss=0.9795, dev_macro_f1=0.3952, dev_err=61.55%, es_counter=4
+2026-04-15 23:17:45,389 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 23:17:45,395 - supervised_baseline - INFO - Training done in 37s. Epochs: 9, Best epoch: 4
+2026-04-15 23:17:45,395 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:17:50,161 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpga3ll_91\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:17:50,161 - supervised_baseline - INFO - Test error rate: 49.87%, Test macro-F1: 0.4759, Test ECE: 0.1613
+2026-04-15 23:17:50,180 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpga3ll_91\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:17:50,188 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpga3ll_91\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:17:50,195 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.4850 ---
+2026-04-15 23:17:50,196 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 23:17:50,898 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:17:50,898 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:17:50,926 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:17:50,926 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:17:55,777 - supervised_baseline - INFO - Epoch 1/66: loss=2.2011, dev_macro_f1=0.0296, dev_err=91.40%, es_counter=0
+2026-04-15 23:17:59,805 - supervised_baseline - INFO - Epoch 2/66: loss=2.1923, dev_macro_f1=0.0496, dev_err=90.17%, es_counter=0
+2026-04-15 23:18:03,843 - supervised_baseline - INFO - Epoch 3/66: loss=2.1872, dev_macro_f1=0.1103, dev_err=82.92%, es_counter=0
+2026-04-15 23:18:07,880 - supervised_baseline - INFO - Epoch 4/66: loss=2.1747, dev_macro_f1=0.2280, dev_err=60.07%, es_counter=0
+2026-04-15 23:18:11,942 - supervised_baseline - INFO - Epoch 5/66: loss=2.1408, dev_macro_f1=0.2765, dev_err=72.60%, es_counter=0
+2026-04-15 23:18:16,018 - supervised_baseline - INFO - Epoch 6/66: loss=2.0385, dev_macro_f1=0.3306, dev_err=59.83%, es_counter=0
+2026-04-15 23:18:20,043 - supervised_baseline - INFO - Epoch 7/66: loss=1.8448, dev_macro_f1=0.4267, dev_err=49.39%, es_counter=0
+2026-04-15 23:18:24,175 - supervised_baseline - INFO - Epoch 8/66: loss=1.6082, dev_macro_f1=0.4626, dev_err=45.82%, es_counter=0
+2026-04-15 23:18:28,254 - supervised_baseline - INFO - Epoch 9/66: loss=1.3408, dev_macro_f1=0.4654, dev_err=46.56%, es_counter=0
+2026-04-15 23:18:32,342 - supervised_baseline - INFO - Epoch 10/66: loss=1.0719, dev_macro_f1=0.5027, dev_err=39.68%, es_counter=0
+2026-04-15 23:18:36,445 - supervised_baseline - INFO - Epoch 11/66: loss=0.8687, dev_macro_f1=0.5393, dev_err=38.21%, es_counter=0
+2026-04-15 23:18:40,557 - supervised_baseline - INFO - Epoch 12/66: loss=0.6576, dev_macro_f1=0.5597, dev_err=35.75%, es_counter=0
+2026-04-15 23:18:44,650 - supervised_baseline - INFO - Epoch 13/66: loss=0.5235, dev_macro_f1=0.5592, dev_err=33.54%, es_counter=1
+2026-04-15 23:18:48,719 - supervised_baseline - INFO - Epoch 14/66: loss=0.3951, dev_macro_f1=0.5333, dev_err=36.98%, es_counter=2
+2026-04-15 23:18:52,799 - supervised_baseline - INFO - Epoch 15/66: loss=0.3128, dev_macro_f1=0.4988, dev_err=41.15%, es_counter=3
+2026-04-15 23:18:56,864 - supervised_baseline - INFO - Epoch 16/66: loss=0.2538, dev_macro_f1=0.5049, dev_err=41.15%, es_counter=4
+2026-04-15 23:19:00,939 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 23:19:00,944 - supervised_baseline - INFO - Training done in 69s. Epochs: 17, Best epoch: 12
+2026-04-15 23:19:00,944 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:19:05,712 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp2qwxers3\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:19:05,712 - supervised_baseline - INFO - Test error rate: 34.45%, Test macro-F1: 0.5396, Test ECE: 0.1130
+2026-04-15 23:19:05,730 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2qwxers3\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:19:05,742 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2qwxers3\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:19:05,751 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.5597 ---
+2026-04-15 23:19:05,751 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 23:19:06,420 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:19:06,420 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:19:06,447 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:19:06,447 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:19:12,626 - supervised_baseline - INFO - Epoch 1/55: loss=2.1951, dev_macro_f1=0.1406, dev_err=83.05%, es_counter=0
+2026-04-15 23:19:17,957 - supervised_baseline - INFO - Epoch 2/55: loss=1.8233, dev_macro_f1=0.4313, dev_err=35.50%, es_counter=0
+2026-04-15 23:19:23,207 - supervised_baseline - INFO - Epoch 3/55: loss=1.5240, dev_macro_f1=0.2181, dev_err=78.62%, es_counter=1
+2026-04-15 23:19:28,508 - supervised_baseline - INFO - Epoch 4/55: loss=2.1106, dev_macro_f1=0.0038, dev_err=98.28%, es_counter=2
+2026-04-15 23:19:33,786 - supervised_baseline - INFO - Epoch 5/55: loss=2.2627, dev_macro_f1=0.0079, dev_err=96.31%, es_counter=3
+2026-04-15 23:19:39,101 - supervised_baseline - INFO - Epoch 6/55: loss=2.2856, dev_macro_f1=0.0153, dev_err=92.63%, es_counter=4
+2026-04-15 23:19:44,396 - supervised_baseline - INFO - Early stopping at epoch 7
+2026-04-15 23:19:44,400 - supervised_baseline - INFO - Training done in 37s. Epochs: 7, Best epoch: 2
+2026-04-15 23:19:44,400 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:19:49,786 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpyf16l2au\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:19:49,787 - supervised_baseline - INFO - Test error rate: 34.64%, Test macro-F1: 0.4321, Test ECE: 0.2445
+2026-04-15 23:19:49,808 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpyf16l2au\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:19:49,821 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpyf16l2au\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:19:49,830 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.4313 ---
+2026-04-15 23:19:49,830 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 23:19:50,499 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:19:50,499 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:19:50,532 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:19:50,532 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:19:55,367 - supervised_baseline - INFO - Epoch 1/100: loss=2.2013, dev_macro_f1=0.0290, dev_err=91.28%, es_counter=0
+2026-04-15 23:19:59,414 - supervised_baseline - INFO - Epoch 2/100: loss=2.1955, dev_macro_f1=0.0296, dev_err=90.91%, es_counter=0
+2026-04-15 23:20:03,440 - supervised_baseline - INFO - Epoch 3/100: loss=2.1965, dev_macro_f1=0.0392, dev_err=92.26%, es_counter=0
+2026-04-15 23:20:07,508 - supervised_baseline - INFO - Epoch 4/100: loss=2.1924, dev_macro_f1=0.0672, dev_err=87.35%, es_counter=0
+2026-04-15 23:20:11,619 - supervised_baseline - INFO - Epoch 5/100: loss=2.1832, dev_macro_f1=0.1514, dev_err=78.99%, es_counter=0
+2026-04-15 23:20:15,654 - supervised_baseline - INFO - Epoch 6/100: loss=2.1625, dev_macro_f1=0.2075, dev_err=69.16%, es_counter=0
+2026-04-15 23:20:19,649 - supervised_baseline - INFO - Epoch 7/100: loss=2.1384, dev_macro_f1=0.2448, dev_err=70.02%, es_counter=0
+2026-04-15 23:20:23,667 - supervised_baseline - INFO - Epoch 8/100: loss=2.0729, dev_macro_f1=0.3675, dev_err=48.03%, es_counter=0
+2026-04-15 23:20:27,677 - supervised_baseline - INFO - Epoch 9/100: loss=1.9566, dev_macro_f1=0.3506, dev_err=56.88%, es_counter=1
+2026-04-15 23:20:31,664 - supervised_baseline - INFO - Epoch 10/100: loss=1.7855, dev_macro_f1=0.3952, dev_err=51.84%, es_counter=0
+2026-04-15 23:20:35,673 - supervised_baseline - INFO - Epoch 11/100: loss=1.6030, dev_macro_f1=0.4236, dev_err=51.72%, es_counter=0
+2026-04-15 23:20:39,678 - supervised_baseline - INFO - Epoch 12/100: loss=1.3790, dev_macro_f1=0.4913, dev_err=37.35%, es_counter=0
+2026-04-15 23:20:43,687 - supervised_baseline - INFO - Epoch 13/100: loss=1.1829, dev_macro_f1=0.4921, dev_err=40.54%, es_counter=0
+2026-04-15 23:20:47,708 - supervised_baseline - INFO - Epoch 14/100: loss=0.9764, dev_macro_f1=0.4870, dev_err=42.38%, es_counter=1
+2026-04-15 23:20:51,720 - supervised_baseline - INFO - Epoch 15/100: loss=0.8027, dev_macro_f1=0.4636, dev_err=50.98%, es_counter=2
+2026-04-15 23:20:55,725 - supervised_baseline - INFO - Epoch 16/100: loss=0.6549, dev_macro_f1=0.4623, dev_err=45.58%, es_counter=3
+2026-04-15 23:20:59,741 - supervised_baseline - INFO - Epoch 17/100: loss=0.5504, dev_macro_f1=0.5123, dev_err=38.57%, es_counter=0
+2026-04-15 23:21:03,756 - supervised_baseline - INFO - Epoch 18/100: loss=0.4482, dev_macro_f1=0.5214, dev_err=41.15%, es_counter=0
+2026-04-15 23:21:07,748 - supervised_baseline - INFO - Epoch 19/100: loss=0.3753, dev_macro_f1=0.5428, dev_err=36.00%, es_counter=0
+2026-04-15 23:21:11,766 - supervised_baseline - INFO - Epoch 20/100: loss=0.3112, dev_macro_f1=0.5397, dev_err=38.08%, es_counter=1
+2026-04-15 23:21:15,801 - supervised_baseline - INFO - Epoch 21/100: loss=0.2654, dev_macro_f1=0.5270, dev_err=38.33%, es_counter=2
+2026-04-15 23:21:19,806 - supervised_baseline - INFO - Epoch 22/100: loss=0.2451, dev_macro_f1=0.5216, dev_err=39.19%, es_counter=3
+2026-04-15 23:21:23,819 - supervised_baseline - INFO - Epoch 23/100: loss=0.2119, dev_macro_f1=0.5269, dev_err=38.94%, es_counter=4
+2026-04-15 23:21:27,872 - supervised_baseline - INFO - Epoch 24/100: loss=0.1900, dev_macro_f1=0.5466, dev_err=37.47%, es_counter=0
+2026-04-15 23:21:31,863 - supervised_baseline - INFO - Epoch 25/100: loss=0.1716, dev_macro_f1=0.5381, dev_err=37.47%, es_counter=1
+2026-04-15 23:21:35,891 - supervised_baseline - INFO - Epoch 26/100: loss=0.1597, dev_macro_f1=0.5181, dev_err=41.52%, es_counter=2
+2026-04-15 23:21:39,921 - supervised_baseline - INFO - Epoch 27/100: loss=0.1439, dev_macro_f1=0.5171, dev_err=40.05%, es_counter=3
+2026-04-15 23:21:43,961 - supervised_baseline - INFO - Epoch 28/100: loss=0.1350, dev_macro_f1=0.5232, dev_err=39.80%, es_counter=4
+2026-04-15 23:21:47,984 - supervised_baseline - INFO - Early stopping at epoch 29
+2026-04-15 23:21:47,990 - supervised_baseline - INFO - Training done in 117s. Epochs: 29, Best epoch: 24
+2026-04-15 23:21:47,990 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:21:52,751 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpnz0dq5_u\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:21:52,751 - supervised_baseline - INFO - Test error rate: 37.36%, Test macro-F1: 0.5150, Test ECE: 0.1320
+2026-04-15 23:21:52,770 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpnz0dq5_u\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:21:52,780 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpnz0dq5_u\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:21:52,787 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.5466 ---
+2026-04-15 23:21:52,787 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 23:21:53,464 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=50, seed_set=3
+2026-04-15 23:21:53,464 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 23:21:53,486 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 23:21:53,486 - supervised_baseline - INFO - Labeled: 439, Dev: 814, Test: 1582
+2026-04-15 23:21:58,258 - supervised_baseline - INFO - Epoch 1/21: loss=2.1981, dev_macro_f1=0.1152, dev_err=84.52%, es_counter=0
+2026-04-15 23:22:02,260 - supervised_baseline - INFO - Epoch 2/21: loss=2.0276, dev_macro_f1=0.2465, dev_err=68.06%, es_counter=0
+2026-04-15 23:22:06,271 - supervised_baseline - INFO - Epoch 3/21: loss=1.6079, dev_macro_f1=0.4231, dev_err=55.65%, es_counter=0
+2026-04-15 23:22:10,286 - supervised_baseline - INFO - Epoch 4/21: loss=0.9892, dev_macro_f1=0.3913, dev_err=59.46%, es_counter=1
+2026-04-15 23:22:14,278 - supervised_baseline - INFO - Epoch 5/21: loss=0.7895, dev_macro_f1=0.4175, dev_err=65.36%, es_counter=2
+2026-04-15 23:22:18,468 - supervised_baseline - INFO - Epoch 6/21: loss=0.7664, dev_macro_f1=0.4854, dev_err=46.93%, es_counter=0
+2026-04-15 23:22:22,468 - supervised_baseline - INFO - Epoch 7/21: loss=0.5046, dev_macro_f1=0.4373, dev_err=50.98%, es_counter=1
+2026-04-15 23:22:26,496 - supervised_baseline - INFO - Epoch 8/21: loss=0.3973, dev_macro_f1=0.4965, dev_err=42.75%, es_counter=0
+2026-04-15 23:22:30,522 - supervised_baseline - INFO - Epoch 9/21: loss=0.3687, dev_macro_f1=0.4292, dev_err=58.48%, es_counter=1
+2026-04-15 23:22:34,543 - supervised_baseline - INFO - Epoch 10/21: loss=0.2453, dev_macro_f1=0.4866, dev_err=46.81%, es_counter=2
+2026-04-15 23:22:38,578 - supervised_baseline - INFO - Epoch 11/21: loss=0.4628, dev_macro_f1=0.4724, dev_err=47.54%, es_counter=3
+2026-04-15 23:22:42,600 - supervised_baseline - INFO - Epoch 12/21: loss=0.3480, dev_macro_f1=0.5061, dev_err=40.05%, es_counter=0
+2026-04-15 23:22:46,622 - supervised_baseline - INFO - Epoch 13/21: loss=0.2227, dev_macro_f1=0.4287, dev_err=50.49%, es_counter=1
+2026-04-15 23:22:50,613 - supervised_baseline - INFO - Epoch 14/21: loss=0.1559, dev_macro_f1=0.4789, dev_err=46.44%, es_counter=2
+2026-04-15 23:22:54,624 - supervised_baseline - INFO - Epoch 15/21: loss=0.0920, dev_macro_f1=0.4787, dev_err=49.63%, es_counter=3
+2026-04-15 23:22:58,634 - supervised_baseline - INFO - Epoch 16/21: loss=0.1003, dev_macro_f1=0.4742, dev_err=49.88%, es_counter=4
+2026-04-15 23:23:02,639 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 23:23:02,644 - supervised_baseline - INFO - Training done in 69s. Epochs: 17, Best epoch: 12
+2026-04-15 23:23:02,644 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 23:23:07,332 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp6l65ewu_\kerala_floods_2018\50_set3\metrics.json
+2026-04-15 23:23:07,332 - supervised_baseline - INFO - Test error rate: 37.23%, Test macro-F1: 0.4895, Test ECE: 0.2694
+2026-04-15 23:23:07,354 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp6l65ewu_\kerala_floods_2018\50_set3\test_predictions.tsv (1582 samples)
+2026-04-15 23:23:07,362 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp6l65ewu_\kerala_floods_2018\50_set3\dev_predictions.tsv (814 samples)
+2026-04-15 23:23:07,363 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.5061 ---

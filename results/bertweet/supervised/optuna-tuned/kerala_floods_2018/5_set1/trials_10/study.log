@@ -1,0 +1,359 @@
+2026-04-15 22:20:35,723 - supervised_baseline - INFO - === Optuna study: kerala_floods_2018 budget=5 seed=1 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 22:20:35,723 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 22:20:36,348 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:20:36,348 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:20:36,399 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:20:36,399 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:20:38,600 - supervised_baseline - INFO - Epoch 1/29: loss=2.1942, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:20:40,070 - supervised_baseline - INFO - Epoch 2/29: loss=2.2033, dev_macro_f1=0.0811, dev_err=84.03%, es_counter=0
+2026-04-15 22:20:41,556 - supervised_baseline - INFO - Epoch 3/29: loss=2.1317, dev_macro_f1=0.0969, dev_err=83.78%, es_counter=0
+2026-04-15 22:20:43,061 - supervised_baseline - INFO - Epoch 4/29: loss=2.0050, dev_macro_f1=0.2028, dev_err=83.05%, es_counter=0
+2026-04-15 22:20:44,522 - supervised_baseline - INFO - Epoch 5/29: loss=1.8289, dev_macro_f1=0.1703, dev_err=80.34%, es_counter=1
+2026-04-15 22:20:46,017 - supervised_baseline - INFO - Epoch 6/29: loss=1.6484, dev_macro_f1=0.2608, dev_err=76.29%, es_counter=0
+2026-04-15 22:20:47,467 - supervised_baseline - INFO - Epoch 7/29: loss=1.4212, dev_macro_f1=0.2531, dev_err=76.29%, es_counter=1
+2026-04-15 22:20:48,938 - supervised_baseline - INFO - Epoch 8/29: loss=1.2479, dev_macro_f1=0.2675, dev_err=69.16%, es_counter=0
+2026-04-15 22:20:50,391 - supervised_baseline - INFO - Epoch 9/29: loss=1.0808, dev_macro_f1=0.2627, dev_err=68.92%, es_counter=1
+2026-04-15 22:20:51,890 - supervised_baseline - INFO - Epoch 10/29: loss=0.9174, dev_macro_f1=0.2698, dev_err=71.13%, es_counter=0
+2026-04-15 22:20:53,340 - supervised_baseline - INFO - Epoch 11/29: loss=0.8089, dev_macro_f1=0.2763, dev_err=73.46%, es_counter=0
+2026-04-15 22:20:54,802 - supervised_baseline - INFO - Epoch 12/29: loss=0.6805, dev_macro_f1=0.2614, dev_err=74.20%, es_counter=1
+2026-04-15 22:20:56,284 - supervised_baseline - INFO - Epoch 13/29: loss=0.6025, dev_macro_f1=0.2847, dev_err=70.02%, es_counter=0
+2026-04-15 22:20:57,754 - supervised_baseline - INFO - Epoch 14/29: loss=0.5076, dev_macro_f1=0.2913, dev_err=67.08%, es_counter=0
+2026-04-15 22:20:59,227 - supervised_baseline - INFO - Epoch 15/29: loss=0.4428, dev_macro_f1=0.2955, dev_err=66.58%, es_counter=0
+2026-04-15 22:21:00,685 - supervised_baseline - INFO - Epoch 16/29: loss=0.3970, dev_macro_f1=0.2826, dev_err=68.92%, es_counter=1
+2026-04-15 22:21:02,152 - supervised_baseline - INFO - Epoch 17/29: loss=0.3438, dev_macro_f1=0.2862, dev_err=70.39%, es_counter=2
+2026-04-15 22:21:03,624 - supervised_baseline - INFO - Epoch 18/29: loss=0.3042, dev_macro_f1=0.2961, dev_err=69.90%, es_counter=0
+2026-04-15 22:21:05,082 - supervised_baseline - INFO - Epoch 19/29: loss=0.2811, dev_macro_f1=0.2966, dev_err=69.53%, es_counter=0
+2026-04-15 22:21:06,549 - supervised_baseline - INFO - Epoch 20/29: loss=0.2571, dev_macro_f1=0.2930, dev_err=69.04%, es_counter=1
+2026-04-15 22:21:08,033 - supervised_baseline - INFO - Epoch 21/29: loss=0.2272, dev_macro_f1=0.2942, dev_err=67.81%, es_counter=2
+2026-04-15 22:21:09,523 - supervised_baseline - INFO - Epoch 22/29: loss=0.2132, dev_macro_f1=0.2875, dev_err=67.44%, es_counter=3
+2026-04-15 22:21:11,040 - supervised_baseline - INFO - Epoch 23/29: loss=0.1945, dev_macro_f1=0.2909, dev_err=67.08%, es_counter=4
+2026-04-15 22:21:12,703 - supervised_baseline - INFO - Early stopping at epoch 24
+2026-04-15 22:21:12,708 - supervised_baseline - INFO - Training done in 36s. Epochs: 24, Best epoch: 19
+2026-04-15 22:21:12,708 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:21:16,589 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp5d9vuocm\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:21:16,589 - supervised_baseline - INFO - Test error rate: 70.67%, Test macro-F1: 0.2754, Test ECE: 0.2417
+2026-04-15 22:21:16,604 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp5d9vuocm\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:21:16,613 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp5d9vuocm\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:21:16,620 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.2966 ---
+2026-04-15 22:21:16,620 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 22:21:17,275 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:21:17,275 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:21:17,297 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:21:17,297 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:21:19,661 - supervised_baseline - INFO - Epoch 1/88: loss=2.2187, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:21:21,217 - supervised_baseline - INFO - Epoch 2/88: loss=2.1750, dev_macro_f1=0.0262, dev_err=89.31%, es_counter=0
+2026-04-15 22:21:22,737 - supervised_baseline - INFO - Epoch 3/88: loss=2.2087, dev_macro_f1=0.0260, dev_err=89.43%, es_counter=1
+2026-04-15 22:21:24,267 - supervised_baseline - INFO - Epoch 4/88: loss=2.1852, dev_macro_f1=0.0284, dev_err=89.07%, es_counter=0
+2026-04-15 22:21:25,807 - supervised_baseline - INFO - Epoch 5/88: loss=2.1891, dev_macro_f1=0.0356, dev_err=87.84%, es_counter=0
+2026-04-15 22:21:27,339 - supervised_baseline - INFO - Epoch 6/88: loss=2.1790, dev_macro_f1=0.0443, dev_err=86.24%, es_counter=0
+2026-04-15 22:21:28,859 - supervised_baseline - INFO - Epoch 7/88: loss=2.1677, dev_macro_f1=0.0524, dev_err=83.42%, es_counter=0
+2026-04-15 22:21:30,393 - supervised_baseline - INFO - Epoch 8/88: loss=2.1466, dev_macro_f1=0.0642, dev_err=78.13%, es_counter=0
+2026-04-15 22:21:31,932 - supervised_baseline - INFO - Epoch 9/88: loss=2.1660, dev_macro_f1=0.0779, dev_err=71.13%, es_counter=0
+2026-04-15 22:21:33,443 - supervised_baseline - INFO - Epoch 10/88: loss=2.1414, dev_macro_f1=0.0854, dev_err=67.69%, es_counter=0
+2026-04-15 22:21:34,977 - supervised_baseline - INFO - Epoch 11/88: loss=2.1128, dev_macro_f1=0.0894, dev_err=65.97%, es_counter=0
+2026-04-15 22:21:36,524 - supervised_baseline - INFO - Epoch 12/88: loss=2.0926, dev_macro_f1=0.0967, dev_err=60.81%, es_counter=0
+2026-04-15 22:21:38,068 - supervised_baseline - INFO - Epoch 13/88: loss=2.0552, dev_macro_f1=0.1170, dev_err=57.62%, es_counter=0
+2026-04-15 22:21:39,575 - supervised_baseline - INFO - Epoch 14/88: loss=2.0369, dev_macro_f1=0.1243, dev_err=56.39%, es_counter=0
+2026-04-15 22:21:41,107 - supervised_baseline - INFO - Epoch 15/88: loss=2.0192, dev_macro_f1=0.1331, dev_err=55.41%, es_counter=0
+2026-04-15 22:21:42,655 - supervised_baseline - INFO - Epoch 16/88: loss=2.0026, dev_macro_f1=0.1507, dev_err=59.09%, es_counter=0
+2026-04-15 22:21:44,158 - supervised_baseline - INFO - Epoch 17/88: loss=1.9647, dev_macro_f1=0.1779, dev_err=63.51%, es_counter=0
+2026-04-15 22:21:45,707 - supervised_baseline - INFO - Epoch 18/88: loss=1.8964, dev_macro_f1=0.1997, dev_err=65.85%, es_counter=0
+2026-04-15 22:21:47,233 - supervised_baseline - INFO - Epoch 19/88: loss=1.8830, dev_macro_f1=0.2035, dev_err=69.41%, es_counter=0
+2026-04-15 22:21:48,757 - supervised_baseline - INFO - Epoch 20/88: loss=1.8354, dev_macro_f1=0.2219, dev_err=71.13%, es_counter=0
+2026-04-15 22:21:50,511 - supervised_baseline - INFO - Epoch 21/88: loss=1.8010, dev_macro_f1=0.2409, dev_err=71.13%, es_counter=0
+2026-04-15 22:21:52,201 - supervised_baseline - INFO - Epoch 22/88: loss=1.7704, dev_macro_f1=0.2465, dev_err=70.02%, es_counter=0
+2026-04-15 22:21:53,809 - supervised_baseline - INFO - Epoch 23/88: loss=1.7386, dev_macro_f1=0.2585, dev_err=66.22%, es_counter=0
+2026-04-15 22:21:55,366 - supervised_baseline - INFO - Epoch 24/88: loss=1.6766, dev_macro_f1=0.2592, dev_err=64.62%, es_counter=0
+2026-04-15 22:21:56,910 - supervised_baseline - INFO - Epoch 25/88: loss=1.6719, dev_macro_f1=0.2620, dev_err=64.37%, es_counter=0
+2026-04-15 22:21:58,446 - supervised_baseline - INFO - Epoch 26/88: loss=1.6333, dev_macro_f1=0.2718, dev_err=63.76%, es_counter=0
+2026-04-15 22:21:59,958 - supervised_baseline - INFO - Epoch 27/88: loss=1.5731, dev_macro_f1=0.2729, dev_err=64.62%, es_counter=0
+2026-04-15 22:22:01,564 - supervised_baseline - INFO - Epoch 28/88: loss=1.5475, dev_macro_f1=0.2694, dev_err=67.20%, es_counter=1
+2026-04-15 22:22:03,142 - supervised_baseline - INFO - Epoch 29/88: loss=1.5029, dev_macro_f1=0.2629, dev_err=68.30%, es_counter=2
+2026-04-15 22:22:04,693 - supervised_baseline - INFO - Epoch 30/88: loss=1.4842, dev_macro_f1=0.2600, dev_err=68.30%, es_counter=3
+2026-04-15 22:22:06,241 - supervised_baseline - INFO - Epoch 31/88: loss=1.4813, dev_macro_f1=0.2570, dev_err=68.80%, es_counter=4
+2026-04-15 22:22:07,774 - supervised_baseline - INFO - Early stopping at epoch 32
+2026-04-15 22:22:07,780 - supervised_baseline - INFO - Training done in 50s. Epochs: 32, Best epoch: 27
+2026-04-15 22:22:07,780 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:22:12,223 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp2kwk0xqw\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:22:12,223 - supervised_baseline - INFO - Test error rate: 64.22%, Test macro-F1: 0.2536, Test ECE: 0.1945
+2026-04-15 22:22:12,236 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2kwk0xqw\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:22:12,241 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp2kwk0xqw\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:22:12,253 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.2729 ---
+2026-04-15 22:22:12,253 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 22:22:12,961 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:22:12,961 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:22:12,983 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:22:12,983 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:22:15,363 - supervised_baseline - INFO - Epoch 1/65: loss=2.2035, dev_macro_f1=0.0256, dev_err=89.43%, es_counter=0
+2026-04-15 22:22:17,053 - supervised_baseline - INFO - Epoch 2/65: loss=2.1883, dev_macro_f1=0.0332, dev_err=88.33%, es_counter=0
+2026-04-15 22:22:18,757 - supervised_baseline - INFO - Epoch 3/65: loss=2.1710, dev_macro_f1=0.0292, dev_err=88.57%, es_counter=1
+2026-04-15 22:22:20,422 - supervised_baseline - INFO - Epoch 4/65: loss=2.1580, dev_macro_f1=0.0458, dev_err=86.49%, es_counter=0
+2026-04-15 22:22:22,096 - supervised_baseline - INFO - Epoch 5/65: loss=2.1000, dev_macro_f1=0.1314, dev_err=76.90%, es_counter=0
+2026-04-15 22:22:23,767 - supervised_baseline - INFO - Epoch 6/65: loss=2.0469, dev_macro_f1=0.1683, dev_err=72.73%, es_counter=0
+2026-04-15 22:22:25,432 - supervised_baseline - INFO - Epoch 7/65: loss=1.9187, dev_macro_f1=0.2500, dev_err=66.95%, es_counter=0
+2026-04-15 22:22:27,087 - supervised_baseline - INFO - Epoch 8/65: loss=1.7625, dev_macro_f1=0.2262, dev_err=73.83%, es_counter=1
+2026-04-15 22:22:28,786 - supervised_baseline - INFO - Epoch 9/65: loss=1.6347, dev_macro_f1=0.2371, dev_err=72.97%, es_counter=2
+2026-04-15 22:22:30,458 - supervised_baseline - INFO - Epoch 10/65: loss=1.4735, dev_macro_f1=0.2434, dev_err=76.29%, es_counter=3
+2026-04-15 22:22:32,162 - supervised_baseline - INFO - Epoch 11/65: loss=1.3727, dev_macro_f1=0.2571, dev_err=71.87%, es_counter=0
+2026-04-15 22:22:33,835 - supervised_baseline - INFO - Epoch 12/65: loss=1.2102, dev_macro_f1=0.2522, dev_err=71.62%, es_counter=1
+2026-04-15 22:22:35,525 - supervised_baseline - INFO - Epoch 13/65: loss=1.0779, dev_macro_f1=0.2689, dev_err=71.01%, es_counter=0
+2026-04-15 22:22:37,217 - supervised_baseline - INFO - Epoch 14/65: loss=0.9637, dev_macro_f1=0.2604, dev_err=70.88%, es_counter=1
+2026-04-15 22:22:38,905 - supervised_baseline - INFO - Epoch 15/65: loss=0.8589, dev_macro_f1=0.2779, dev_err=67.57%, es_counter=0
+2026-04-15 22:22:40,597 - supervised_baseline - INFO - Epoch 16/65: loss=0.7533, dev_macro_f1=0.2841, dev_err=68.06%, es_counter=0
+2026-04-15 22:22:42,279 - supervised_baseline - INFO - Epoch 17/65: loss=0.6512, dev_macro_f1=0.2888, dev_err=68.67%, es_counter=0
+2026-04-15 22:22:43,942 - supervised_baseline - INFO - Epoch 18/65: loss=0.5910, dev_macro_f1=0.2868, dev_err=66.95%, es_counter=1
+2026-04-15 22:22:45,635 - supervised_baseline - INFO - Epoch 19/65: loss=0.5425, dev_macro_f1=0.2798, dev_err=67.94%, es_counter=2
+2026-04-15 22:22:47,317 - supervised_baseline - INFO - Epoch 20/65: loss=0.4869, dev_macro_f1=0.2966, dev_err=65.60%, es_counter=0
+2026-04-15 22:22:48,997 - supervised_baseline - INFO - Epoch 21/65: loss=0.4333, dev_macro_f1=0.2980, dev_err=66.46%, es_counter=0
+2026-04-15 22:22:50,664 - supervised_baseline - INFO - Epoch 22/65: loss=0.3961, dev_macro_f1=0.2886, dev_err=67.57%, es_counter=1
+2026-04-15 22:22:52,354 - supervised_baseline - INFO - Epoch 23/65: loss=0.3551, dev_macro_f1=0.2841, dev_err=66.95%, es_counter=2
+2026-04-15 22:22:54,026 - supervised_baseline - INFO - Epoch 24/65: loss=0.3216, dev_macro_f1=0.2976, dev_err=64.37%, es_counter=3
+2026-04-15 22:22:55,719 - supervised_baseline - INFO - Epoch 25/65: loss=0.3032, dev_macro_f1=0.2938, dev_err=65.48%, es_counter=4
+2026-04-15 22:22:57,426 - supervised_baseline - INFO - Early stopping at epoch 26
+2026-04-15 22:22:57,431 - supervised_baseline - INFO - Training done in 44s. Epochs: 26, Best epoch: 21
+2026-04-15 22:22:57,431 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:23:01,922 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpz85ivdcz\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:23:01,922 - supervised_baseline - INFO - Test error rate: 68.90%, Test macro-F1: 0.2682, Test ECE: 0.1116
+2026-04-15 22:23:01,936 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz85ivdcz\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:23:01,946 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz85ivdcz\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:23:01,955 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.2980 ---
+2026-04-15 22:23:01,956 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 22:23:02,578 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:23:02,578 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:23:02,603 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:23:02,603 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:23:05,057 - supervised_baseline - INFO - Epoch 1/42: loss=2.2113, dev_macro_f1=0.0320, dev_err=89.07%, es_counter=0
+2026-04-15 22:23:06,736 - supervised_baseline - INFO - Epoch 2/42: loss=2.1486, dev_macro_f1=0.0262, dev_err=91.03%, es_counter=1
+2026-04-15 22:23:08,408 - supervised_baseline - INFO - Epoch 3/42: loss=1.9702, dev_macro_f1=0.1721, dev_err=77.15%, es_counter=0
+2026-04-15 22:23:10,083 - supervised_baseline - INFO - Epoch 4/42: loss=1.6580, dev_macro_f1=0.2380, dev_err=80.96%, es_counter=0
+2026-04-15 22:23:11,740 - supervised_baseline - INFO - Epoch 5/42: loss=1.3299, dev_macro_f1=0.2304, dev_err=79.24%, es_counter=1
+2026-04-15 22:23:13,414 - supervised_baseline - INFO - Epoch 6/42: loss=0.8778, dev_macro_f1=0.2884, dev_err=65.97%, es_counter=0
+2026-04-15 22:23:15,102 - supervised_baseline - INFO - Epoch 7/42: loss=0.4963, dev_macro_f1=0.3024, dev_err=71.13%, es_counter=0
+2026-04-15 22:23:16,764 - supervised_baseline - INFO - Epoch 8/42: loss=0.2810, dev_macro_f1=0.3024, dev_err=63.14%, es_counter=1
+2026-04-15 22:23:18,448 - supervised_baseline - INFO - Epoch 9/42: loss=0.1465, dev_macro_f1=0.3213, dev_err=53.56%, es_counter=0
+2026-04-15 22:23:20,137 - supervised_baseline - INFO - Epoch 10/42: loss=0.0879, dev_macro_f1=0.3282, dev_err=56.14%, es_counter=0
+2026-04-15 22:23:21,788 - supervised_baseline - INFO - Epoch 11/42: loss=0.0567, dev_macro_f1=0.3011, dev_err=62.53%, es_counter=1
+2026-04-15 22:23:23,479 - supervised_baseline - INFO - Epoch 12/42: loss=0.0370, dev_macro_f1=0.2762, dev_err=66.22%, es_counter=2
+2026-04-15 22:23:25,157 - supervised_baseline - INFO - Epoch 13/42: loss=0.0291, dev_macro_f1=0.2754, dev_err=66.83%, es_counter=3
+2026-04-15 22:23:26,849 - supervised_baseline - INFO - Epoch 14/42: loss=0.0221, dev_macro_f1=0.2779, dev_err=66.34%, es_counter=4
+2026-04-15 22:23:28,514 - supervised_baseline - INFO - Early stopping at epoch 15
+2026-04-15 22:23:28,519 - supervised_baseline - INFO - Training done in 25s. Epochs: 15, Best epoch: 10
+2026-04-15 22:23:28,519 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:23:32,931 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp0ng351fa\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:23:32,931 - supervised_baseline - INFO - Test error rate: 57.21%, Test macro-F1: 0.3211, Test ECE: 0.3679
+2026-04-15 22:23:32,948 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp0ng351fa\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:23:32,959 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp0ng351fa\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:23:32,970 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.3282 ---
+2026-04-15 22:23:32,970 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 22:23:33,636 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:23:33,636 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:23:33,663 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:23:33,663 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:23:35,993 - supervised_baseline - INFO - Epoch 1/62: loss=2.1942, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:23:37,474 - supervised_baseline - INFO - Epoch 2/62: loss=2.2033, dev_macro_f1=0.0265, dev_err=89.19%, es_counter=0
+2026-04-15 22:23:38,949 - supervised_baseline - INFO - Epoch 3/62: loss=2.1924, dev_macro_f1=0.0288, dev_err=88.94%, es_counter=0
+2026-04-15 22:23:40,428 - supervised_baseline - INFO - Epoch 4/62: loss=2.1587, dev_macro_f1=0.0375, dev_err=86.36%, es_counter=0
+2026-04-15 22:23:41,880 - supervised_baseline - INFO - Epoch 5/62: loss=2.1241, dev_macro_f1=0.0956, dev_err=72.85%, es_counter=0
+2026-04-15 22:23:43,373 - supervised_baseline - INFO - Epoch 6/62: loss=2.1008, dev_macro_f1=0.1458, dev_err=63.39%, es_counter=0
+2026-04-15 22:23:44,808 - supervised_baseline - INFO - Epoch 7/62: loss=2.0286, dev_macro_f1=0.1593, dev_err=70.88%, es_counter=0
+2026-04-15 22:23:46,289 - supervised_baseline - INFO - Epoch 8/62: loss=1.9680, dev_macro_f1=0.1747, dev_err=78.26%, es_counter=0
+2026-04-15 22:23:47,736 - supervised_baseline - INFO - Epoch 9/62: loss=1.8781, dev_macro_f1=0.2105, dev_err=76.29%, es_counter=0
+2026-04-15 22:23:49,187 - supervised_baseline - INFO - Epoch 10/62: loss=1.7792, dev_macro_f1=0.2289, dev_err=72.36%, es_counter=0
+2026-04-15 22:23:50,628 - supervised_baseline - INFO - Epoch 11/62: loss=1.7025, dev_macro_f1=0.2232, dev_err=73.59%, es_counter=1
+2026-04-15 22:23:52,093 - supervised_baseline - INFO - Epoch 12/62: loss=1.5848, dev_macro_f1=0.2410, dev_err=73.46%, es_counter=0
+2026-04-15 22:23:53,555 - supervised_baseline - INFO - Epoch 13/62: loss=1.5431, dev_macro_f1=0.2453, dev_err=74.45%, es_counter=0
+2026-04-15 22:23:55,009 - supervised_baseline - INFO - Epoch 14/62: loss=1.4135, dev_macro_f1=0.2525, dev_err=73.22%, es_counter=0
+2026-04-15 22:23:56,476 - supervised_baseline - INFO - Epoch 15/62: loss=1.3572, dev_macro_f1=0.2480, dev_err=73.10%, es_counter=1
+2026-04-15 22:23:57,922 - supervised_baseline - INFO - Epoch 16/62: loss=1.2913, dev_macro_f1=0.2499, dev_err=72.48%, es_counter=2
+2026-04-15 22:23:59,402 - supervised_baseline - INFO - Epoch 17/62: loss=1.1968, dev_macro_f1=0.2557, dev_err=72.11%, es_counter=0
+2026-04-15 22:24:00,850 - supervised_baseline - INFO - Epoch 18/62: loss=1.1251, dev_macro_f1=0.2672, dev_err=70.02%, es_counter=0
+2026-04-15 22:24:02,289 - supervised_baseline - INFO - Epoch 19/62: loss=1.0565, dev_macro_f1=0.2643, dev_err=69.16%, es_counter=1
+2026-04-15 22:24:03,764 - supervised_baseline - INFO - Epoch 20/62: loss=0.9842, dev_macro_f1=0.2588, dev_err=71.01%, es_counter=2
+2026-04-15 22:24:05,229 - supervised_baseline - INFO - Epoch 21/62: loss=0.8930, dev_macro_f1=0.2488, dev_err=72.60%, es_counter=3
+2026-04-15 22:24:06,688 - supervised_baseline - INFO - Epoch 22/62: loss=0.8591, dev_macro_f1=0.2404, dev_err=74.45%, es_counter=4
+2026-04-15 22:24:08,161 - supervised_baseline - INFO - Early stopping at epoch 23
+2026-04-15 22:24:08,165 - supervised_baseline - INFO - Training done in 34s. Epochs: 23, Best epoch: 18
+2026-04-15 22:24:08,165 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:24:12,088 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpcqj9s7ik\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:24:12,089 - supervised_baseline - INFO - Test error rate: 71.43%, Test macro-F1: 0.2528, Test ECE: 0.0495
+2026-04-15 22:24:12,102 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpcqj9s7ik\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:24:12,113 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpcqj9s7ik\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:24:12,122 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.2672 ---
+2026-04-15 22:24:12,122 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 22:24:12,857 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:24:12,857 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:24:12,888 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:24:12,888 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:24:15,082 - supervised_baseline - INFO - Epoch 1/81: loss=2.1942, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:24:16,559 - supervised_baseline - INFO - Epoch 2/81: loss=2.2033, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=1
+2026-04-15 22:24:18,019 - supervised_baseline - INFO - Epoch 3/81: loss=2.2004, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:24:19,496 - supervised_baseline - INFO - Epoch 4/81: loss=2.1851, dev_macro_f1=0.0265, dev_err=89.19%, es_counter=0
+2026-04-15 22:24:20,981 - supervised_baseline - INFO - Epoch 5/81: loss=2.1768, dev_macro_f1=0.0263, dev_err=89.31%, es_counter=1
+2026-04-15 22:24:22,454 - supervised_baseline - INFO - Epoch 6/81: loss=2.1851, dev_macro_f1=0.0269, dev_err=89.31%, es_counter=0
+2026-04-15 22:24:23,907 - supervised_baseline - INFO - Epoch 7/81: loss=2.1666, dev_macro_f1=0.0311, dev_err=88.45%, es_counter=0
+2026-04-15 22:24:25,394 - supervised_baseline - INFO - Epoch 8/81: loss=2.1748, dev_macro_f1=0.0362, dev_err=87.22%, es_counter=0
+2026-04-15 22:24:26,869 - supervised_baseline - INFO - Epoch 9/81: loss=2.1479, dev_macro_f1=0.0475, dev_err=84.03%, es_counter=0
+2026-04-15 22:24:28,342 - supervised_baseline - INFO - Epoch 10/81: loss=2.1439, dev_macro_f1=0.0587, dev_err=80.71%, es_counter=0
+2026-04-15 22:24:29,825 - supervised_baseline - INFO - Epoch 11/81: loss=2.1511, dev_macro_f1=0.0693, dev_err=76.29%, es_counter=0
+2026-04-15 22:24:31,291 - supervised_baseline - INFO - Epoch 12/81: loss=2.1228, dev_macro_f1=0.0775, dev_err=71.74%, es_counter=0
+2026-04-15 22:24:32,776 - supervised_baseline - INFO - Epoch 13/81: loss=2.1261, dev_macro_f1=0.0800, dev_err=68.30%, es_counter=0
+2026-04-15 22:24:34,260 - supervised_baseline - INFO - Epoch 14/81: loss=2.1013, dev_macro_f1=0.1012, dev_err=65.60%, es_counter=0
+2026-04-15 22:24:35,720 - supervised_baseline - INFO - Epoch 15/81: loss=2.0881, dev_macro_f1=0.1229, dev_err=63.64%, es_counter=0
+2026-04-15 22:24:37,197 - supervised_baseline - INFO - Epoch 16/81: loss=2.0802, dev_macro_f1=0.1467, dev_err=63.39%, es_counter=0
+2026-04-15 22:24:38,663 - supervised_baseline - INFO - Epoch 17/81: loss=2.0652, dev_macro_f1=0.1573, dev_err=63.39%, es_counter=0
+2026-04-15 22:24:40,122 - supervised_baseline - INFO - Epoch 18/81: loss=2.0609, dev_macro_f1=0.1548, dev_err=64.00%, es_counter=1
+2026-04-15 22:24:41,592 - supervised_baseline - INFO - Epoch 19/81: loss=2.0320, dev_macro_f1=0.1551, dev_err=65.60%, es_counter=2
+2026-04-15 22:24:43,075 - supervised_baseline - INFO - Epoch 20/81: loss=2.0218, dev_macro_f1=0.1721, dev_err=65.72%, es_counter=0
+2026-04-15 22:24:44,529 - supervised_baseline - INFO - Epoch 21/81: loss=1.9877, dev_macro_f1=0.1817, dev_err=66.34%, es_counter=0
+2026-04-15 22:24:46,020 - supervised_baseline - INFO - Epoch 22/81: loss=1.9856, dev_macro_f1=0.1837, dev_err=66.71%, es_counter=0
+2026-04-15 22:24:47,512 - supervised_baseline - INFO - Epoch 23/81: loss=1.9694, dev_macro_f1=0.1982, dev_err=67.20%, es_counter=0
+2026-04-15 22:24:48,966 - supervised_baseline - INFO - Epoch 24/81: loss=1.9579, dev_macro_f1=0.2027, dev_err=67.81%, es_counter=0
+2026-04-15 22:24:50,432 - supervised_baseline - INFO - Epoch 25/81: loss=1.9321, dev_macro_f1=0.2198, dev_err=67.57%, es_counter=0
+2026-04-15 22:24:51,877 - supervised_baseline - INFO - Epoch 26/81: loss=1.9037, dev_macro_f1=0.2276, dev_err=69.29%, es_counter=0
+2026-04-15 22:24:53,372 - supervised_baseline - INFO - Epoch 27/81: loss=1.8963, dev_macro_f1=0.2280, dev_err=70.15%, es_counter=0
+2026-04-15 22:24:54,828 - supervised_baseline - INFO - Epoch 28/81: loss=1.8943, dev_macro_f1=0.2231, dev_err=72.48%, es_counter=1
+2026-04-15 22:24:56,276 - supervised_baseline - INFO - Epoch 29/81: loss=1.8299, dev_macro_f1=0.2188, dev_err=73.96%, es_counter=2
+2026-04-15 22:24:57,734 - supervised_baseline - INFO - Epoch 30/81: loss=1.8271, dev_macro_f1=0.2127, dev_err=74.94%, es_counter=3
+2026-04-15 22:24:59,198 - supervised_baseline - INFO - Epoch 31/81: loss=1.8083, dev_macro_f1=0.2085, dev_err=76.41%, es_counter=4
+2026-04-15 22:25:00,646 - supervised_baseline - INFO - Early stopping at epoch 32
+2026-04-15 22:25:00,652 - supervised_baseline - INFO - Training done in 47s. Epochs: 32, Best epoch: 27
+2026-04-15 22:25:00,652 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:25:04,562 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp_u110gin\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:25:04,562 - supervised_baseline - INFO - Test error rate: 69.85%, Test macro-F1: 0.2143, Test ECE: 0.1629
+2026-04-15 22:25:04,582 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_u110gin\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:25:04,592 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_u110gin\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:25:04,603 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.2280 ---
+2026-04-15 22:25:04,603 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 22:25:05,241 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:25:05,241 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:25:05,266 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:25:05,266 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:25:07,843 - supervised_baseline - INFO - Epoch 1/23: loss=2.2097, dev_macro_f1=0.0252, dev_err=89.43%, es_counter=0
+2026-04-15 22:25:09,699 - supervised_baseline - INFO - Epoch 2/23: loss=2.1878, dev_macro_f1=0.0350, dev_err=87.47%, es_counter=0
+2026-04-15 22:25:11,551 - supervised_baseline - INFO - Epoch 3/23: loss=2.1638, dev_macro_f1=0.0555, dev_err=81.94%, es_counter=0
+2026-04-15 22:25:13,410 - supervised_baseline - INFO - Epoch 4/23: loss=2.1074, dev_macro_f1=0.1022, dev_err=57.13%, es_counter=0
+2026-04-15 22:25:15,258 - supervised_baseline - INFO - Epoch 5/23: loss=2.0443, dev_macro_f1=0.1348, dev_err=56.02%, es_counter=0
+2026-04-15 22:25:17,143 - supervised_baseline - INFO - Epoch 6/23: loss=1.9973, dev_macro_f1=0.1909, dev_err=61.55%, es_counter=0
+2026-04-15 22:25:18,992 - supervised_baseline - INFO - Epoch 7/23: loss=1.8985, dev_macro_f1=0.2470, dev_err=63.39%, es_counter=0
+2026-04-15 22:25:20,854 - supervised_baseline - INFO - Epoch 8/23: loss=1.8175, dev_macro_f1=0.2397, dev_err=67.32%, es_counter=1
+2026-04-15 22:25:22,735 - supervised_baseline - INFO - Epoch 9/23: loss=1.7443, dev_macro_f1=0.2471, dev_err=67.69%, es_counter=0
+2026-04-15 22:25:24,567 - supervised_baseline - INFO - Epoch 10/23: loss=1.6576, dev_macro_f1=0.2470, dev_err=71.38%, es_counter=1
+2026-04-15 22:25:26,421 - supervised_baseline - INFO - Epoch 11/23: loss=1.5594, dev_macro_f1=0.2350, dev_err=75.06%, es_counter=2
+2026-04-15 22:25:28,299 - supervised_baseline - INFO - Epoch 12/23: loss=1.5068, dev_macro_f1=0.2552, dev_err=70.76%, es_counter=0
+2026-04-15 22:25:30,134 - supervised_baseline - INFO - Epoch 13/23: loss=1.4223, dev_macro_f1=0.2742, dev_err=63.64%, es_counter=0
+2026-04-15 22:25:31,978 - supervised_baseline - INFO - Epoch 14/23: loss=1.3356, dev_macro_f1=0.2560, dev_err=71.25%, es_counter=1
+2026-04-15 22:25:33,820 - supervised_baseline - INFO - Epoch 15/23: loss=1.2812, dev_macro_f1=0.2604, dev_err=69.29%, es_counter=2
+2026-04-15 22:25:35,678 - supervised_baseline - INFO - Epoch 16/23: loss=1.2539, dev_macro_f1=0.2583, dev_err=70.64%, es_counter=3
+2026-04-15 22:25:37,557 - supervised_baseline - INFO - Epoch 17/23: loss=1.2049, dev_macro_f1=0.2608, dev_err=71.01%, es_counter=4
+2026-04-15 22:25:39,400 - supervised_baseline - INFO - Early stopping at epoch 18
+2026-04-15 22:25:39,404 - supervised_baseline - INFO - Training done in 34s. Epochs: 18, Best epoch: 13
+2026-04-15 22:25:39,404 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:25:44,061 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpamaamva8\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:25:44,061 - supervised_baseline - INFO - Test error rate: 63.53%, Test macro-F1: 0.2624, Test ECE: 0.1848
+2026-04-15 22:25:44,077 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpamaamva8\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:25:44,085 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpamaamva8\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:25:44,095 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.2742 ---
+2026-04-15 22:25:44,095 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 22:25:44,733 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:25:44,733 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:25:44,754 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:25:44,754 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:25:47,154 - supervised_baseline - INFO - Epoch 1/36: loss=2.2091, dev_macro_f1=0.0305, dev_err=89.19%, es_counter=0
+2026-04-15 22:25:48,816 - supervised_baseline - INFO - Epoch 2/36: loss=2.1568, dev_macro_f1=0.0516, dev_err=83.91%, es_counter=0
+2026-04-15 22:25:50,489 - supervised_baseline - INFO - Epoch 3/36: loss=2.0170, dev_macro_f1=0.2027, dev_err=82.31%, es_counter=0
+2026-04-15 22:25:52,158 - supervised_baseline - INFO - Epoch 4/36: loss=1.7724, dev_macro_f1=0.2273, dev_err=79.61%, es_counter=0
+2026-04-15 22:25:53,815 - supervised_baseline - INFO - Epoch 5/36: loss=1.3912, dev_macro_f1=0.2214, dev_err=76.66%, es_counter=1
+2026-04-15 22:25:55,489 - supervised_baseline - INFO - Epoch 6/36: loss=1.0340, dev_macro_f1=0.2951, dev_err=60.44%, es_counter=0
+2026-04-15 22:25:57,158 - supervised_baseline - INFO - Epoch 7/36: loss=0.7111, dev_macro_f1=0.2612, dev_err=73.34%, es_counter=1
+2026-04-15 22:25:58,821 - supervised_baseline - INFO - Epoch 8/36: loss=0.4701, dev_macro_f1=0.3280, dev_err=62.53%, es_counter=0
+2026-04-15 22:26:00,502 - supervised_baseline - INFO - Epoch 9/36: loss=0.3490, dev_macro_f1=0.3597, dev_err=56.39%, es_counter=0
+2026-04-15 22:26:02,180 - supervised_baseline - INFO - Epoch 10/36: loss=0.2258, dev_macro_f1=0.3086, dev_err=65.48%, es_counter=1
+2026-04-15 22:26:03,831 - supervised_baseline - INFO - Epoch 11/36: loss=0.1636, dev_macro_f1=0.3195, dev_err=60.69%, es_counter=2
+2026-04-15 22:26:05,488 - supervised_baseline - INFO - Epoch 12/36: loss=0.1066, dev_macro_f1=0.3496, dev_err=55.16%, es_counter=3
+2026-04-15 22:26:07,160 - supervised_baseline - INFO - Epoch 13/36: loss=0.0860, dev_macro_f1=0.3572, dev_err=52.70%, es_counter=4
+2026-04-15 22:26:08,854 - supervised_baseline - INFO - Epoch 14/36: loss=0.0686, dev_macro_f1=0.3704, dev_err=53.19%, es_counter=0
+2026-04-15 22:26:10,609 - supervised_baseline - INFO - Epoch 15/36: loss=0.0594, dev_macro_f1=0.3634, dev_err=53.93%, es_counter=1
+2026-04-15 22:26:12,270 - supervised_baseline - INFO - Epoch 16/36: loss=0.0474, dev_macro_f1=0.3560, dev_err=54.30%, es_counter=2
+2026-04-15 22:26:13,940 - supervised_baseline - INFO - Epoch 17/36: loss=0.0402, dev_macro_f1=0.3611, dev_err=54.18%, es_counter=3
+2026-04-15 22:26:15,609 - supervised_baseline - INFO - Epoch 18/36: loss=0.0368, dev_macro_f1=0.3597, dev_err=53.19%, es_counter=4
+2026-04-15 22:26:17,278 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 22:26:17,279 - supervised_baseline - INFO - Training done in 32s. Epochs: 19, Best epoch: 14
+2026-04-15 22:26:17,279 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:26:21,596 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpzoaf_9u8\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:26:21,596 - supervised_baseline - INFO - Test error rate: 54.42%, Test macro-F1: 0.3443, Test ECE: 0.3142
+2026-04-15 22:26:21,612 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzoaf_9u8\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:26:21,621 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzoaf_9u8\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:26:21,634 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.3704 ---
+2026-04-15 22:26:21,634 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 22:26:22,330 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:26:22,330 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:26:22,358 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:26:22,358 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:26:24,545 - supervised_baseline - INFO - Epoch 1/23: loss=2.1942, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:26:26,044 - supervised_baseline - INFO - Epoch 2/23: loss=2.2033, dev_macro_f1=0.0623, dev_err=89.68%, es_counter=0
+2026-04-15 22:26:27,531 - supervised_baseline - INFO - Epoch 3/23: loss=2.1125, dev_macro_f1=0.1379, dev_err=79.48%, es_counter=0
+2026-04-15 22:26:28,979 - supervised_baseline - INFO - Epoch 4/23: loss=2.0401, dev_macro_f1=0.0482, dev_err=96.93%, es_counter=1
+2026-04-15 22:26:30,424 - supervised_baseline - INFO - Epoch 5/23: loss=1.9159, dev_macro_f1=0.0121, dev_err=94.23%, es_counter=2
+2026-04-15 22:26:31,888 - supervised_baseline - INFO - Epoch 6/23: loss=2.4586, dev_macro_f1=0.1032, dev_err=82.68%, es_counter=3
+2026-04-15 22:26:33,346 - supervised_baseline - INFO - Epoch 7/23: loss=1.7668, dev_macro_f1=0.0269, dev_err=89.43%, es_counter=4
+2026-04-15 22:26:34,806 - supervised_baseline - INFO - Epoch 8/23: loss=2.7295, dev_macro_f1=0.1596, dev_err=45.45%, es_counter=0
+2026-04-15 22:26:36,273 - supervised_baseline - INFO - Epoch 9/23: loss=1.9179, dev_macro_f1=0.0131, dev_err=95.09%, es_counter=1
+2026-04-15 22:26:37,745 - supervised_baseline - INFO - Epoch 10/23: loss=2.6855, dev_macro_f1=0.0061, dev_err=98.16%, es_counter=2
+2026-04-15 22:26:39,204 - supervised_baseline - INFO - Epoch 11/23: loss=2.4074, dev_macro_f1=0.0305, dev_err=97.91%, es_counter=3
+2026-04-15 22:26:40,650 - supervised_baseline - INFO - Epoch 12/23: loss=2.2131, dev_macro_f1=0.0149, dev_err=98.77%, es_counter=4
+2026-04-15 22:26:42,102 - supervised_baseline - INFO - Early stopping at epoch 13
+2026-04-15 22:26:42,107 - supervised_baseline - INFO - Training done in 19s. Epochs: 13, Best epoch: 8
+2026-04-15 22:26:42,107 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:26:45,926 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp_ukzxi91\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:26:45,926 - supervised_baseline - INFO - Test error rate: 45.26%, Test macro-F1: 0.1596, Test ECE: 0.2960
+2026-04-15 22:26:45,942 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_ukzxi91\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:26:45,954 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_ukzxi91\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:26:45,961 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.1596 ---
+2026-04-15 22:26:45,961 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 22:26:46,604 - supervised_baseline - INFO - Starting Supervised Baseline: event=kerala_floods_2018, budget=5, seed_set=1
+2026-04-15 22:26:46,604 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 22:26:46,628 - supervised_baseline - INFO - Detected 9 classes for event kerala_floods_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:26:46,628 - supervised_baseline - INFO - Labeled: 45, Dev: 814, Test: 1582
+2026-04-15 22:26:48,857 - supervised_baseline - INFO - Epoch 1/66: loss=2.2187, dev_macro_f1=0.0257, dev_err=89.43%, es_counter=0
+2026-04-15 22:26:50,379 - supervised_baseline - INFO - Epoch 2/66: loss=2.1750, dev_macro_f1=0.0262, dev_err=89.31%, es_counter=0
+2026-04-15 22:26:51,917 - supervised_baseline - INFO - Epoch 3/66: loss=2.2085, dev_macro_f1=0.0260, dev_err=89.43%, es_counter=1
+2026-04-15 22:26:53,469 - supervised_baseline - INFO - Epoch 4/66: loss=2.1848, dev_macro_f1=0.0294, dev_err=88.82%, es_counter=0
+2026-04-15 22:26:54,988 - supervised_baseline - INFO - Epoch 5/66: loss=2.1881, dev_macro_f1=0.0385, dev_err=87.47%, es_counter=0
+2026-04-15 22:26:56,539 - supervised_baseline - INFO - Epoch 6/66: loss=2.1773, dev_macro_f1=0.0475, dev_err=85.26%, es_counter=0
+2026-04-15 22:26:58,070 - supervised_baseline - INFO - Epoch 7/66: loss=2.1657, dev_macro_f1=0.0563, dev_err=82.06%, es_counter=0
+2026-04-15 22:26:59,597 - supervised_baseline - INFO - Epoch 8/66: loss=2.1436, dev_macro_f1=0.0670, dev_err=77.52%, es_counter=0
+2026-04-15 22:27:01,109 - supervised_baseline - INFO - Epoch 9/66: loss=2.1637, dev_macro_f1=0.0782, dev_err=70.88%, es_counter=0
+2026-04-15 22:27:02,638 - supervised_baseline - INFO - Epoch 10/66: loss=2.1428, dev_macro_f1=0.0850, dev_err=68.06%, es_counter=0
+2026-04-15 22:27:04,152 - supervised_baseline - INFO - Epoch 11/66: loss=2.1184, dev_macro_f1=0.0889, dev_err=66.46%, es_counter=0
+2026-04-15 22:27:05,712 - supervised_baseline - INFO - Epoch 12/66: loss=2.1023, dev_macro_f1=0.0900, dev_err=62.65%, es_counter=0
+2026-04-15 22:27:07,266 - supervised_baseline - INFO - Epoch 13/66: loss=2.0685, dev_macro_f1=0.0994, dev_err=58.97%, es_counter=0
+2026-04-15 22:27:08,806 - supervised_baseline - INFO - Epoch 14/66: loss=2.0601, dev_macro_f1=0.1111, dev_err=56.88%, es_counter=0
+2026-04-15 22:27:10,331 - supervised_baseline - INFO - Epoch 15/66: loss=2.0493, dev_macro_f1=0.1262, dev_err=54.91%, es_counter=0
+2026-04-15 22:27:11,880 - supervised_baseline - INFO - Epoch 16/66: loss=2.0417, dev_macro_f1=0.1299, dev_err=57.25%, es_counter=0
+2026-04-15 22:27:13,423 - supervised_baseline - INFO - Epoch 17/66: loss=2.0095, dev_macro_f1=0.1469, dev_err=60.07%, es_counter=0
+2026-04-15 22:27:14,957 - supervised_baseline - INFO - Epoch 18/66: loss=1.9559, dev_macro_f1=0.1647, dev_err=62.90%, es_counter=0
+2026-04-15 22:27:16,502 - supervised_baseline - INFO - Epoch 19/66: loss=1.9506, dev_macro_f1=0.1933, dev_err=64.37%, es_counter=0
+2026-04-15 22:27:18,036 - supervised_baseline - INFO - Epoch 20/66: loss=1.9101, dev_macro_f1=0.2036, dev_err=67.44%, es_counter=0
+2026-04-15 22:27:19,592 - supervised_baseline - INFO - Epoch 21/66: loss=1.8904, dev_macro_f1=0.2160, dev_err=67.81%, es_counter=0
+2026-04-15 22:27:21,119 - supervised_baseline - INFO - Epoch 22/66: loss=1.8616, dev_macro_f1=0.2403, dev_err=67.94%, es_counter=0
+2026-04-15 22:27:22,664 - supervised_baseline - INFO - Epoch 23/66: loss=1.8478, dev_macro_f1=0.2438, dev_err=66.71%, es_counter=0
+2026-04-15 22:27:24,200 - supervised_baseline - INFO - Epoch 24/66: loss=1.7963, dev_macro_f1=0.2470, dev_err=65.23%, es_counter=0
+2026-04-15 22:27:25,723 - supervised_baseline - INFO - Epoch 25/66: loss=1.7893, dev_macro_f1=0.2544, dev_err=64.25%, es_counter=0
+2026-04-15 22:27:27,248 - supervised_baseline - INFO - Epoch 26/66: loss=1.7603, dev_macro_f1=0.2618, dev_err=63.14%, es_counter=0
+2026-04-15 22:27:28,779 - supervised_baseline - INFO - Epoch 27/66: loss=1.7170, dev_macro_f1=0.2619, dev_err=63.27%, es_counter=0
+2026-04-15 22:27:30,321 - supervised_baseline - INFO - Epoch 28/66: loss=1.7010, dev_macro_f1=0.2617, dev_err=63.88%, es_counter=1
+2026-04-15 22:27:31,892 - supervised_baseline - INFO - Epoch 29/66: loss=1.6663, dev_macro_f1=0.2627, dev_err=64.86%, es_counter=0
+2026-04-15 22:27:33,456 - supervised_baseline - INFO - Epoch 30/66: loss=1.6573, dev_macro_f1=0.2656, dev_err=64.99%, es_counter=0
+2026-04-15 22:27:34,992 - supervised_baseline - INFO - Epoch 31/66: loss=1.6577, dev_macro_f1=0.2680, dev_err=65.60%, es_counter=0
+2026-04-15 22:27:36,546 - supervised_baseline - INFO - Epoch 32/66: loss=1.6073, dev_macro_f1=0.2665, dev_err=66.34%, es_counter=1
+2026-04-15 22:27:38,111 - supervised_baseline - INFO - Epoch 33/66: loss=1.6128, dev_macro_f1=0.2586, dev_err=67.94%, es_counter=2
+2026-04-15 22:27:39,672 - supervised_baseline - INFO - Epoch 34/66: loss=1.5651, dev_macro_f1=0.2546, dev_err=70.27%, es_counter=3
+2026-04-15 22:27:41,214 - supervised_baseline - INFO - Epoch 35/66: loss=1.5479, dev_macro_f1=0.2507, dev_err=72.73%, es_counter=4
+2026-04-15 22:27:42,737 - supervised_baseline - INFO - Early stopping at epoch 36
+2026-04-15 22:27:42,742 - supervised_baseline - INFO - Training done in 56s. Epochs: 36, Best epoch: 31
+2026-04-15 22:27:42,742 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:27:46,751 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp7l0qrvas\kerala_floods_2018\5_set1\metrics.json
+2026-04-15 22:27:46,751 - supervised_baseline - INFO - Test error rate: 64.92%, Test macro-F1: 0.2469, Test ECE: 0.1918
+2026-04-15 22:27:46,770 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp7l0qrvas\kerala_floods_2018\5_set1\test_predictions.tsv (1582 samples)
+2026-04-15 22:27:46,780 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp7l0qrvas\kerala_floods_2018\5_set1\dev_predictions.tsv (814 samples)
+2026-04-15 22:27:46,789 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.2680 ---

@@ -1,0 +1,231 @@
+2026-04-15 19:19:13,278 - supervised_baseline - INFO - === Optuna study: hurricane_dorian_2019 budget=50 seed=2 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 19:19:13,279 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 19:19:13,894 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:19:13,894 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:19:13,935 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:19:13,935 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:19:17,895 - supervised_baseline - INFO - Epoch 1/39: loss=2.1828, dev_macro_f1=0.1931, dev_err=70.23%, es_counter=0
+2026-04-15 19:19:20,974 - supervised_baseline - INFO - Epoch 2/39: loss=1.7547, dev_macro_f1=0.4512, dev_err=47.29%, es_counter=0
+2026-04-15 19:19:24,058 - supervised_baseline - INFO - Epoch 3/39: loss=1.1965, dev_macro_f1=0.4317, dev_err=50.52%, es_counter=1
+2026-04-15 19:19:27,151 - supervised_baseline - INFO - Epoch 4/39: loss=1.2134, dev_macro_f1=0.5213, dev_err=42.78%, es_counter=0
+2026-04-15 19:19:30,235 - supervised_baseline - INFO - Epoch 5/39: loss=1.0727, dev_macro_f1=0.5264, dev_err=43.69%, es_counter=0
+2026-04-15 19:19:33,328 - supervised_baseline - INFO - Epoch 6/39: loss=2.0965, dev_macro_f1=0.0354, dev_err=81.06%, es_counter=1
+2026-04-15 19:19:36,420 - supervised_baseline - INFO - Epoch 7/39: loss=2.4371, dev_macro_f1=0.0212, dev_err=89.43%, es_counter=2
+2026-04-15 19:19:39,504 - supervised_baseline - INFO - Epoch 8/39: loss=2.2722, dev_macro_f1=0.0229, dev_err=88.53%, es_counter=3
+2026-04-15 19:19:42,602 - supervised_baseline - INFO - Epoch 9/39: loss=2.2585, dev_macro_f1=0.0212, dev_err=89.43%, es_counter=4
+2026-04-15 19:19:45,708 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 19:19:45,715 - supervised_baseline - INFO - Training done in 31s. Epochs: 10, Best epoch: 5
+2026-04-15 19:19:45,715 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:19:49,394 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpw49zub9x\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:19:49,394 - supervised_baseline - INFO - Test error rate: 43.63%, Test macro-F1: 0.5261, Test ECE: 0.2068
+2026-04-15 19:19:49,409 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpw49zub9x\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:19:49,419 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpw49zub9x\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:19:49,428 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.5264 ---
+2026-04-15 19:19:49,428 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 19:19:50,102 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:19:50,102 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:19:50,126 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:19:50,126 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:19:55,288 - supervised_baseline - INFO - Epoch 1/67: loss=2.2002, dev_macro_f1=0.0963, dev_err=79.77%, es_counter=0
+2026-04-15 19:19:59,749 - supervised_baseline - INFO - Epoch 2/67: loss=2.1739, dev_macro_f1=0.2997, dev_err=64.18%, es_counter=0
+2026-04-15 19:20:04,201 - supervised_baseline - INFO - Epoch 3/67: loss=2.0303, dev_macro_f1=0.4779, dev_err=49.10%, es_counter=0
+2026-04-15 19:20:08,650 - supervised_baseline - INFO - Epoch 4/67: loss=1.6046, dev_macro_f1=0.4353, dev_err=48.45%, es_counter=1
+2026-04-15 19:20:13,071 - supervised_baseline - INFO - Epoch 5/67: loss=1.1212, dev_macro_f1=0.5525, dev_err=38.92%, es_counter=0
+2026-04-15 19:20:17,513 - supervised_baseline - INFO - Epoch 6/67: loss=1.4445, dev_macro_f1=0.4578, dev_err=51.80%, es_counter=1
+2026-04-15 19:20:21,969 - supervised_baseline - INFO - Epoch 7/67: loss=2.1002, dev_macro_f1=0.0050, dev_err=97.68%, es_counter=2
+2026-04-15 19:20:26,417 - supervised_baseline - INFO - Epoch 8/67: loss=2.2383, dev_macro_f1=0.0212, dev_err=89.43%, es_counter=3
+2026-04-15 19:20:30,876 - supervised_baseline - INFO - Epoch 9/67: loss=2.2088, dev_macro_f1=0.0212, dev_err=89.43%, es_counter=4
+2026-04-15 19:20:35,339 - supervised_baseline - INFO - Early stopping at epoch 10
+2026-04-15 19:20:35,343 - supervised_baseline - INFO - Training done in 45s. Epochs: 10, Best epoch: 5
+2026-04-15 19:20:35,343 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:20:39,757 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpz2w7ddc3\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:20:39,757 - supervised_baseline - INFO - Test error rate: 38.66%, Test macro-F1: 0.5559, Test ECE: 0.1184
+2026-04-15 19:20:39,771 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz2w7ddc3\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:20:39,785 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpz2w7ddc3\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:20:39,791 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.5525 ---
+2026-04-15 19:20:39,791 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 19:20:40,451 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:20:40,451 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:20:40,474 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:20:40,475 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:20:45,001 - supervised_baseline - INFO - Epoch 1/94: loss=2.1898, dev_macro_f1=0.2208, dev_err=70.75%, es_counter=0
+2026-04-15 19:20:48,765 - supervised_baseline - INFO - Epoch 2/94: loss=1.8859, dev_macro_f1=0.4142, dev_err=51.29%, es_counter=0
+2026-04-15 19:20:52,525 - supervised_baseline - INFO - Epoch 3/94: loss=1.1666, dev_macro_f1=0.5015, dev_err=46.39%, es_counter=0
+2026-04-15 19:20:56,293 - supervised_baseline - INFO - Epoch 4/94: loss=0.8350, dev_macro_f1=0.5846, dev_err=35.70%, es_counter=0
+2026-04-15 19:21:00,054 - supervised_baseline - INFO - Epoch 5/94: loss=0.6398, dev_macro_f1=0.4734, dev_err=46.13%, es_counter=1
+2026-04-15 19:21:03,814 - supervised_baseline - INFO - Epoch 6/94: loss=0.8824, dev_macro_f1=0.4523, dev_err=48.97%, es_counter=2
+2026-04-15 19:21:07,581 - supervised_baseline - INFO - Epoch 7/94: loss=1.1376, dev_macro_f1=0.0948, dev_err=89.69%, es_counter=3
+2026-04-15 19:21:11,355 - supervised_baseline - INFO - Epoch 8/94: loss=2.0900, dev_macro_f1=0.1888, dev_err=71.91%, es_counter=4
+2026-04-15 19:21:15,098 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 19:21:15,103 - supervised_baseline - INFO - Training done in 34s. Epochs: 9, Best epoch: 4
+2026-04-15 19:21:15,103 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:21:19,154 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp3wrc27b1\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:21:19,154 - supervised_baseline - INFO - Test error rate: 39.85%, Test macro-F1: 0.5374, Test ECE: 0.1324
+2026-04-15 19:21:19,164 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp3wrc27b1\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:21:19,182 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp3wrc27b1\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:21:19,191 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.5846 ---
+2026-04-15 19:21:19,191 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 19:21:19,926 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:21:19,926 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:21:19,952 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:21:19,952 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:21:24,001 - supervised_baseline - INFO - Epoch 1/45: loss=2.1950, dev_macro_f1=0.0838, dev_err=78.99%, es_counter=0
+2026-04-15 19:21:27,317 - supervised_baseline - INFO - Epoch 2/45: loss=2.1497, dev_macro_f1=0.3600, dev_err=58.38%, es_counter=0
+2026-04-15 19:21:30,600 - supervised_baseline - INFO - Epoch 3/45: loss=1.9644, dev_macro_f1=0.5075, dev_err=41.62%, es_counter=0
+2026-04-15 19:21:33,910 - supervised_baseline - INFO - Epoch 4/45: loss=1.4999, dev_macro_f1=0.4874, dev_err=43.69%, es_counter=1
+2026-04-15 19:21:37,244 - supervised_baseline - INFO - Epoch 5/45: loss=1.0356, dev_macro_f1=0.5531, dev_err=40.85%, es_counter=0
+2026-04-15 19:21:40,531 - supervised_baseline - INFO - Epoch 6/45: loss=0.6287, dev_macro_f1=0.6021, dev_err=35.70%, es_counter=0
+2026-04-15 19:21:43,842 - supervised_baseline - INFO - Epoch 7/45: loss=0.3906, dev_macro_f1=0.5828, dev_err=38.02%, es_counter=1
+2026-04-15 19:21:47,121 - supervised_baseline - INFO - Epoch 8/45: loss=0.2459, dev_macro_f1=0.5811, dev_err=37.37%, es_counter=2
+2026-04-15 19:21:50,399 - supervised_baseline - INFO - Epoch 9/45: loss=0.1544, dev_macro_f1=0.5806, dev_err=39.69%, es_counter=3
+2026-04-15 19:21:53,730 - supervised_baseline - INFO - Epoch 10/45: loss=0.1924, dev_macro_f1=0.5618, dev_err=39.69%, es_counter=4
+2026-04-15 19:21:57,023 - supervised_baseline - INFO - Early stopping at epoch 11
+2026-04-15 19:21:57,026 - supervised_baseline - INFO - Training done in 37s. Epochs: 11, Best epoch: 6
+2026-04-15 19:21:57,026 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:22:00,803 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpuv1d0vcg\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:22:00,803 - supervised_baseline - INFO - Test error rate: 34.95%, Test macro-F1: 0.5946, Test ECE: 0.0731
+2026-04-15 19:22:00,821 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpuv1d0vcg\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:22:00,830 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpuv1d0vcg\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:22:00,839 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.6021 ---
+2026-04-15 19:22:00,839 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 19:22:01,462 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:22:01,462 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:22:01,487 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:22:01,487 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:22:05,363 - supervised_baseline - INFO - Epoch 1/68: loss=2.2002, dev_macro_f1=0.1161, dev_err=76.42%, es_counter=0
+2026-04-15 19:22:08,443 - supervised_baseline - INFO - Epoch 2/68: loss=2.1285, dev_macro_f1=0.3256, dev_err=61.60%, es_counter=0
+2026-04-15 19:22:11,521 - supervised_baseline - INFO - Epoch 3/68: loss=1.8256, dev_macro_f1=0.5224, dev_err=40.98%, es_counter=0
+2026-04-15 19:22:14,600 - supervised_baseline - INFO - Epoch 4/68: loss=1.2829, dev_macro_f1=0.5916, dev_err=37.76%, es_counter=0
+2026-04-15 19:22:17,636 - supervised_baseline - INFO - Epoch 5/68: loss=0.8252, dev_macro_f1=0.5658, dev_err=39.69%, es_counter=1
+2026-04-15 19:22:20,686 - supervised_baseline - INFO - Epoch 6/68: loss=0.5737, dev_macro_f1=0.5323, dev_err=43.04%, es_counter=2
+2026-04-15 19:22:23,792 - supervised_baseline - INFO - Epoch 7/68: loss=0.4765, dev_macro_f1=0.5834, dev_err=42.53%, es_counter=3
+2026-04-15 19:22:26,861 - supervised_baseline - INFO - Epoch 8/68: loss=0.3398, dev_macro_f1=0.5428, dev_err=43.69%, es_counter=4
+2026-04-15 19:22:29,950 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 19:22:29,954 - supervised_baseline - INFO - Training done in 28s. Epochs: 9, Best epoch: 4
+2026-04-15 19:22:29,954 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:22:33,634 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmph8exer82\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:22:33,634 - supervised_baseline - INFO - Test error rate: 39.26%, Test macro-F1: 0.5589, Test ECE: 0.1243
+2026-04-15 19:22:33,652 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmph8exer82\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:22:33,662 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmph8exer82\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:22:33,672 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.5916 ---
+2026-04-15 19:22:33,672 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 19:22:34,270 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:22:34,270 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:22:34,298 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:22:34,298 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:22:38,972 - supervised_baseline - INFO - Epoch 1/54: loss=2.1672, dev_macro_f1=0.3488, dev_err=59.41%, es_counter=0
+2026-04-15 19:22:42,725 - supervised_baseline - INFO - Epoch 2/54: loss=1.5695, dev_macro_f1=0.4818, dev_err=47.16%, es_counter=0
+2026-04-15 19:22:46,482 - supervised_baseline - INFO - Epoch 3/54: loss=1.0728, dev_macro_f1=0.5106, dev_err=48.71%, es_counter=0
+2026-04-15 19:22:50,251 - supervised_baseline - INFO - Epoch 4/54: loss=1.1486, dev_macro_f1=0.3983, dev_err=56.06%, es_counter=1
+2026-04-15 19:22:54,002 - supervised_baseline - INFO - Epoch 5/54: loss=2.0351, dev_macro_f1=0.0276, dev_err=85.82%, es_counter=2
+2026-04-15 19:22:57,740 - supervised_baseline - INFO - Epoch 6/54: loss=2.2740, dev_macro_f1=0.0340, dev_err=81.96%, es_counter=3
+2026-04-15 19:23:01,469 - supervised_baseline - INFO - Epoch 7/54: loss=2.3034, dev_macro_f1=0.0050, dev_err=97.68%, es_counter=4
+2026-04-15 19:23:05,231 - supervised_baseline - INFO - Early stopping at epoch 8
+2026-04-15 19:23:05,236 - supervised_baseline - INFO - Training done in 30s. Epochs: 8, Best epoch: 3
+2026-04-15 19:23:05,236 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:23:09,365 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp20r1dcyt\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:23:09,365 - supervised_baseline - INFO - Test error rate: 50.20%, Test macro-F1: 0.4781, Test ECE: 0.0789
+2026-04-15 19:23:09,383 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp20r1dcyt\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:23:09,389 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp20r1dcyt\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:23:09,397 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.5106 ---
+2026-04-15 19:23:09,398 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 19:23:10,117 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:23:10,117 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:23:10,139 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:23:10,139 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:23:14,031 - supervised_baseline - INFO - Epoch 1/53: loss=2.2018, dev_macro_f1=0.0739, dev_err=79.38%, es_counter=0
+2026-04-15 19:23:17,109 - supervised_baseline - INFO - Epoch 2/53: loss=2.1608, dev_macro_f1=0.2347, dev_err=67.53%, es_counter=0
+2026-04-15 19:23:20,207 - supervised_baseline - INFO - Epoch 3/53: loss=1.9901, dev_macro_f1=0.5099, dev_err=43.56%, es_counter=0
+2026-04-15 19:23:23,313 - supervised_baseline - INFO - Epoch 4/53: loss=1.6076, dev_macro_f1=0.5058, dev_err=45.36%, es_counter=1
+2026-04-15 19:23:26,374 - supervised_baseline - INFO - Epoch 5/53: loss=1.1495, dev_macro_f1=0.5549, dev_err=40.98%, es_counter=0
+2026-04-15 19:23:29,482 - supervised_baseline - INFO - Epoch 6/53: loss=0.7116, dev_macro_f1=0.5670, dev_err=38.92%, es_counter=0
+2026-04-15 19:23:32,546 - supervised_baseline - INFO - Epoch 7/53: loss=0.4210, dev_macro_f1=0.5705, dev_err=39.18%, es_counter=0
+2026-04-15 19:23:35,625 - supervised_baseline - INFO - Epoch 8/53: loss=0.3209, dev_macro_f1=0.5750, dev_err=40.34%, es_counter=0
+2026-04-15 19:23:38,720 - supervised_baseline - INFO - Epoch 9/53: loss=0.1971, dev_macro_f1=0.6075, dev_err=35.18%, es_counter=0
+2026-04-15 19:23:41,775 - supervised_baseline - INFO - Epoch 10/53: loss=0.1853, dev_macro_f1=0.5702, dev_err=37.50%, es_counter=1
+2026-04-15 19:23:44,837 - supervised_baseline - INFO - Epoch 11/53: loss=0.1319, dev_macro_f1=0.5815, dev_err=37.76%, es_counter=2
+2026-04-15 19:23:47,929 - supervised_baseline - INFO - Epoch 12/53: loss=0.0840, dev_macro_f1=0.5692, dev_err=39.43%, es_counter=3
+2026-04-15 19:23:51,011 - supervised_baseline - INFO - Epoch 13/53: loss=0.0906, dev_macro_f1=0.5466, dev_err=40.34%, es_counter=4
+2026-04-15 19:23:54,059 - supervised_baseline - INFO - Early stopping at epoch 14
+2026-04-15 19:23:54,065 - supervised_baseline - INFO - Training done in 43s. Epochs: 14, Best epoch: 9
+2026-04-15 19:23:54,065 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:23:57,695 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp1rp0hx84\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:23:57,695 - supervised_baseline - INFO - Test error rate: 35.28%, Test macro-F1: 0.5951, Test ECE: 0.2039
+2026-04-15 19:23:57,713 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp1rp0hx84\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:23:57,723 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp1rp0hx84\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:23:57,732 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.6075 ---
+2026-04-15 19:23:57,733 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 19:23:58,376 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:23:58,376 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:23:58,394 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:23:58,394 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:24:03,515 - supervised_baseline - INFO - Epoch 1/94: loss=2.1975, dev_macro_f1=0.1547, dev_err=77.45%, es_counter=0
+2026-04-15 19:24:07,906 - supervised_baseline - INFO - Epoch 2/94: loss=2.1226, dev_macro_f1=0.4424, dev_err=54.51%, es_counter=0
+2026-04-15 19:24:12,329 - supervised_baseline - INFO - Epoch 3/94: loss=1.6934, dev_macro_f1=0.4902, dev_err=42.65%, es_counter=0
+2026-04-15 19:24:16,754 - supervised_baseline - INFO - Epoch 4/94: loss=1.1149, dev_macro_f1=0.5653, dev_err=38.79%, es_counter=0
+2026-04-15 19:24:21,146 - supervised_baseline - INFO - Epoch 5/94: loss=0.7102, dev_macro_f1=0.5134, dev_err=44.33%, es_counter=1
+2026-04-15 19:24:25,607 - supervised_baseline - INFO - Epoch 6/94: loss=0.4653, dev_macro_f1=0.5774, dev_err=38.66%, es_counter=0
+2026-04-15 19:24:30,029 - supervised_baseline - INFO - Epoch 7/94: loss=0.4195, dev_macro_f1=0.5968, dev_err=37.89%, es_counter=0
+2026-04-15 19:24:34,438 - supervised_baseline - INFO - Epoch 8/94: loss=0.6053, dev_macro_f1=0.4662, dev_err=47.55%, es_counter=1
+2026-04-15 19:24:38,829 - supervised_baseline - INFO - Epoch 9/94: loss=0.6391, dev_macro_f1=0.5124, dev_err=46.01%, es_counter=2
+2026-04-15 19:24:43,298 - supervised_baseline - INFO - Epoch 10/94: loss=0.3324, dev_macro_f1=0.5718, dev_err=40.21%, es_counter=3
+2026-04-15 19:24:47,764 - supervised_baseline - INFO - Epoch 11/94: loss=0.1624, dev_macro_f1=0.5403, dev_err=41.11%, es_counter=4
+2026-04-15 19:24:52,175 - supervised_baseline - INFO - Early stopping at epoch 12
+2026-04-15 19:24:52,181 - supervised_baseline - INFO - Training done in 53s. Epochs: 12, Best epoch: 7
+2026-04-15 19:24:52,181 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:24:56,544 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp161loxvt\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:24:56,544 - supervised_baseline - INFO - Test error rate: 37.86%, Test macro-F1: 0.5828, Test ECE: 0.1813
+2026-04-15 19:24:56,562 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp161loxvt\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:24:56,571 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp161loxvt\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:24:56,581 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.5968 ---
+2026-04-15 19:24:56,581 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 19:24:57,232 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:24:57,232 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:24:57,254 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:24:57,254 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:25:01,787 - supervised_baseline - INFO - Epoch 1/76: loss=2.2050, dev_macro_f1=0.0645, dev_err=80.93%, es_counter=0
+2026-04-15 19:25:05,617 - supervised_baseline - INFO - Epoch 2/76: loss=2.1928, dev_macro_f1=0.0759, dev_err=80.41%, es_counter=0
+2026-04-15 19:25:09,378 - supervised_baseline - INFO - Epoch 3/76: loss=2.1722, dev_macro_f1=0.2113, dev_err=70.62%, es_counter=0
+2026-04-15 19:25:13,155 - supervised_baseline - INFO - Epoch 4/76: loss=2.1141, dev_macro_f1=0.4147, dev_err=52.32%, es_counter=0
+2026-04-15 19:25:16,955 - supervised_baseline - INFO - Epoch 5/76: loss=1.9565, dev_macro_f1=0.5225, dev_err=44.72%, es_counter=0
+2026-04-15 19:25:20,739 - supervised_baseline - INFO - Epoch 6/76: loss=1.6619, dev_macro_f1=0.5405, dev_err=39.82%, es_counter=0
+2026-04-15 19:25:24,526 - supervised_baseline - INFO - Epoch 7/76: loss=1.3223, dev_macro_f1=0.5624, dev_err=38.66%, es_counter=0
+2026-04-15 19:25:28,323 - supervised_baseline - INFO - Epoch 8/76: loss=1.0029, dev_macro_f1=0.6005, dev_err=34.92%, es_counter=0
+2026-04-15 19:25:32,084 - supervised_baseline - INFO - Epoch 9/76: loss=0.7385, dev_macro_f1=0.5915, dev_err=37.63%, es_counter=1
+2026-04-15 19:25:35,858 - supervised_baseline - INFO - Epoch 10/76: loss=0.5365, dev_macro_f1=0.5989, dev_err=36.86%, es_counter=2
+2026-04-15 19:25:39,628 - supervised_baseline - INFO - Epoch 11/76: loss=0.3951, dev_macro_f1=0.5931, dev_err=37.37%, es_counter=3
+2026-04-15 19:25:43,379 - supervised_baseline - INFO - Epoch 12/76: loss=0.3324, dev_macro_f1=0.5822, dev_err=39.05%, es_counter=4
+2026-04-15 19:25:47,153 - supervised_baseline - INFO - Early stopping at epoch 13
+2026-04-15 19:25:47,160 - supervised_baseline - INFO - Training done in 49s. Epochs: 13, Best epoch: 8
+2026-04-15 19:25:47,160 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:25:51,268 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpetn0ulgf\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:25:51,269 - supervised_baseline - INFO - Test error rate: 36.80%, Test macro-F1: 0.5726, Test ECE: 0.1484
+2026-04-15 19:25:51,289 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpetn0ulgf\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:25:51,299 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpetn0ulgf\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:25:51,309 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.6005 ---
+2026-04-15 19:25:51,309 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 19:25:51,960 - supervised_baseline - INFO - Starting Supervised Baseline: event=hurricane_dorian_2019, budget=50, seed_set=2
+2026-04-15 19:25:51,960 - supervised_baseline - INFO - Using device: cuda:1, model: vinai/bertweet-base
+2026-04-15 19:25:51,988 - supervised_baseline - INFO - Detected 9 classes for event hurricane_dorian_2019: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 19:25:51,988 - supervised_baseline - INFO - Labeled: 442, Dev: 776, Test: 1508
+2026-04-15 19:25:56,522 - supervised_baseline - INFO - Epoch 1/56: loss=2.2041, dev_macro_f1=0.0685, dev_err=80.67%, es_counter=0
+2026-04-15 19:26:00,313 - supervised_baseline - INFO - Epoch 2/56: loss=2.1836, dev_macro_f1=0.1523, dev_err=74.87%, es_counter=0
+2026-04-15 19:26:04,130 - supervised_baseline - INFO - Epoch 3/56: loss=2.1259, dev_macro_f1=0.4266, dev_err=53.09%, es_counter=0
+2026-04-15 19:26:07,882 - supervised_baseline - INFO - Epoch 4/56: loss=1.9120, dev_macro_f1=0.4642, dev_err=46.65%, es_counter=0
+2026-04-15 19:26:11,664 - supervised_baseline - INFO - Epoch 5/56: loss=1.5236, dev_macro_f1=0.4927, dev_err=44.46%, es_counter=0
+2026-04-15 19:26:15,423 - supervised_baseline - INFO - Epoch 6/56: loss=1.0691, dev_macro_f1=0.5545, dev_err=39.56%, es_counter=0
+2026-04-15 19:26:19,208 - supervised_baseline - INFO - Epoch 7/56: loss=0.8136, dev_macro_f1=0.5556, dev_err=40.59%, es_counter=0
+2026-04-15 19:26:22,951 - supervised_baseline - INFO - Epoch 8/56: loss=0.5954, dev_macro_f1=0.5991, dev_err=37.24%, es_counter=0
+2026-04-15 19:26:26,738 - supervised_baseline - INFO - Epoch 9/56: loss=0.3972, dev_macro_f1=0.6227, dev_err=33.51%, es_counter=0
+2026-04-15 19:26:30,496 - supervised_baseline - INFO - Epoch 10/56: loss=0.2698, dev_macro_f1=0.5961, dev_err=36.73%, es_counter=1
+2026-04-15 19:26:34,248 - supervised_baseline - INFO - Epoch 11/56: loss=0.1770, dev_macro_f1=0.6010, dev_err=37.37%, es_counter=2
+2026-04-15 19:26:38,008 - supervised_baseline - INFO - Epoch 12/56: loss=0.1286, dev_macro_f1=0.6094, dev_err=35.95%, es_counter=3
+2026-04-15 19:26:41,719 - supervised_baseline - INFO - Epoch 13/56: loss=0.1013, dev_macro_f1=0.6084, dev_err=34.92%, es_counter=4
+2026-04-15 19:26:45,493 - supervised_baseline - INFO - Early stopping at epoch 14
+2026-04-15 19:26:45,498 - supervised_baseline - INFO - Training done in 53s. Epochs: 14, Best epoch: 9
+2026-04-15 19:26:45,498 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 19:26:49,572 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpk6ph47df\hurricane_dorian_2019\50_set2\metrics.json
+2026-04-15 19:26:49,572 - supervised_baseline - INFO - Test error rate: 35.48%, Test macro-F1: 0.5944, Test ECE: 0.0775
+2026-04-15 19:26:49,585 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpk6ph47df\hurricane_dorian_2019\50_set2\test_predictions.tsv (1508 samples)
+2026-04-15 19:26:49,594 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpk6ph47df\hurricane_dorian_2019\50_set2\dev_predictions.tsv (776 samples)
+2026-04-15 19:26:49,599 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.6227 ---

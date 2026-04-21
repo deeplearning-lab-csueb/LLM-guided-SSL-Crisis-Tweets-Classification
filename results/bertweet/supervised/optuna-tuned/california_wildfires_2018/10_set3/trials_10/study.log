@@ -1,0 +1,335 @@
+2026-04-15 21:53:05,517 - supervised_baseline - INFO - === Optuna study: california_wildfires_2018 budget=10 seed=3 | target=10 trials, 0 replayed, 10 new ===
+2026-04-15 21:53:05,517 - supervised_baseline - INFO - --- Trial 1/10 ---
+2026-04-15 21:53:06,271 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:53:06,271 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:53:06,308 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:53:06,308 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:53:09,030 - supervised_baseline - INFO - Epoch 1/44: loss=2.3435, dev_macro_f1=0.0600, dev_err=87.90%, es_counter=0
+2026-04-15 21:53:11,014 - supervised_baseline - INFO - Epoch 2/44: loss=2.2935, dev_macro_f1=0.0241, dev_err=94.02%, es_counter=1
+2026-04-15 21:53:13,012 - supervised_baseline - INFO - Epoch 3/44: loss=2.1553, dev_macro_f1=0.0330, dev_err=96.28%, es_counter=2
+2026-04-15 21:53:15,017 - supervised_baseline - INFO - Epoch 4/44: loss=2.0918, dev_macro_f1=0.2358, dev_err=62.50%, es_counter=0
+2026-04-15 21:53:17,011 - supervised_baseline - INFO - Epoch 5/44: loss=2.0372, dev_macro_f1=0.0706, dev_err=89.10%, es_counter=1
+2026-04-15 21:53:19,016 - supervised_baseline - INFO - Epoch 6/44: loss=1.7811, dev_macro_f1=0.1082, dev_err=89.49%, es_counter=2
+2026-04-15 21:53:21,023 - supervised_baseline - INFO - Epoch 7/44: loss=2.3304, dev_macro_f1=0.0768, dev_err=82.31%, es_counter=3
+2026-04-15 21:53:23,012 - supervised_baseline - INFO - Epoch 8/44: loss=2.3033, dev_macro_f1=0.0543, dev_err=92.55%, es_counter=4
+2026-04-15 21:53:25,002 - supervised_baseline - INFO - Early stopping at epoch 9
+2026-04-15 21:53:25,007 - supervised_baseline - INFO - Training done in 18s. Epochs: 9, Best epoch: 4
+2026-04-15 21:53:25,008 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:53:29,285 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp3pi_pmrs\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:53:29,285 - supervised_baseline - INFO - Test error rate: 65.98%, Test macro-F1: 0.2087, Test ECE: 0.1074
+2026-04-15 21:53:29,298 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp3pi_pmrs\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:53:29,309 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp3pi_pmrs\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:53:29,318 - supervised_baseline - INFO - --- Trial 1/10 done: dev_macro_f1=0.2358 ---
+2026-04-15 21:53:29,318 - supervised_baseline - INFO - --- Trial 2/10 ---
+2026-04-15 21:53:29,983 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:53:29,983 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:53:30,011 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:53:30,011 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:53:32,906 - supervised_baseline - INFO - Epoch 1/83: loss=2.3162, dev_macro_f1=0.0421, dev_err=88.03%, es_counter=0
+2026-04-15 21:53:35,045 - supervised_baseline - INFO - Epoch 2/83: loss=2.2946, dev_macro_f1=0.0640, dev_err=84.44%, es_counter=0
+2026-04-15 21:53:37,153 - supervised_baseline - INFO - Epoch 3/83: loss=2.2818, dev_macro_f1=0.0571, dev_err=90.69%, es_counter=1
+2026-04-15 21:53:39,291 - supervised_baseline - INFO - Epoch 4/83: loss=2.2378, dev_macro_f1=0.0853, dev_err=90.56%, es_counter=0
+2026-04-15 21:53:41,402 - supervised_baseline - INFO - Epoch 5/83: loss=2.1586, dev_macro_f1=0.1481, dev_err=82.45%, es_counter=0
+2026-04-15 21:53:43,534 - supervised_baseline - INFO - Epoch 6/83: loss=1.9856, dev_macro_f1=0.2885, dev_err=67.95%, es_counter=0
+2026-04-15 21:53:45,654 - supervised_baseline - INFO - Epoch 7/83: loss=1.7504, dev_macro_f1=0.3313, dev_err=60.51%, es_counter=0
+2026-04-15 21:53:47,787 - supervised_baseline - INFO - Epoch 8/83: loss=1.4317, dev_macro_f1=0.4437, dev_err=45.48%, es_counter=0
+2026-04-15 21:53:49,926 - supervised_baseline - INFO - Epoch 9/83: loss=1.1481, dev_macro_f1=0.4613, dev_err=45.48%, es_counter=0
+2026-04-15 21:53:52,036 - supervised_baseline - INFO - Epoch 10/83: loss=0.8894, dev_macro_f1=0.4481, dev_err=45.74%, es_counter=1
+2026-04-15 21:53:54,194 - supervised_baseline - INFO - Epoch 11/83: loss=0.7142, dev_macro_f1=0.4643, dev_err=44.02%, es_counter=0
+2026-04-15 21:53:56,298 - supervised_baseline - INFO - Epoch 12/83: loss=0.4841, dev_macro_f1=0.4445, dev_err=49.07%, es_counter=1
+2026-04-15 21:53:58,438 - supervised_baseline - INFO - Epoch 13/83: loss=0.3554, dev_macro_f1=0.4644, dev_err=44.95%, es_counter=0
+2026-04-15 21:54:00,563 - supervised_baseline - INFO - Epoch 14/83: loss=0.2606, dev_macro_f1=0.4499, dev_err=48.01%, es_counter=1
+2026-04-15 21:54:02,692 - supervised_baseline - INFO - Epoch 15/83: loss=0.2020, dev_macro_f1=0.4552, dev_err=46.54%, es_counter=2
+2026-04-15 21:54:04,827 - supervised_baseline - INFO - Epoch 16/83: loss=0.1621, dev_macro_f1=0.4520, dev_err=47.74%, es_counter=3
+2026-04-15 21:54:06,964 - supervised_baseline - INFO - Epoch 17/83: loss=0.1358, dev_macro_f1=0.4462, dev_err=47.87%, es_counter=4
+2026-04-15 21:54:09,086 - supervised_baseline - INFO - Early stopping at epoch 18
+2026-04-15 21:54:09,094 - supervised_baseline - INFO - Training done in 38s. Epochs: 18, Best epoch: 13
+2026-04-15 21:54:09,094 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:54:13,619 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpoelyhhae\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:54:13,619 - supervised_baseline - INFO - Test error rate: 46.13%, Test macro-F1: 0.4616, Test ECE: 0.0605
+2026-04-15 21:54:13,637 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpoelyhhae\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:54:13,647 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpoelyhhae\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:54:13,656 - supervised_baseline - INFO - --- Trial 2/10 done: dev_macro_f1=0.4644 ---
+2026-04-15 21:54:13,656 - supervised_baseline - INFO - --- Trial 3/10 ---
+2026-04-15 21:54:14,443 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:54:14,443 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:54:14,468 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:54:14,468 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:54:17,271 - supervised_baseline - INFO - Epoch 1/58: loss=2.3174, dev_macro_f1=0.0419, dev_err=87.77%, es_counter=0
+2026-04-15 21:54:19,411 - supervised_baseline - INFO - Epoch 2/58: loss=2.2910, dev_macro_f1=0.0689, dev_err=83.91%, es_counter=0
+2026-04-15 21:54:21,567 - supervised_baseline - INFO - Epoch 3/58: loss=2.2539, dev_macro_f1=0.0770, dev_err=89.89%, es_counter=0
+2026-04-15 21:54:23,703 - supervised_baseline - INFO - Epoch 4/58: loss=2.1612, dev_macro_f1=0.1847, dev_err=79.52%, es_counter=0
+2026-04-15 21:54:25,842 - supervised_baseline - INFO - Epoch 5/58: loss=1.9611, dev_macro_f1=0.2723, dev_err=68.48%, es_counter=0
+2026-04-15 21:54:28,008 - supervised_baseline - INFO - Epoch 6/58: loss=1.6471, dev_macro_f1=0.3501, dev_err=63.56%, es_counter=0
+2026-04-15 21:54:30,148 - supervised_baseline - INFO - Epoch 7/58: loss=1.3106, dev_macro_f1=0.3056, dev_err=63.56%, es_counter=1
+2026-04-15 21:54:32,304 - supervised_baseline - INFO - Epoch 8/58: loss=0.9424, dev_macro_f1=0.4317, dev_err=45.35%, es_counter=0
+2026-04-15 21:54:34,451 - supervised_baseline - INFO - Epoch 9/58: loss=0.7033, dev_macro_f1=0.4564, dev_err=45.88%, es_counter=0
+2026-04-15 21:54:36,585 - supervised_baseline - INFO - Epoch 10/58: loss=0.5051, dev_macro_f1=0.4848, dev_err=40.82%, es_counter=0
+2026-04-15 21:54:38,710 - supervised_baseline - INFO - Epoch 11/58: loss=0.3550, dev_macro_f1=0.4272, dev_err=51.99%, es_counter=1
+2026-04-15 21:54:40,875 - supervised_baseline - INFO - Epoch 12/58: loss=0.2469, dev_macro_f1=0.5112, dev_err=40.82%, es_counter=0
+2026-04-15 21:54:43,002 - supervised_baseline - INFO - Epoch 13/58: loss=0.1950, dev_macro_f1=0.4754, dev_err=47.34%, es_counter=1
+2026-04-15 21:54:45,141 - supervised_baseline - INFO - Epoch 14/58: loss=0.1476, dev_macro_f1=0.4731, dev_err=48.27%, es_counter=2
+2026-04-15 21:54:47,266 - supervised_baseline - INFO - Epoch 15/58: loss=0.1159, dev_macro_f1=0.5019, dev_err=42.82%, es_counter=3
+2026-04-15 21:54:49,412 - supervised_baseline - INFO - Epoch 16/58: loss=0.0983, dev_macro_f1=0.5006, dev_err=42.69%, es_counter=4
+2026-04-15 21:54:51,562 - supervised_baseline - INFO - Early stopping at epoch 17
+2026-04-15 21:54:51,566 - supervised_baseline - INFO - Training done in 37s. Epochs: 17, Best epoch: 12
+2026-04-15 21:54:51,566 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:54:56,056 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpv6ns15vu\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:54:56,056 - supervised_baseline - INFO - Test error rate: 42.51%, Test macro-F1: 0.4905, Test ECE: 0.0871
+2026-04-15 21:54:56,068 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpv6ns15vu\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:54:56,077 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpv6ns15vu\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:54:56,087 - supervised_baseline - INFO - --- Trial 3/10 done: dev_macro_f1=0.5112 ---
+2026-04-15 21:54:56,087 - supervised_baseline - INFO - --- Trial 4/10 ---
+2026-04-15 21:54:56,751 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:54:56,751 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:54:56,777 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:54:56,777 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:54:59,603 - supervised_baseline - INFO - Epoch 1/50: loss=2.3198, dev_macro_f1=0.0442, dev_err=87.10%, es_counter=0
+2026-04-15 21:55:01,745 - supervised_baseline - INFO - Epoch 2/50: loss=2.2876, dev_macro_f1=0.0380, dev_err=85.64%, es_counter=1
+2026-04-15 21:55:03,894 - supervised_baseline - INFO - Epoch 3/50: loss=2.1902, dev_macro_f1=0.1634, dev_err=82.58%, es_counter=0
+2026-04-15 21:55:06,019 - supervised_baseline - INFO - Epoch 4/50: loss=1.9852, dev_macro_f1=0.3247, dev_err=65.03%, es_counter=0
+2026-04-15 21:55:08,155 - supervised_baseline - INFO - Epoch 5/50: loss=1.5956, dev_macro_f1=0.3144, dev_err=63.56%, es_counter=1
+2026-04-15 21:55:10,272 - supervised_baseline - INFO - Epoch 6/50: loss=1.1861, dev_macro_f1=0.3027, dev_err=71.54%, es_counter=2
+2026-04-15 21:55:12,445 - supervised_baseline - INFO - Epoch 7/50: loss=0.8160, dev_macro_f1=0.3854, dev_err=55.45%, es_counter=0
+2026-04-15 21:55:14,577 - supervised_baseline - INFO - Epoch 8/50: loss=0.5070, dev_macro_f1=0.4670, dev_err=43.09%, es_counter=0
+2026-04-15 21:55:16,725 - supervised_baseline - INFO - Epoch 9/50: loss=0.3590, dev_macro_f1=0.4275, dev_err=50.93%, es_counter=1
+2026-04-15 21:55:18,869 - supervised_baseline - INFO - Epoch 10/50: loss=0.2178, dev_macro_f1=0.4268, dev_err=51.99%, es_counter=2
+2026-04-15 21:55:21,017 - supervised_baseline - INFO - Epoch 11/50: loss=0.1487, dev_macro_f1=0.4634, dev_err=45.21%, es_counter=3
+2026-04-15 21:55:23,186 - supervised_baseline - INFO - Epoch 12/50: loss=0.1192, dev_macro_f1=0.3773, dev_err=58.38%, es_counter=4
+2026-04-15 21:55:25,386 - supervised_baseline - INFO - Epoch 13/50: loss=0.0870, dev_macro_f1=0.5034, dev_err=43.62%, es_counter=0
+2026-04-15 21:55:27,576 - supervised_baseline - INFO - Epoch 14/50: loss=0.0734, dev_macro_f1=0.3971, dev_err=56.65%, es_counter=1
+2026-04-15 21:55:29,871 - supervised_baseline - INFO - Epoch 15/50: loss=0.0513, dev_macro_f1=0.3804, dev_err=57.18%, es_counter=2
+2026-04-15 21:55:32,120 - supervised_baseline - INFO - Epoch 16/50: loss=0.0406, dev_macro_f1=0.4156, dev_err=52.26%, es_counter=3
+2026-04-15 21:55:34,410 - supervised_baseline - INFO - Epoch 17/50: loss=0.0357, dev_macro_f1=0.4340, dev_err=50.80%, es_counter=4
+2026-04-15 21:55:36,659 - supervised_baseline - INFO - Early stopping at epoch 18
+2026-04-15 21:55:36,665 - supervised_baseline - INFO - Training done in 39s. Epochs: 18, Best epoch: 13
+2026-04-15 21:55:36,665 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:55:41,387 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmprm4w77hr\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:55:41,387 - supervised_baseline - INFO - Test error rate: 46.89%, Test macro-F1: 0.4705, Test ECE: 0.2715
+2026-04-15 21:55:41,408 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmprm4w77hr\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:55:41,420 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmprm4w77hr\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:55:41,430 - supervised_baseline - INFO - --- Trial 4/10 done: dev_macro_f1=0.5034 ---
+2026-04-15 21:55:41,430 - supervised_baseline - INFO - --- Trial 5/10 ---
+2026-04-15 21:55:42,148 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:55:42,148 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:55:42,166 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:55:42,167 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:55:45,451 - supervised_baseline - INFO - Epoch 1/44: loss=2.3271, dev_macro_f1=0.0238, dev_err=93.35%, es_counter=0
+2026-04-15 21:55:47,980 - supervised_baseline - INFO - Epoch 2/44: loss=2.3028, dev_macro_f1=0.1026, dev_err=86.70%, es_counter=0
+2026-04-15 21:55:50,491 - supervised_baseline - INFO - Epoch 3/44: loss=2.0861, dev_macro_f1=0.2261, dev_err=69.68%, es_counter=0
+2026-04-15 21:55:53,044 - supervised_baseline - INFO - Epoch 4/44: loss=1.6476, dev_macro_f1=0.3480, dev_err=61.04%, es_counter=0
+2026-04-15 21:55:55,570 - supervised_baseline - INFO - Epoch 5/44: loss=1.0723, dev_macro_f1=0.4216, dev_err=53.99%, es_counter=0
+2026-04-15 21:55:58,083 - supervised_baseline - INFO - Epoch 6/44: loss=0.6472, dev_macro_f1=0.3801, dev_err=57.98%, es_counter=1
+2026-04-15 21:56:00,610 - supervised_baseline - INFO - Epoch 7/44: loss=0.3798, dev_macro_f1=0.4612, dev_err=44.81%, es_counter=0
+2026-04-15 21:56:03,116 - supervised_baseline - INFO - Epoch 8/44: loss=0.2230, dev_macro_f1=0.3889, dev_err=55.32%, es_counter=1
+2026-04-15 21:56:05,650 - supervised_baseline - INFO - Epoch 9/44: loss=0.1615, dev_macro_f1=0.4975, dev_err=43.75%, es_counter=0
+2026-04-15 21:56:08,164 - supervised_baseline - INFO - Epoch 10/44: loss=0.2599, dev_macro_f1=0.3887, dev_err=53.59%, es_counter=1
+2026-04-15 21:56:10,708 - supervised_baseline - INFO - Epoch 11/44: loss=0.3869, dev_macro_f1=0.3944, dev_err=57.45%, es_counter=2
+2026-04-15 21:56:13,085 - supervised_baseline - INFO - Epoch 12/44: loss=0.4903, dev_macro_f1=0.4519, dev_err=49.60%, es_counter=3
+2026-04-15 21:56:15,437 - supervised_baseline - INFO - Epoch 13/44: loss=0.4097, dev_macro_f1=0.4162, dev_err=53.86%, es_counter=4
+2026-04-15 21:56:17,767 - supervised_baseline - INFO - Early stopping at epoch 14
+2026-04-15 21:56:17,772 - supervised_baseline - INFO - Training done in 35s. Epochs: 14, Best epoch: 9
+2026-04-15 21:56:17,772 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:56:22,459 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpzpzeqj8j\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:56:22,459 - supervised_baseline - INFO - Test error rate: 46.20%, Test macro-F1: 0.4579, Test ECE: 0.2357
+2026-04-15 21:56:22,477 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzpzeqj8j\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:56:22,488 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpzpzeqj8j\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:56:22,497 - supervised_baseline - INFO - --- Trial 5/10 done: dev_macro_f1=0.4975 ---
+2026-04-15 21:56:22,497 - supervised_baseline - INFO - --- Trial 6/10 ---
+2026-04-15 21:56:23,137 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:56:23,137 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:56:23,155 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:56:23,155 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:56:25,640 - supervised_baseline - INFO - Epoch 1/76: loss=2.3011, dev_macro_f1=0.0402, dev_err=88.83%, es_counter=0
+2026-04-15 21:56:27,412 - supervised_baseline - INFO - Epoch 2/76: loss=2.3221, dev_macro_f1=0.0394, dev_err=89.23%, es_counter=1
+2026-04-15 21:56:29,203 - supervised_baseline - INFO - Epoch 3/76: loss=2.3053, dev_macro_f1=0.0438, dev_err=89.23%, es_counter=0
+2026-04-15 21:56:30,972 - supervised_baseline - INFO - Epoch 4/76: loss=2.3142, dev_macro_f1=0.0430, dev_err=90.29%, es_counter=1
+2026-04-15 21:56:32,739 - supervised_baseline - INFO - Epoch 5/76: loss=2.2893, dev_macro_f1=0.0528, dev_err=89.63%, es_counter=0
+2026-04-15 21:56:34,519 - supervised_baseline - INFO - Epoch 6/76: loss=2.2754, dev_macro_f1=0.0542, dev_err=89.36%, es_counter=0
+2026-04-15 21:56:36,295 - supervised_baseline - INFO - Epoch 7/76: loss=2.2717, dev_macro_f1=0.0538, dev_err=89.49%, es_counter=1
+2026-04-15 21:56:38,077 - supervised_baseline - INFO - Epoch 8/76: loss=2.2585, dev_macro_f1=0.0564, dev_err=89.36%, es_counter=0
+2026-04-15 21:56:39,877 - supervised_baseline - INFO - Epoch 9/76: loss=2.2490, dev_macro_f1=0.0843, dev_err=88.30%, es_counter=0
+2026-04-15 21:56:41,698 - supervised_baseline - INFO - Epoch 10/76: loss=2.2253, dev_macro_f1=0.0910, dev_err=87.63%, es_counter=0
+2026-04-15 21:56:43,456 - supervised_baseline - INFO - Epoch 11/76: loss=2.2046, dev_macro_f1=0.1501, dev_err=83.11%, es_counter=0
+2026-04-15 21:56:45,251 - supervised_baseline - INFO - Epoch 12/76: loss=2.1731, dev_macro_f1=0.1658, dev_err=82.31%, es_counter=0
+2026-04-15 21:56:47,035 - supervised_baseline - INFO - Epoch 13/76: loss=2.1623, dev_macro_f1=0.2238, dev_err=78.06%, es_counter=0
+2026-04-15 21:56:48,824 - supervised_baseline - INFO - Epoch 14/76: loss=2.1160, dev_macro_f1=0.2646, dev_err=72.21%, es_counter=0
+2026-04-15 21:56:50,592 - supervised_baseline - INFO - Epoch 15/76: loss=2.0891, dev_macro_f1=0.2964, dev_err=67.42%, es_counter=0
+2026-04-15 21:56:52,395 - supervised_baseline - INFO - Epoch 16/76: loss=2.0567, dev_macro_f1=0.3127, dev_err=64.36%, es_counter=0
+2026-04-15 21:56:54,216 - supervised_baseline - INFO - Epoch 17/76: loss=2.0134, dev_macro_f1=0.3352, dev_err=60.64%, es_counter=0
+2026-04-15 21:56:56,026 - supervised_baseline - INFO - Epoch 18/76: loss=1.9595, dev_macro_f1=0.3371, dev_err=58.91%, es_counter=0
+2026-04-15 21:56:57,846 - supervised_baseline - INFO - Epoch 19/76: loss=1.9297, dev_macro_f1=0.3318, dev_err=58.78%, es_counter=1
+2026-04-15 21:56:59,652 - supervised_baseline - INFO - Epoch 20/76: loss=1.8695, dev_macro_f1=0.3455, dev_err=55.85%, es_counter=0
+2026-04-15 21:57:01,461 - supervised_baseline - INFO - Epoch 21/76: loss=1.8270, dev_macro_f1=0.3371, dev_err=56.52%, es_counter=1
+2026-04-15 21:57:03,250 - supervised_baseline - INFO - Epoch 22/76: loss=1.7865, dev_macro_f1=0.3518, dev_err=55.85%, es_counter=0
+2026-04-15 21:57:05,065 - supervised_baseline - INFO - Epoch 23/76: loss=1.7329, dev_macro_f1=0.3671, dev_err=54.65%, es_counter=0
+2026-04-15 21:57:06,852 - supervised_baseline - INFO - Epoch 24/76: loss=1.7052, dev_macro_f1=0.3568, dev_err=55.72%, es_counter=1
+2026-04-15 21:57:08,632 - supervised_baseline - INFO - Epoch 25/76: loss=1.6571, dev_macro_f1=0.3549, dev_err=55.98%, es_counter=2
+2026-04-15 21:57:10,452 - supervised_baseline - INFO - Epoch 26/76: loss=1.6227, dev_macro_f1=0.3645, dev_err=55.05%, es_counter=3
+2026-04-15 21:57:12,278 - supervised_baseline - INFO - Epoch 27/76: loss=1.5617, dev_macro_f1=0.3905, dev_err=51.86%, es_counter=0
+2026-04-15 21:57:14,079 - supervised_baseline - INFO - Epoch 28/76: loss=1.5246, dev_macro_f1=0.4064, dev_err=49.60%, es_counter=0
+2026-04-15 21:57:15,902 - supervised_baseline - INFO - Epoch 29/76: loss=1.4656, dev_macro_f1=0.4088, dev_err=49.20%, es_counter=0
+2026-04-15 21:57:17,718 - supervised_baseline - INFO - Epoch 30/76: loss=1.4484, dev_macro_f1=0.3960, dev_err=50.66%, es_counter=1
+2026-04-15 21:57:19,537 - supervised_baseline - INFO - Epoch 31/76: loss=1.3958, dev_macro_f1=0.3934, dev_err=51.33%, es_counter=2
+2026-04-15 21:57:21,293 - supervised_baseline - INFO - Epoch 32/76: loss=1.3621, dev_macro_f1=0.3981, dev_err=51.46%, es_counter=3
+2026-04-15 21:57:23,107 - supervised_baseline - INFO - Epoch 33/76: loss=1.3240, dev_macro_f1=0.3998, dev_err=51.33%, es_counter=4
+2026-04-15 21:57:24,896 - supervised_baseline - INFO - Early stopping at epoch 34
+2026-04-15 21:57:24,903 - supervised_baseline - INFO - Training done in 61s. Epochs: 34, Best epoch: 29
+2026-04-15 21:57:24,903 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:57:28,886 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp_715qp5z\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:57:28,886 - supervised_baseline - INFO - Test error rate: 53.52%, Test macro-F1: 0.3817, Test ECE: 0.2691
+2026-04-15 21:57:28,905 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_715qp5z\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:57:28,917 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp_715qp5z\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:57:28,924 - supervised_baseline - INFO - --- Trial 6/10 done: dev_macro_f1=0.4088 ---
+2026-04-15 21:57:28,924 - supervised_baseline - INFO - --- Trial 7/10 ---
+2026-04-15 21:57:29,754 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:57:29,755 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:57:29,781 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:57:29,781 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:57:32,386 - supervised_baseline - INFO - Epoch 1/21: loss=2.3011, dev_macro_f1=0.0444, dev_err=88.96%, es_counter=0
+2026-04-15 21:57:34,195 - supervised_baseline - INFO - Epoch 2/21: loss=2.3155, dev_macro_f1=0.0848, dev_err=88.16%, es_counter=0
+2026-04-15 21:57:36,006 - supervised_baseline - INFO - Epoch 3/21: loss=2.2609, dev_macro_f1=0.0754, dev_err=93.09%, es_counter=1
+2026-04-15 21:57:37,828 - supervised_baseline - INFO - Epoch 4/21: loss=2.2323, dev_macro_f1=0.1510, dev_err=84.71%, es_counter=0
+2026-04-15 21:57:39,653 - supervised_baseline - INFO - Epoch 5/21: loss=2.1468, dev_macro_f1=0.2420, dev_err=66.76%, es_counter=0
+2026-04-15 21:57:41,476 - supervised_baseline - INFO - Epoch 6/21: loss=2.0610, dev_macro_f1=0.2558, dev_err=68.22%, es_counter=0
+2026-04-15 21:57:43,314 - supervised_baseline - INFO - Epoch 7/21: loss=1.9679, dev_macro_f1=0.2889, dev_err=66.09%, es_counter=0
+2026-04-15 21:57:45,130 - supervised_baseline - INFO - Epoch 8/21: loss=1.8710, dev_macro_f1=0.3298, dev_err=61.97%, es_counter=0
+2026-04-15 21:57:46,982 - supervised_baseline - INFO - Epoch 9/21: loss=1.7687, dev_macro_f1=0.3477, dev_err=57.85%, es_counter=0
+2026-04-15 21:57:48,793 - supervised_baseline - INFO - Epoch 10/21: loss=1.6694, dev_macro_f1=0.3531, dev_err=56.65%, es_counter=0
+2026-04-15 21:57:50,600 - supervised_baseline - INFO - Epoch 11/21: loss=1.5980, dev_macro_f1=0.3582, dev_err=54.12%, es_counter=0
+2026-04-15 21:57:52,410 - supervised_baseline - INFO - Epoch 12/21: loss=1.5089, dev_macro_f1=0.3700, dev_err=51.20%, es_counter=0
+2026-04-15 21:57:54,245 - supervised_baseline - INFO - Epoch 13/21: loss=1.4460, dev_macro_f1=0.4188, dev_err=46.28%, es_counter=0
+2026-04-15 21:57:56,014 - supervised_baseline - INFO - Epoch 14/21: loss=1.3586, dev_macro_f1=0.4278, dev_err=45.74%, es_counter=0
+2026-04-15 21:57:57,804 - supervised_baseline - INFO - Epoch 15/21: loss=1.3032, dev_macro_f1=0.4306, dev_err=46.41%, es_counter=0
+2026-04-15 21:57:59,609 - supervised_baseline - INFO - Epoch 16/21: loss=1.2510, dev_macro_f1=0.4234, dev_err=48.01%, es_counter=1
+2026-04-15 21:58:01,410 - supervised_baseline - INFO - Epoch 17/21: loss=1.2057, dev_macro_f1=0.4111, dev_err=49.07%, es_counter=2
+2026-04-15 21:58:03,183 - supervised_baseline - INFO - Epoch 18/21: loss=1.1670, dev_macro_f1=0.4207, dev_err=47.47%, es_counter=3
+2026-04-15 21:58:04,957 - supervised_baseline - INFO - Epoch 19/21: loss=1.1461, dev_macro_f1=0.4248, dev_err=46.94%, es_counter=4
+2026-04-15 21:58:06,725 - supervised_baseline - INFO - Early stopping at epoch 20
+2026-04-15 21:58:06,731 - supervised_baseline - INFO - Training done in 36s. Epochs: 20, Best epoch: 15
+2026-04-15 21:58:06,731 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:58:10,750 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpxs01v8_x\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:58:10,750 - supervised_baseline - INFO - Test error rate: 49.49%, Test macro-F1: 0.4187, Test ECE: 0.2745
+2026-04-15 21:58:10,770 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxs01v8_x\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:58:10,783 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpxs01v8_x\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:58:10,793 - supervised_baseline - INFO - --- Trial 7/10 done: dev_macro_f1=0.4306 ---
+2026-04-15 21:58:10,793 - supervised_baseline - INFO - --- Trial 8/10 ---
+2026-04-15 21:58:11,609 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:58:11,609 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:58:11,632 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:58:11,632 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:58:14,488 - supervised_baseline - INFO - Epoch 1/90: loss=2.3296, dev_macro_f1=0.0395, dev_err=88.96%, es_counter=0
+2026-04-15 21:58:16,425 - supervised_baseline - INFO - Epoch 2/90: loss=2.3130, dev_macro_f1=0.0393, dev_err=89.10%, es_counter=1
+2026-04-15 21:58:18,363 - supervised_baseline - INFO - Epoch 3/90: loss=2.2943, dev_macro_f1=0.0366, dev_err=91.09%, es_counter=2
+2026-04-15 21:58:20,299 - supervised_baseline - INFO - Epoch 4/90: loss=2.3078, dev_macro_f1=0.0433, dev_err=91.36%, es_counter=0
+2026-04-15 21:58:22,227 - supervised_baseline - INFO - Epoch 5/90: loss=2.3227, dev_macro_f1=0.0466, dev_err=91.62%, es_counter=0
+2026-04-15 21:58:24,155 - supervised_baseline - INFO - Epoch 6/90: loss=2.3245, dev_macro_f1=0.0445, dev_err=92.42%, es_counter=1
+2026-04-15 21:58:26,094 - supervised_baseline - INFO - Epoch 7/90: loss=2.2720, dev_macro_f1=0.0549, dev_err=92.15%, es_counter=0
+2026-04-15 21:58:28,031 - supervised_baseline - INFO - Epoch 8/90: loss=2.2790, dev_macro_f1=0.0689, dev_err=90.96%, es_counter=0
+2026-04-15 21:58:29,974 - supervised_baseline - INFO - Epoch 9/90: loss=2.2633, dev_macro_f1=0.0719, dev_err=90.96%, es_counter=0
+2026-04-15 21:58:31,922 - supervised_baseline - INFO - Epoch 10/90: loss=2.2542, dev_macro_f1=0.0786, dev_err=90.96%, es_counter=0
+2026-04-15 21:58:33,865 - supervised_baseline - INFO - Epoch 11/90: loss=2.2034, dev_macro_f1=0.0853, dev_err=88.70%, es_counter=0
+2026-04-15 21:58:35,805 - supervised_baseline - INFO - Epoch 12/90: loss=2.1644, dev_macro_f1=0.1429, dev_err=82.18%, es_counter=0
+2026-04-15 21:58:37,752 - supervised_baseline - INFO - Epoch 13/90: loss=2.1265, dev_macro_f1=0.2133, dev_err=78.86%, es_counter=0
+2026-04-15 21:58:39,700 - supervised_baseline - INFO - Epoch 14/90: loss=2.0928, dev_macro_f1=0.2156, dev_err=78.99%, es_counter=0
+2026-04-15 21:58:41,635 - supervised_baseline - INFO - Epoch 15/90: loss=2.0699, dev_macro_f1=0.2149, dev_err=77.26%, es_counter=1
+2026-04-15 21:58:43,567 - supervised_baseline - INFO - Epoch 16/90: loss=2.0000, dev_macro_f1=0.2661, dev_err=72.87%, es_counter=0
+2026-04-15 21:58:45,506 - supervised_baseline - INFO - Epoch 17/90: loss=1.9298, dev_macro_f1=0.2977, dev_err=66.89%, es_counter=0
+2026-04-15 21:58:47,451 - supervised_baseline - INFO - Epoch 18/90: loss=1.8829, dev_macro_f1=0.3194, dev_err=59.04%, es_counter=0
+2026-04-15 21:58:49,403 - supervised_baseline - INFO - Epoch 19/90: loss=1.8312, dev_macro_f1=0.3202, dev_err=56.52%, es_counter=0
+2026-04-15 21:58:51,364 - supervised_baseline - INFO - Epoch 20/90: loss=1.7910, dev_macro_f1=0.3389, dev_err=54.12%, es_counter=0
+2026-04-15 21:58:53,337 - supervised_baseline - INFO - Epoch 21/90: loss=1.6967, dev_macro_f1=0.3774, dev_err=51.20%, es_counter=0
+2026-04-15 21:58:55,267 - supervised_baseline - INFO - Epoch 22/90: loss=1.6714, dev_macro_f1=0.3975, dev_err=50.66%, es_counter=0
+2026-04-15 21:58:57,202 - supervised_baseline - INFO - Epoch 23/90: loss=1.5739, dev_macro_f1=0.3960, dev_err=50.80%, es_counter=1
+2026-04-15 21:58:59,206 - supervised_baseline - INFO - Epoch 24/90: loss=1.5838, dev_macro_f1=0.4007, dev_err=48.67%, es_counter=0
+2026-04-15 21:59:01,218 - supervised_baseline - INFO - Epoch 25/90: loss=1.4571, dev_macro_f1=0.3844, dev_err=48.94%, es_counter=1
+2026-04-15 21:59:03,162 - supervised_baseline - INFO - Epoch 26/90: loss=1.4017, dev_macro_f1=0.3890, dev_err=48.14%, es_counter=2
+2026-04-15 21:59:05,109 - supervised_baseline - INFO - Epoch 27/90: loss=1.4079, dev_macro_f1=0.3814, dev_err=48.67%, es_counter=3
+2026-04-15 21:59:07,063 - supervised_baseline - INFO - Epoch 28/90: loss=1.3471, dev_macro_f1=0.4227, dev_err=44.55%, es_counter=0
+2026-04-15 21:59:09,013 - supervised_baseline - INFO - Epoch 29/90: loss=1.2916, dev_macro_f1=0.4359, dev_err=44.28%, es_counter=0
+2026-04-15 21:59:10,950 - supervised_baseline - INFO - Epoch 30/90: loss=1.2563, dev_macro_f1=0.4333, dev_err=42.95%, es_counter=1
+2026-04-15 21:59:12,879 - supervised_baseline - INFO - Epoch 31/90: loss=1.1712, dev_macro_f1=0.4243, dev_err=44.55%, es_counter=2
+2026-04-15 21:59:14,835 - supervised_baseline - INFO - Epoch 32/90: loss=1.2279, dev_macro_f1=0.4199, dev_err=45.88%, es_counter=3
+2026-04-15 21:59:16,795 - supervised_baseline - INFO - Epoch 33/90: loss=1.1176, dev_macro_f1=0.4417, dev_err=45.35%, es_counter=0
+2026-04-15 21:59:18,771 - supervised_baseline - INFO - Epoch 34/90: loss=1.0456, dev_macro_f1=0.4560, dev_err=44.41%, es_counter=0
+2026-04-15 21:59:20,712 - supervised_baseline - INFO - Epoch 35/90: loss=1.0631, dev_macro_f1=0.4277, dev_err=45.74%, es_counter=1
+2026-04-15 21:59:22,646 - supervised_baseline - INFO - Epoch 36/90: loss=0.9787, dev_macro_f1=0.4150, dev_err=47.47%, es_counter=2
+2026-04-15 21:59:24,591 - supervised_baseline - INFO - Epoch 37/90: loss=0.9408, dev_macro_f1=0.4386, dev_err=45.48%, es_counter=3
+2026-04-15 21:59:26,529 - supervised_baseline - INFO - Epoch 38/90: loss=0.9286, dev_macro_f1=0.4467, dev_err=44.95%, es_counter=4
+2026-04-15 21:59:28,468 - supervised_baseline - INFO - Early stopping at epoch 39
+2026-04-15 21:59:28,473 - supervised_baseline - INFO - Training done in 76s. Epochs: 39, Best epoch: 34
+2026-04-15 21:59:28,473 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 21:59:32,693 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmp17syixd1\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 21:59:32,693 - supervised_baseline - INFO - Test error rate: 48.32%, Test macro-F1: 0.4302, Test ECE: 0.2373
+2026-04-15 21:59:32,712 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp17syixd1\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 21:59:32,722 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmp17syixd1\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 21:59:32,732 - supervised_baseline - INFO - --- Trial 8/10 done: dev_macro_f1=0.4560 ---
+2026-04-15 21:59:32,733 - supervised_baseline - INFO - --- Trial 9/10 ---
+2026-04-15 21:59:33,360 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 21:59:33,360 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 21:59:33,379 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 21:59:33,379 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 21:59:35,893 - supervised_baseline - INFO - Epoch 1/53: loss=2.3011, dev_macro_f1=0.0412, dev_err=90.16%, es_counter=0
+2026-04-15 21:59:37,724 - supervised_baseline - INFO - Epoch 2/53: loss=2.3110, dev_macro_f1=0.0669, dev_err=90.96%, es_counter=0
+2026-04-15 21:59:39,582 - supervised_baseline - INFO - Epoch 3/53: loss=2.2324, dev_macro_f1=0.1070, dev_err=86.97%, es_counter=0
+2026-04-15 21:59:41,416 - supervised_baseline - INFO - Epoch 4/53: loss=2.1470, dev_macro_f1=0.2436, dev_err=63.16%, es_counter=0
+2026-04-15 21:59:43,236 - supervised_baseline - INFO - Epoch 5/53: loss=1.9048, dev_macro_f1=0.3366, dev_err=56.65%, es_counter=0
+2026-04-15 21:59:45,043 - supervised_baseline - INFO - Epoch 6/53: loss=1.6219, dev_macro_f1=0.3357, dev_err=58.51%, es_counter=1
+2026-04-15 21:59:46,847 - supervised_baseline - INFO - Epoch 7/53: loss=1.2883, dev_macro_f1=0.3910, dev_err=53.72%, es_counter=0
+2026-04-15 21:59:48,618 - supervised_baseline - INFO - Epoch 8/53: loss=0.9792, dev_macro_f1=0.4190, dev_err=46.41%, es_counter=0
+2026-04-15 21:59:50,402 - supervised_baseline - INFO - Epoch 9/53: loss=0.7143, dev_macro_f1=0.4514, dev_err=46.54%, es_counter=0
+2026-04-15 21:59:52,212 - supervised_baseline - INFO - Epoch 10/53: loss=0.5071, dev_macro_f1=0.4997, dev_err=41.89%, es_counter=0
+2026-04-15 21:59:54,004 - supervised_baseline - INFO - Epoch 11/53: loss=0.3617, dev_macro_f1=0.4566, dev_err=46.01%, es_counter=1
+2026-04-15 21:59:55,796 - supervised_baseline - INFO - Epoch 12/53: loss=0.2495, dev_macro_f1=0.4358, dev_err=48.94%, es_counter=2
+2026-04-15 21:59:57,593 - supervised_baseline - INFO - Epoch 13/53: loss=0.1893, dev_macro_f1=0.4941, dev_err=41.76%, es_counter=3
+2026-04-15 21:59:59,366 - supervised_baseline - INFO - Epoch 14/53: loss=0.1353, dev_macro_f1=0.5000, dev_err=41.62%, es_counter=0
+2026-04-15 22:00:01,217 - supervised_baseline - INFO - Epoch 15/53: loss=0.1028, dev_macro_f1=0.4957, dev_err=42.29%, es_counter=1
+2026-04-15 22:00:03,012 - supervised_baseline - INFO - Epoch 16/53: loss=0.0797, dev_macro_f1=0.4700, dev_err=45.48%, es_counter=2
+2026-04-15 22:00:04,815 - supervised_baseline - INFO - Epoch 17/53: loss=0.0658, dev_macro_f1=0.4587, dev_err=47.47%, es_counter=3
+2026-04-15 22:00:06,634 - supervised_baseline - INFO - Epoch 18/53: loss=0.0543, dev_macro_f1=0.4707, dev_err=45.35%, es_counter=4
+2026-04-15 22:00:08,423 - supervised_baseline - INFO - Early stopping at epoch 19
+2026-04-15 22:00:08,429 - supervised_baseline - INFO - Training done in 34s. Epochs: 19, Best epoch: 14
+2026-04-15 22:00:08,429 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:00:12,419 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpl89lr57q\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 22:00:12,419 - supervised_baseline - INFO - Test error rate: 40.79%, Test macro-F1: 0.5016, Test ECE: 0.1642
+2026-04-15 22:00:12,438 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpl89lr57q\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 22:00:12,448 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpl89lr57q\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 22:00:12,457 - supervised_baseline - INFO - --- Trial 9/10 done: dev_macro_f1=0.5000 ---
+2026-04-15 22:00:12,457 - supervised_baseline - INFO - --- Trial 10/10 ---
+2026-04-15 22:00:13,144 - supervised_baseline - INFO - Starting Supervised Baseline: event=california_wildfires_2018, budget=10, seed_set=3
+2026-04-15 22:00:13,144 - supervised_baseline - INFO - Using device: cuda:0, model: vinai/bertweet-base
+2026-04-15 22:00:13,169 - supervised_baseline - INFO - Detected 10 classes for event california_wildfires_2018: ['caution_and_advice', 'displaced_people_and_evacuations', 'infrastructure_and_utility_damage', 'injured_or_dead_people', 'missing_or_found_people', 'not_humanitarian', 'other_relevant_information', 'requests_or_urgent_needs', 'rescue_volunteering_or_donation_effort', 'sympathy_and_support']
+2026-04-15 22:00:13,169 - supervised_baseline - INFO - Labeled: 100, Dev: 752, Test: 1461
+2026-04-15 22:00:15,596 - supervised_baseline - INFO - Epoch 1/42: loss=2.3011, dev_macro_f1=0.0440, dev_err=89.10%, es_counter=0
+2026-04-15 22:00:17,373 - supervised_baseline - INFO - Epoch 2/42: loss=2.3154, dev_macro_f1=0.0868, dev_err=88.03%, es_counter=0
+2026-04-15 22:00:19,154 - supervised_baseline - INFO - Epoch 3/42: loss=2.2604, dev_macro_f1=0.0665, dev_err=94.28%, es_counter=1
+2026-04-15 22:00:20,935 - supervised_baseline - INFO - Epoch 4/42: loss=2.2222, dev_macro_f1=0.1827, dev_err=74.60%, es_counter=0
+2026-04-15 22:00:22,730 - supervised_baseline - INFO - Epoch 5/42: loss=2.0776, dev_macro_f1=0.2734, dev_err=62.23%, es_counter=0
+2026-04-15 22:00:24,527 - supervised_baseline - INFO - Epoch 6/42: loss=1.8830, dev_macro_f1=0.2997, dev_err=66.09%, es_counter=0
+2026-04-15 22:00:26,318 - supervised_baseline - INFO - Epoch 7/42: loss=1.7186, dev_macro_f1=0.4003, dev_err=51.06%, es_counter=0
+2026-04-15 22:00:28,109 - supervised_baseline - INFO - Epoch 8/42: loss=1.5026, dev_macro_f1=0.4079, dev_err=48.94%, es_counter=0
+2026-04-15 22:00:29,879 - supervised_baseline - INFO - Epoch 9/42: loss=1.2936, dev_macro_f1=0.3804, dev_err=53.19%, es_counter=1
+2026-04-15 22:00:31,645 - supervised_baseline - INFO - Epoch 10/42: loss=1.1127, dev_macro_f1=0.4438, dev_err=46.14%, es_counter=0
+2026-04-15 22:00:33,474 - supervised_baseline - INFO - Epoch 11/42: loss=0.9393, dev_macro_f1=0.4550, dev_err=45.35%, es_counter=0
+2026-04-15 22:00:35,260 - supervised_baseline - INFO - Epoch 12/42: loss=0.8033, dev_macro_f1=0.4182, dev_err=50.66%, es_counter=1
+2026-04-15 22:00:37,117 - supervised_baseline - INFO - Epoch 13/42: loss=0.6797, dev_macro_f1=0.4473, dev_err=45.74%, es_counter=2
+2026-04-15 22:00:38,941 - supervised_baseline - INFO - Epoch 14/42: loss=0.5586, dev_macro_f1=0.4408, dev_err=46.54%, es_counter=3
+2026-04-15 22:00:40,780 - supervised_baseline - INFO - Epoch 15/42: loss=0.4687, dev_macro_f1=0.4447, dev_err=47.61%, es_counter=4
+2026-04-15 22:00:42,647 - supervised_baseline - INFO - Epoch 16/42: loss=0.3953, dev_macro_f1=0.4726, dev_err=45.08%, es_counter=0
+2026-04-15 22:00:44,467 - supervised_baseline - INFO - Epoch 17/42: loss=0.3432, dev_macro_f1=0.4634, dev_err=46.01%, es_counter=1
+2026-04-15 22:00:46,256 - supervised_baseline - INFO - Epoch 18/42: loss=0.2997, dev_macro_f1=0.4494, dev_err=47.47%, es_counter=2
+2026-04-15 22:00:48,069 - supervised_baseline - INFO - Epoch 19/42: loss=0.2632, dev_macro_f1=0.4564, dev_err=46.54%, es_counter=3
+2026-04-15 22:00:49,861 - supervised_baseline - INFO - Epoch 20/42: loss=0.2261, dev_macro_f1=0.4661, dev_err=45.61%, es_counter=4
+2026-04-15 22:00:51,668 - supervised_baseline - INFO - Epoch 21/42: loss=0.2012, dev_macro_f1=0.4756, dev_err=45.08%, es_counter=0
+2026-04-15 22:00:53,439 - supervised_baseline - INFO - Epoch 22/42: loss=0.1811, dev_macro_f1=0.4741, dev_err=45.74%, es_counter=1
+2026-04-15 22:00:55,260 - supervised_baseline - INFO - Epoch 23/42: loss=0.1655, dev_macro_f1=0.4655, dev_err=46.68%, es_counter=2
+2026-04-15 22:00:57,057 - supervised_baseline - INFO - Epoch 24/42: loss=0.1535, dev_macro_f1=0.4627, dev_err=46.54%, es_counter=3
+2026-04-15 22:00:58,853 - supervised_baseline - INFO - Epoch 25/42: loss=0.1446, dev_macro_f1=0.4660, dev_err=45.61%, es_counter=4
+2026-04-15 22:01:00,665 - supervised_baseline - INFO - Early stopping at epoch 26
+2026-04-15 22:01:00,672 - supervised_baseline - INFO - Training done in 47s. Epochs: 26, Best epoch: 21
+2026-04-15 22:01:00,672 - supervised_baseline - INFO - === Final Evaluation ===
+2026-04-15 22:01:04,691 - supervised_baseline - INFO - Results saved to C:\Users\anhtr\AppData\Local\Temp\tmpqnwgw7is\california_wildfires_2018\10_set3\metrics.json
+2026-04-15 22:01:04,691 - supervised_baseline - INFO - Test error rate: 46.89%, Test macro-F1: 0.4590, Test ECE: 0.1291
+2026-04-15 22:01:04,709 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpqnwgw7is\california_wildfires_2018\10_set3\test_predictions.tsv (1461 samples)
+2026-04-15 22:01:04,721 - supervised_baseline - INFO - Predictions saved to C:\Users\anhtr\AppData\Local\Temp\tmpqnwgw7is\california_wildfires_2018\10_set3\dev_predictions.tsv (752 samples)
+2026-04-15 22:01:04,729 - supervised_baseline - INFO - --- Trial 10/10 done: dev_macro_f1=0.4756 ---
