@@ -15,6 +15,7 @@ LG-CoTrain is a semi-supervised pipeline that combines a small set of human-labe
 - [Data Layout](#data-layout)
 - [Class Labels and Disaster Events](#class-labels-and-disaster-events)
 - [CLI Reference](#cli-reference)
+- [Additional Baselines](#additional-baselines)
 - [Zero-shot sub-module (`zeroshot/`)](#zero-shot-sub-module-zeroshot)
 - [Notebook Index](#notebook-index)
 - [Hyperparameter Configurations](#hyperparameter-configurations)
@@ -127,6 +128,45 @@ clean_release/
 │   ├── generate_selftrained_teacher.py        # produces self-trained pseudo-labels (SG-CoTrain ablation)
 │   ├── filter_pseudo_labels.py                # top-p filtering for SG-CoTrain-Top variant
 │   └── requirements.txt
+│
+├── aum_st_mixup/                              # AUM-guided Self-Training with Mixup
+│   ├── aum_mixup_st.py                        # Core training: AUM tracking, Mixup, self-training loop
+│   ├── run_aum_mixup_st.py                    # CLI entry point
+│   ├── make_aum_mixup_sweep.py                # WandB sweep generation (all events × budgets)
+│   ├── make_5lb_rerun_sweep.py                # WandB sweep for 5lb/cl reruns
+│   ├── extract_best_hps.py                    # Extract best HPs from WandB sweeps
+│   ├── get_aum_mixup_st_results.py            # Result aggregation from WandB
+│   ├── submit_job.sh                          # Container job submission
+│   └── requirements.txt
+│
+├── ust/                                       # Uncertainty-aware Self-Training baseline
+│   ├── ust.py                                 # Core UST training loop
+│   ├── run_ust.py                             # CLI entry point
+│   ├── run_mixmatch.py                        # MixMatch variant
+│   ├── custom_dataset.py                      # Dataset utilities
+│   ├── sampler.py                             # Uncertainty sampling strategies
+│   └── make_container.sh                      # Container automation
+│
+├── verifymatch/                               # VerifyMatch SSL pipeline
+│   ├── train.py                               # Main VerifyMatch training (WandB integrated)
+│   ├── calibrate.py                           # Temperature scaling calibration
+│   ├── optuna_sweep.py                        # Optuna-based hyperparameter search
+│   └── make_container.sh                      # Container automation
+│
+├── crisismmd_cotrain/                         # LLM-guided co-training for CrisisMMD
+│   ├── cotrain/                               # Co-training pipeline
+│   ├── pseudolabeling/                        # LLM pseudo-label generation (Llama)
+│   └── result_processing/                     # Result extraction and analysis
+│
+├── utils/                                     # Shared data preparation utilities
+│   ├── humaid_separator.py                    # HumAID dataset splitting
+│   ├── vmatch_separator.py                    # VerifyMatch data prep
+│   ├── zero_shot_prep.py                      # Zero-shot data formatting
+│   └── ...
+│
+├── docker/                                    # Container definitions
+│   ├── Dockerfile                             # General training image
+│   └── Dockerfile.cotrain                     # Co-training optimized image
 │
 ├── supervised_baseline/                       # BERTweet supervised baseline package (used by NB27 to fine-tune the SG-CoTrain teacher)
 ├── vanilla_cotrain/                           # vanilla Blum & Mitchell co-training (extra ablation)
@@ -287,6 +327,38 @@ python merge_optuna_results.py --sources pc2_results/ pc3_results/ \
 | `--results-root` | `results/` |
 
 See `python -m lg_cotrain.run_experiment --help` for the full list.
+
+---
+
+## Additional Baselines
+
+### AUM-ST-Mixup (`aum_st_mixup/`)
+
+AUM-guided Self-Training with Mixup. Uses Area Under the Margin (AUM) scores to split pseudo-labeled data into high-confidence and low-confidence subsets, then applies Mixup regularization during semi-supervised training.
+
+**Pipeline:**
+1. Phase 1 — Supervised warm-up on labeled data
+2. Phase 2 — Pseudo-label unlabeled data, compute AUM scores, split by median AUM
+3. Phase 3 — Train with Mixup between labeled↔low-AUM and high-AUM↔low-AUM pairs
+
+```bash
+python -m aum_st_mixup.run_aum_mixup_st \
+    --event kaikoura_earthquake_2016 \
+    --lbcl 5 --set_num 1 \
+    --pt_teacher_checkpoint vinai/bertweet-base
+```
+
+### UST (`ust/`)
+
+Uncertainty-aware Self-Training baseline. Uses MC-Dropout for uncertainty estimation and BALD acquisition to select pseudo-labeled samples.
+
+### VerifyMatch (`verifymatch/`)
+
+Semi-supervised learning with verification matching and optional temperature scaling calibration.
+
+### CrisisMMD Co-Training (`crisismmd_cotrain/`)
+
+Earlier co-training pipeline developed for the CrisisMMD multimodal dataset (pre-HumAID). Includes Llama-based pseudo-label generation.
 
 ---
 
