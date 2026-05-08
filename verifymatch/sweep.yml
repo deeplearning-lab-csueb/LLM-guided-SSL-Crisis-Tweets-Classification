@@ -1,0 +1,32 @@
+name: humaid_ssl_sweep
+program: train.py   # or the relative path to your training script
+method: grid                  # or "grid" / "bayes"
+
+metric:
+  name: macro-F1                  # <-- make sure your code logs this metric
+  goal: maximize
+
+parameters:
+  # === core training hyperparameters ===
+  learning_rate:
+    values: [1e-5, 2e-5, 5e-5]
+  batch_size:
+    values: [8, 16, 32]
+  epochs:
+    values: [3, 8, 12, 18]
+  T:                            # temperature / confidence sharpening
+    values: [0.3, 0.5, 0.7, 1.0]
+  set_num:                      # dataset split index
+    values: [1, 2, 3]
+
+  # === experiment control ===
+  seed:
+    values: [42, 123, 777]
+
+  # === fixed metadata for grouping ===
+  task:
+    value: HumAID
+  model:
+    value: vinai/bertweet-base
+  max_seq_length:
+    value: 128
